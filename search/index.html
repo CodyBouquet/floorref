@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Search Results | Flooring Reference</title>
+  <meta name="description" content="Search results for flooring specifications, materials, and terminology." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:," />
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+  <div id="site-header"></div>
+
+  <main class="mx-auto max-w-6xl px-4 py-10">
+    <section class="max-w-3xl">
+      <h1 class="text-3xl font-bold tracking-tight">Search results</h1>
+      <p id="searchSummary" class="mt-2 text-slate-600 text-sm"></p>
+    </section>
+
+    <section class="mt-8">
+      <div id="searchResults" class="space-y-4"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <!-- Keep site.js for header/footer + dropdown search -->
+  <script src="/assets/js/site.js" defer></script>
+
+  <!-- Search page logic (uses snippets + did you mean) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      const params = new URLSearchParams(window.location.search);
+      const qRaw = (params.get("q") || "").trim();
+
+      const summaryEl = document.getElementById("searchSummary");
+      const resultsEl = document.getElementById("searchResults");
+
+      if (!qRaw || qRaw.length < 2) {
+        summaryEl.textContent = "Enter a search term to see results.";
+        resultsEl.innerHTML = `
+          <div class="rounded-xl border border-slate-200 bg-white p-6 text-slate-600">
+            Try searching for a material (e.g., <span class="font-semibold">LVT</span>) or a spec (e.g., <span class="font-semibold">wear layer</span>).
+          </div>
+        `;
+        return;
+      }
+
+      summaryEl.innerHTML = `Results for <span class="font-semibold">"${escapeHtml(qRaw)}"</span>`;
+
+      let index = [];
+      try {
+        const res = await fetch("/search-index.json", { cache: "no-store" });
+        if (!res.ok) throw new Error("Failed to load search index");
+        index = await res.json();
+      } catch (err) {
+        console.error(err);
+        resultsEl.innerHTML = `
+          <div class="rounded-xl border border-slate-200 bg-white p-6 text-slate-600">
+            Search is temporarily unavailable.
+          </div>
+        `;
+        return;
+      }
+
+      const hits = searchIndex(index, qRaw);
+
+      if (!hits.length) {
+        const suggestions = getDidYouMeanSuggestions(index, qRaw, 3);
+
+        if (suggestions.length) {
+          resultsEl.innerHTML = `
+            <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+              <div class="text-sm text-slate-500">No direct results found.</div>
+              <div class="mt-2 text-sm text-slate-700 font-semibold">Did you mean:</div>
+
+              <div class="mt-4 space-y-3">
+                ${suggestions.map(s => `
+                  <a href="${s.url}"
+                     class="block rounded-xl border border-slate-200 bg-white p-5 shadow-sm
+                            hover:border-slate-400 hover:shadow-md transition">
+                    <div class="font-semibold">${escapeHtml(s.title)}</div>
+                    <div class="mt-2 text-sm text-slate-700">
+                      ${escapeHtml(s.snippet || bestKeywordSnippet(s, qRaw))}
+                    </div>
+                  </a>
+                `).join("")}
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        resultsEl.innerHTML = `
+          <div class="rounded-xl border border-slate-200 bg-white p-6 text-slate-600">
+            No results found.
+          </div>
+        `;
+        return;
+      }
+
+      // Render normal results (title + snippet, no file paths)
+      resultsEl.innerHTML = hits.map(h => `
+        <a href="${h.url}"
+           class="block rounded-xl border border-slate-200 bg-white p-5 shadow-sm
+                  hover:border-slate-400 hover:shadow-md transition">
+          <div class="font-semibold">${escapeHtml(h.title)}</div>
+          <div class="mt-2 text-sm text-slate-700">
+            ${escapeHtml(h.snippet || bestKeywordSnippet(h, qRaw))}
+          </div>
+        </a>
+      `).join("");
+    });
+
+    function searchIndex(index, query) {
+      const q = normalize(query);
+
+      return (index || [])
+        .map(item => {
+          const title = normalize(item.title || "");
+          const url = normalize(item.url || "");
+          const keywords = (item.keywords || []).map(k => normalize(k));
+          const snippet = normalize(item.snippet || "");
+
+          let score = 0;
+          if (title.includes(q)) score += 4;
+          if (keywords.some(k => k.includes(q))) score += 3;
+          if (snippet.includes(q)) score += 2;
+          if (url.includes(q)) score += 1;
+
+          // token matches
+          const tokens = q.split(" ").filter(Boolean);
+          if (tokens.length) {
+            const hay = normalize([item.title || "", item.snippet || "", ...(item.keywords || [])].join(" "));
+            const tokenHits = tokens.filter(t => hay.includes(t)).length;
+            score += Math.min(2, tokenHits);
+          }
+
+          return { ...item, __score: score };
+        })
+        .filter(x => x.__score > 0)
+        .sort((a, b) => b.__score - a.__score || (a.title || "").localeCompare(b.title || ""))
+        .slice(0, 50);
+    }
+
+        // ---------- Did you mean helpers ----------
+
+    function getDidYouMeanSuggestions(index, query, limit = 3) {
+    const q = normalize(query);
+    if (q.length < 2) return [];
+
+    return (index || [])
+        .map(item => {
+        const title = item.title || "";
+        const keywordsArr = (item.keywords || []).map(k => String(k || ""));
+        const hay = `${title} ${keywordsArr.join(" ")}`.trim();
+
+        // 1) word overlap (helps for normal searches)
+        const overlap = overlapScore(q, hay); // 0..1
+
+        // 2) typo tolerance against *tokens* (helps LVF -> LVT)
+        const minDist = minTokenDistance(q, [title, ...keywordsArr]);
+        let typoBonus = 0;
+
+        if (minDist <= 1) typoBonus = 0.60;        // very likely intended
+        else if (minDist === 2) typoBonus = 0.35;  // plausible typo
+        else if (minDist === 3) typoBonus = 0.20;  // weak suggestion
+
+        const score = overlap + typoBonus;
+
+        return { item, score, minDist };
+        })
+        // allow suggestions if either overlap OR typo is decent
+        .filter(x => x.score >= 0.30)
+        .sort((a, b) => b.score - a.score || a.minDist - b.minDist)
+        .slice(0, limit)
+        .map(x => x.item);
+    }
+
+    function minTokenDistance(query, fields) {
+    const q = normalize(query);
+    let best = Infinity;
+
+    for (const field of fields) {
+        const tokens = normalize(field).split(" ").filter(Boolean);
+        if (!tokens.length) continue;
+
+        for (const t of tokens) {
+        // don't compare against very long tokens if query is tiny
+        // (keeps results sane)
+        if (q.length <= 3 && t.length > 12) continue;
+        best = Math.min(best, levenshtein(q, t));
+        if (best <= 1) return best; // early exit
+        }
+    }
+    return best === Infinity ? 999 : best;
+    }
+
+
+    function overlapScore(q, hay) {
+      const qWords = normalize(q).split(" ").filter(Boolean);
+      const hWords = normalize(hay).split(" ").filter(Boolean);
+      if (!qWords.length || !hWords.length) return 0;
+
+      let hits = 0;
+      for (const w of qWords) {
+        if (hWords.some(hw => hw.includes(w) || w.includes(hw))) hits++;
+      }
+      return hits / Math.max(qWords.length, hWords.length);
+    }
+
+    function levenshtein(a, b) {
+      a = normalize(a);
+      b = normalize(b);
+      if (!a || !b) return Math.max(a.length, b.length);
+
+      const m = a.length, n = b.length;
+      const dp = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
+      for (let i = 0; i <= m; i++) dp[i][0] = i;
+      for (let j = 0; j <= n; j++) dp[0][j] = j;
+
+      for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+          const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+          dp[i][j] = Math.min(
+            dp[i - 1][j] + 1,
+            dp[i][j - 1] + 1,
+            dp[i - 1][j - 1] + cost
+          );
+        }
+      }
+      return dp[m][n];
+    }
+
+    function bestKeywordSnippet(item, query) {
+      const q = normalize(query);
+      const kws = (item.keywords || []).map(k => String(k || ""));
+      const hit = kws.find(k => normalize(k).includes(q));
+      if (hit) return hit;
+      return kws.length ? kws.slice(0, 3).join(", ") : "";
+    }
+
+    // ---------- utils ----------
+
+    function normalize(str) {
+      return String(str || "")
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function escapeHtml(s) {
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+  </script>
+</body>
+</html>

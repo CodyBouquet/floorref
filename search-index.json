@@ -1,0 +1,204 @@
+[
+  {
+    "title": "LVT Flooring",
+    "url": "/materials/lvt/",
+    "snippet": "Explains what luxury vinyl tile flooring is, how it is constructed, and common formats and specifications.",
+    "keywords": ["lvt", "luxury vinyl tile", "lvp", "vinyl flooring", "vinyl plank", "wear layer"]
+  },
+  {
+    "title": "Floating Vs Glue-Down LVT",
+    "url": "/materials/lvt/floating-vs-glue-down/",
+    "snippet": "Compares floating (click-lock) LVT with glue-down vinyl, including construction and performance differences.",
+    "keywords": ["floating lvt", "glue down lvt", "click lock vinyl", "dryback vinyl", "vinyl installation types"]
+  },
+  {
+    "title": "Rigid Core LVT",
+    "url": "/materials/lvt/rigid-core/",
+    "snippet": "Covers rigid core LVT formats such as SPC and WPC and how rigid cores affect stability and performance.",
+    "keywords": ["rigid core lvt", "spc", "wpc", "vinyl core", "dimensional stability"]
+  },
+  {
+    "title": "Glue-Down LVT",
+    "url": "/materials/lvt/glue-down/",
+    "snippet": "Describes glue-down (dryback) LVT including flexible construction and adhesive bonding.",
+    "keywords": ["glue down vinyl", "dryback lvt", "flexible vinyl", "pressure sensitive adhesive"]
+  },
+
+  {
+    "title": "Laminate Flooring",
+    "url": "/materials/laminate/",
+    "snippet": "Explains laminate flooring construction, core materials, surface ratings, and common specifications.",
+    "keywords": ["laminate flooring", "ac rating", "laminate thickness", "hdf core", "floating floor"]
+  },
+
+  {
+    "title": "Carpet Flooring",
+    "url": "/materials/carpet/",
+    "snippet": "Introduces carpet flooring types including broadloom, carpet tile, and installation formats.",
+    "keywords": ["carpet flooring", "broadloom carpet", "carpet tile", "pile", "carpet construction"]
+  },
+  {
+    "title": "Carpet Tile",
+    "url": "/materials/carpet/carpet-tile/",
+    "snippet": "Explains carpet tile formats, backing systems, and common commercial applications.",
+    "keywords": ["carpet tile", "modular carpet", "commercial carpet", "carpet backing"]
+  },
+  {
+    "title": "Glue-Down Carpet",
+    "url": "/materials/carpet/glue-down/",
+    "snippet": "Describes glue-down carpet installation methods and where this format is typically used.",
+    "keywords": ["glue down carpet", "direct glue carpet", "commercial carpet"]
+  },
+  {
+    "title": "Stretch-In Carpet",
+    "url": "/materials/carpet/stretch-in/",
+    "snippet": "Explains stretch-in carpet installation using tack strip and cushion.",
+    "keywords": ["stretch in carpet", "tack strip", "carpet cushion", "residential carpet"]
+  },
+
+  {
+    "title": "Hardwood Flooring",
+    "url": "/materials/hardwood/",
+    "snippet": "Overview of hardwood flooring types, construction methods, and material characteristics.",
+    "keywords": ["hardwood flooring", "wood flooring", "janka", "wood species"]
+  },
+  {
+    "title": "Solid Hardwood Flooring",
+    "url": "/materials/hardwood/solid-hardwood/",
+    "snippet": "Explains solid hardwood flooring construction and typical use cases.",
+    "keywords": ["solid hardwood", "solid wood flooring", "site nail hardwood"]
+  },
+  {
+    "title": "Engineered Hardwood Flooring",
+    "url": "/materials/hardwood/engineered-hardwood/",
+    "snippet": "Describes engineered hardwood construction and how it differs from solid wood.",
+    "keywords": ["engineered hardwood", "plywood core", "wood veneer"]
+  },
+  {
+    "title": "Prefinished Hardwood",
+    "url": "/materials/hardwood/prefinished-hardwood/",
+    "snippet": "Explains factory-finished hardwood flooring and its characteristics.",
+    "keywords": ["prefinished hardwood", "factory finished wood"]
+  },
+  {
+    "title": "Site-Finished Hardwood",
+    "url": "/materials/hardwood/site-finished-hardwood/",
+    "snippet": "Covers hardwood flooring that is sanded and finished after installation.",
+    "keywords": ["site finished hardwood", "unfinished hardwood", "on site finishing"]
+  },
+
+  {
+    "title": "AC Rating",
+    "url": "/specs/ac-rating.html",
+    "snippet": "Explains AC ratings and how they measure laminate wear resistance.",
+    "keywords": ["ac rating", "laminate rating", "abrasion class"]
+  },
+  {
+    "title": "Acoustic Rating",
+    "url": "/specs/acoustic-rating.html",
+    "snippet": "Explains acoustic ratings and sound transmission measurements in flooring.",
+    "keywords": ["acoustic rating", "sound rating", "iic", "stc"]
+  },
+  {
+    "title": "Backing",
+    "url": "/specs/backing.html",
+    "snippet": "Describes flooring backing materials and their functional purpose.",
+    "keywords": ["flooring backing", "carpet backing", "vinyl backing"]
+  },
+  {
+    "title": "Core Type",
+    "url": "/specs/core-type.html",
+    "snippet": "Explains different flooring core types and materials.",
+    "keywords": ["flooring core", "spc core", "wpc core", "hdf core"]
+  },
+  {
+    "title": "Density",
+    "url": "/specs/density.html",
+    "snippet": "Explains material density and how it affects flooring performance.",
+    "keywords": ["density", "material density", "flooring weight"]
+  },
+  {
+    "title": "Face Weight",
+    "url": "/specs/face-weight.html",
+    "snippet": "Explains face weight and how it is used to describe carpet quality.",
+    "keywords": ["face weight", "carpet weight", "carpet density"]
+  },
+  {
+    "title": "Fiber Types",
+    "url": "/specs/fiber-types.html",
+    "snippet": "Describes common carpet fiber types and their properties.",
+    "keywords": ["carpet fiber", "nylon carpet", "polyester carpet", "olefin"]
+  },
+  {
+    "title": "Hardwood Finish",
+    "url": "/specs/hardwood-finish.html",
+    "snippet": "Explains hardwood surface finishes and protective coatings.",
+    "keywords": ["hardwood finish", "urethane finish", "wood coating"]
+  },
+  {
+    "title": "Janka Rating",
+    "url": "/specs/janka.html",
+    "snippet": "Explains the Janka hardness scale used to measure wood durability.",
+    "keywords": ["janka rating", "wood hardness", "hardwood durability"]
+  },
+  {
+    "title": "Locking System",
+    "url": "/specs/locking-system.html",
+    "snippet": "Explains locking systems used in floating flooring products.",
+    "keywords": ["locking system", "click lock", "floating floor joint"]
+  },
+  {
+    "title": "Moisture Resistance",
+    "url": "/specs/moisture-resistance.html",
+    "snippet": "Explains moisture resistance claims and testing in flooring products.",
+    "keywords": ["moisture resistance", "water resistance", "waterproof flooring"]
+  },
+  {
+    "title": "Pile Height",
+    "url": "/specs/pile-height.html",
+    "snippet": "Explains carpet pile height and how it affects appearance and feel.",
+    "keywords": ["pile height", "carpet pile", "carpet thickness"]
+  },
+  {
+    "title": "Plank Width Standards",
+    "url": "/specs/plank-width-standards.html",
+    "snippet": "Explains common plank width measurements and standards.",
+    "keywords": ["plank width", "wide plank", "floor plank size"]
+  },
+  {
+    "title": "Species",
+    "url": "/specs/species.html",
+    "snippet": "Explains common wood species used in hardwood flooring.",
+    "keywords": ["wood species", "oak flooring", "maple flooring", "hickory"]
+  },
+  {
+    "title": "Static Load Resistance",
+    "url": "/specs/static-load-resistance.html",
+    "snippet": "Explains static load resistance and indentation performance.",
+    "keywords": ["static load", "indentation resistance", "floor load"]
+  },
+  {
+    "title": "Thickness",
+    "url": "/specs/thickness.html",
+    "snippet": "Explains flooring thickness measurements and why they matter.",
+    "keywords": ["flooring thickness", "plank thickness", "carpet thickness"]
+  },
+  {
+    "title": "Twist Level",
+    "url": "/specs/twist-level.html",
+    "snippet": "Explains carpet twist level and its effect on durability.",
+    "keywords": ["twist level", "carpet twist", "yarn twist"]
+  },
+  {
+    "title": "Veneer Thickness",
+    "url": "/specs/veneer-thickness.html",
+    "snippet": "Explains veneer thickness in engineered hardwood flooring.",
+    "keywords": ["veneer thickness", "engineered wood veneer"]
+  },
+  {
+    "title": "Wear Layer",
+    "url": "/specs/wear-layer.html",
+    "snippet": "Explains wear layer thickness and durability ratings in vinyl flooring.",
+    "keywords": ["wear layer", "vinyl wear layer", "mil wear layer"]
+  }
+]
