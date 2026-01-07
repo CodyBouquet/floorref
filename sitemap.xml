@@ -1,137 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Core -->
   <url>
-    <loc>https://floorref.com/</loc>
-    <priority>1.0</priority>
+    <loc>https://flooringreference.com/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/</loc>
-    <priority>0.9</priority>
+    <loc>https://flooringreference.com/materials/carpet/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
-  <!-- Materials-->
-  <url
-    <loc>https://floorref.com/materials/</loc>
-    <priority>1.0</priority>
-  </url>  
-
   <url>
-    <loc>https://floorref.com/materials/carpet</loc>
-    <priority>0.9</priority>
-  </url>  
-
-  <url>
-    <loc>https://floorref.com/materials/hardwood</loc>
-    <priority>0.9</priority>    
-  </url>  
-
-  <url>
-    <loc>https://floorref.com/materials/laminate</loc>
-    <priority>0.9</priority>
-  </url>  
-
-  <url>
-    <loc>https://floorref.com/materials/lvt</loc>
-    <priority>0.9</priority>  
+    <loc>https://flooringreference.com/materials/carpet/carpet-tile/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
-  <!-- Specs -->
   <url>
-    <loc>https://floorref.com/specs/acoustic-rating</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/carpet/glue-down/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/ac-rating</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/carpet/stretch-in/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/backing</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/hardwood/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/core-type</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/hardwood/engineered-hardwood/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/density</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/hardwood/prefinished-hardwood/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/face-weight</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/hardwood/site-finished-hardwood/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/fiber-types</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/hardwood/solid-hardwood/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/hardwood-finish</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/laminate/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/janka</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/lvt/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/locking-system</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/lvt/floating-vs-glue-down/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/moisture-resistance</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/lvt/glue-down/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/pile-height</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/materials/lvt/rigid-core/</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/plank-width-standards</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/ac-rating.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/species</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/acoustic-rating.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/static-load-resistance</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/backing.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/thickness</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/core-type.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/twist-level</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/density.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/veneer-thickness</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/face-weight.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
   <url>
-    <loc>https://floorref.com/specs/wear-layer</loc>
-    <priority>0.8</priority>
+    <loc>https://flooringreference.com/specs/fiber-types.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
   </url>
-
+  <url>
+    <loc>https://flooringreference.com/specs/hardwood-finish.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/janka.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/locking-system.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/moisture-resistance.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/pile-height.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/plank-width-standards.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/species.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/static-load-resistance.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/thickness.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/twist-level.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/veneer-thickness.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://flooringreference.com/specs/wear-layer.html</loc>
+    <lastmod>2026-01-07T16:56:55.583Z</lastmod>
+  </url>
 </urlset>

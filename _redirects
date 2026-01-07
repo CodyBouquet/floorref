@@ -1,0 +1,9 @@
+# ----------------------------------------
+# FloorRef Canonical URL Redirects
+# ----------------------------------------
+
+# Materials: redirect index.html to folder URL
+/materials/*/index.html   /materials/:splat/   301
+
+# Root index.html → /
+/index.html               /                   301
