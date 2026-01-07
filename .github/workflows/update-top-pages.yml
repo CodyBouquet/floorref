@@ -1,0 +1,51 @@
+name: Weekly Top Pages (GA4)
+
+on:
+  schedule:
+    # Every Monday at 9:15am UTC
+    - cron: "15 9 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-top-pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Your GA script requires search-index.json to exist.
+      # If you already generate it on deploy, we can still rebuild it here to be safe.
+      - name: Build search-index.json
+        run: node scripts/build-search-index.mjs
+
+      - name: Build data/top-pages.json from GA4
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_SERVICE_ACCOUNT_JSON: ${{ secrets.GA4_SERVICE_ACCOUNT_JSON }}
+          TOP_PAGES_LIMIT: "24"
+          TOP_PAGES_DAYS: "7"
+        run: node scripts/build-top-pages-from-ga4.mjs
+
+      - name: Commit & push if changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/top-pages.json
+            git commit -m "Weekly update: top pages (GA4)"
+            git push
+          else
+            echo "No changes to commit."
+          fi
