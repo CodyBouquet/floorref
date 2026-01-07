@@ -1,0 +1,7 @@
+{
+  "name": "floorref",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-search-index.mjs"
+  }
+}
