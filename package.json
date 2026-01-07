@@ -2,6 +2,6 @@
   "name": "floorref",
   "private": true,
   "scripts": {
-    "build": "node scripts/build-search-index.mjs && node scripts/inject-scial-meta.mjs && node scripts/build-sitemap.mjs && node scripts/check-links.mjs"
+    "build": "node scripts/build-search-index.mjs && node scripts/inject-scial-meta.mjs && node scripts/build-sitemap.mjs && node scripts/check-links.mjs && node scripts/inject-ga4.mjs"
   }
 }
