@@ -22,7 +22,7 @@ const INCLUDE_DIRS = [
 ];
 
 // Specific root files to include (optional)
-const INCLUDE_ROOT_FILES = ["index.html", "404.html"];
+const INCLUDE_ROOT_FILES = ["index.html"];
 
 // Files/dirs to skip
 const SKIP_DIRS = new Set(["assets", "data", ".netlify", ".git", "node_modules"]);
