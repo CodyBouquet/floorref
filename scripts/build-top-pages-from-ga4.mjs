@@ -162,9 +162,29 @@ async function runReport(accessToken) {
 }
 
 function buildTopPages(gaRows, indexMap) {
-  // Convert GA results into your homepage format: {title,url,blurb,score}
-  // Uses search-index.json for title/snippet. Falls back if missing.
   const items = [];
+
+  // Exact paths we never want to show
+  const BLOCKED_EXACT = new Set([
+    "/",              // home
+    "/about",
+    "/about/",
+    "/contact",
+    "/contact/",
+    "/legal",
+    "/legal/",
+    "/search",
+    "/search/",
+    "/404.html",
+  ]);
+
+  // Sections we never want to show (and their children)
+  const BLOCKED_PREFIXES = [
+    "/about/",
+    "/contact/",
+    "/legal/",
+    "/search/",
+  ];
 
   for (const row of gaRows) {
     const pagePath = row.dimensionValues?.[0]?.value || "";
@@ -173,26 +193,26 @@ function buildTopPages(gaRows, indexMap) {
     const url = normalizePath(pagePath);
     const views = Number(viewsStr) || 0;
 
-    // Optionally ignore non-content pages
-    // (You told me earlier you wanted to remove these from search index)
-    const blockedPrefixes = ["/search/", "/legal/", "/contact/", "/about/"];
-    if (blockedPrefixes.some((p) => url.startsWith(p))) continue;
-    if (url === "/404.html") continue;
+    if (!url) continue;
 
+    // ❌ Exclusions
+    if (BLOCKED_EXACT.has(url)) continue;
+    if (BLOCKED_PREFIXES.some(prefix => url.startsWith(prefix))) continue;
+
+    // Only include pages that exist in the search index
     const match = indexMap.get(url);
-    const title = match?.title || url;
-    const blurb = match?.snippet || match?.blurb || "";
+    if (!match) continue;
 
     items.push({
-      title,
-      url,
-      blurb,
+      title: match.title,
+      url: match.url,
+      blurb: match.snippet || match.blurb || "",
       score: views,
     });
   }
 
-  // Sort by score desc
-  items.sort((a, b) => (b.score ?? 0) - (a.score ?? 0));
+  // Sort by usage
+  items.sort((a, b) => b.score - a.score);
 
   return items;
 }
