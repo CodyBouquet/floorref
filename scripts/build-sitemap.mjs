@@ -13,7 +13,7 @@ const ROOT = path.resolve(__dirname, "..");
 const OUT_FILE = path.join(ROOT, "sitemap.xml");
 
 // ✅ Your canonical site URL (set this!)
-const SITE_ORIGIN = "https://floorref"; // <-- change me
+const SITE_ORIGIN = "https://floorref.com"; //
 
 // Only include these folders in sitemap
 const INCLUDE_DIRS = ["materials", "specs"];
