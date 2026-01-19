@@ -1,8 +1,32 @@
 [
   {
-    "title": "Flooring Reference — Wear Layers, Thickness & Standards Explained",
-    "url": "/",
-    "blurb": "Plain-English explanations of flooring specifications like wear layer thickness, total thickness, plank width, and material differences. Reference-only, no installation advice.",
+    "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
+    "url": "/materials/lvt/",
+    "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
+    "score": 3
+  },
+  {
+    "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
+    "url": "/materials/lvt/",
+    "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
+    "score": 3
+  },
+  {
+    "title": "What Is Hardwood Flooring? Types, Finishes & Installation Methods Explained",
+    "url": "/materials/hardwood/",
+    "blurb": "Reference explanation of hardwood flooring. Learn the difference between solid and engineered hardwood, prefinished vs site-finished products, and common hardwood installation methods.",
+    "score": 2
+  },
+  {
+    "title": "What Is Carpet Flooring? Formats, Specs & Terms Explained",
+    "url": "/materials/carpet/",
+    "blurb": "Reference explanation of carpet flooring. Learn what carpet is, the difference between stretch-in, glue-down, and carpet tile formats, and common carpet specifications like face weight, density, and pile height.",
+    "score": 1
+  },
+  {
+    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
+    "url": "/materials/laminate/",
+    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
     "score": 1
   }
 ]
