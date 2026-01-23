@@ -39,7 +39,7 @@ function injectHeader() {
   mount.innerHTML = `
     <header class="border-b border-slate-200 bg-white">
       <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between gap-4">
-        <a href="/" class="font-semibold text-lg shrink-0">Flooring Reference</a>
+        <a href="/" class="font-semibold text-lg shrink-0">Floor Ref</a>
 
         <!-- Desktop search -->
         <div class="hidden md:block relative w-full max-w-md">
