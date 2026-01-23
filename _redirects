@@ -2,8 +2,14 @@
 # FloorRef Canonical URL Redirects
 # ----------------------------------------
 
-# Materials: redirect index.html to folder URL
-/materials/*/index.html   /materials/:splat/   301
+# 1) Specs: /specs/name/  -> /specs/name.html
+/specs/:name/            /specs/:name.html    301
 
-# Root index.html → /
-/index.html               /                   301
+# 2) Materials: force trailing slash on /materials/section
+/materials/:section      /materials/:section/ 301
+
+# 3) Materials: index.html -> folder URL
+/materials/*/index.html  /materials/:splat/   301
+
+# 4) Root index.html -> /
+/index.html              /                   301
