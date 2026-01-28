@@ -1,0 +1,283 @@
+materials/carpet/
+├─ index.html
+├─ glue-down/
+│  └─ index.html                (use-case explainer only)
+├─ stretch-in/
+│  └─ index.html                (use-case explainer only)
+├─ carpet-tile/
+│  ├─ index.html
+│  └─ specs/
+│     ├─ index.html
+│     ├─ tile-size.html
+│     ├─ tile-backing-systems.html
+│     ├─ releasable-adhesive.html
+│     ├─ installation-patterns.html
+│     ├─ underfloor-access.html
+│     └─ moisture-limits.html
+└─ specs/
+   ├─ index.html
+   ├─ construction/
+   │  ├─ fiber-type.html
+   │  ├─ fiber-brand.html
+   │  ├─ yarn-type.html
+   │  ├─ twist-level.html
+   │  ├─ heat-setting.html
+   │  ├─ dye-method.html
+   │  ├─ pile-style.html
+   │  ├─ gauge.html
+   │  ├─ stitch-rate.html
+   │  ├─ pile-height.html
+   │  ├─ face-weight.html
+   │  ├─ density.html
+   │  ├─ pattern-repeat.html
+   │  └─ static-control.html
+   ├─ backing/
+   │  ├─ backing-types.html          ⭐ INSTALL METHOD GATEKEEPER
+   │  ├─ primary-backing.html
+   │  ├─ secondary-backing.html
+   │  ├─ cushion-back.html
+   │  ├─ edge-ravel.html
+   │  └─ dimensional-stability.html
+   ├─ performance/
+   │  ├─ tuft-bind.html
+   │  ├─ delamination.html
+   │  ├─ flammability.html
+   │  ├─ smoke-density.html
+   │  ├─ stain-resistance.html
+   │  ├─ soil-resistance.html
+   │  ├─ colorfastness.html
+   │  ├─ electrostatic-propensity.html
+   │  └─ traffic-classification.html
+   ├─ environmental/
+   │  ├─ voc-certifications.html
+   │  ├─ recycled-content.html
+   │  ├─ manufacturing-origin.html
+   │  └─ epd-hpd.html
+   ├─ physical/
+   │  ├─ roll-width.html
+   │  ├─ total-thickness.html
+   │  └─ weight-per-roll.html
+   └─ warranty/
+      ├─ wear-warranty.html
+      ├─ stain-warranty.html
+      ├─ texture-retention.html
+      └─ backing-warranty.html
+
+
+
+
+
+
+
+materials/lvt/
+├─ index.html
+├─ glue-down/
+│  ├─ index.html
+│  └─ specs/
+│     ├─ index.html
+│     ├─ construction/
+│     │  ├─ wear-layer.html
+│     │  ├─ total-thickness.html
+│     │  ├─ surface-coating.html
+│     │  ├─ edge-profile.html
+│     │  └─ embossing.html
+│     ├─ performance/
+│     │  ├─ traffic-class.html
+│     │  ├─ indentation-resistance.html
+│     │  ├─ dimensional-stability.html
+│     │  ├─ slip-resistance.html
+│     │  └─ castor-chair.html
+│     ├─ installation/
+│     │  ├─ adhesive-type.html
+│     │  ├─ trowel-notch.html
+│     │  ├─ open-time.html
+│     │  ├─ rolling-requirements.html
+│     │  ├─ subfloor-tolerance.html
+│     │  └─ moisture-limits.html
+│     ├─ environmental/
+│     │  ├─ voc-certifications.html
+│     │  ├─ phthalate-free.html
+│     │  ├─ recycled-content.html
+│     │  └─ epd-hpd.html
+│     ├─ physical/
+│     │  ├─ plank-size.html
+│     │  ├─ carton-coverage.html
+│     │  ├─ weight-per-carton.html
+│     │  └─ pattern-repeat.html
+│     └─ warranty/
+│        ├─ wear-warranty.html
+│        ├─ commercial-warranty.html
+│        └─ adhesive-warranty.html
+└─ rigid-core/
+   ├─ index.html
+   └─ specs/
+      ├─ index.html
+      ├─ construction/
+      │  ├─ core-type.html
+      │  ├─ total-thickness.html
+      │  ├─ wear-layer.html
+      │  ├─ locking-system.html
+      │  ├─ attached-underlayment.html
+      │  ├─ edge-profile.html
+      │  └─ surface-coating.html
+      ├─ performance/
+      │  ├─ traffic-class.html
+      │  ├─ indentation-resistance.html
+      │  ├─ dimensional-stability.html
+      │  ├─ impact-resistance.html
+      │  ├─ sound-ratings.html
+      │  └─ telegraphing-risk.html
+      ├─ installation/
+      │  ├─ expansion-gap.html
+      │  ├─ max-run-length.html
+      │  ├─ transition-requirements.html
+      │  ├─ subfloor-tolerance.html
+      │  ├─ moisture-limits.html
+      │  ├─ underlayment-rules.html
+      │  └─ radiant-heat.html
+      ├─ environmental/
+      │  ├─ voc-certifications.html
+      │  ├─ phthalate-free.html
+      │  ├─ recycled-content.html
+      │  └─ epd-hpd.html
+      ├─ physical/
+      │  ├─ plank-size.html
+      │  ├─ carton-coverage.html
+      │  ├─ weight-per-carton.html
+      │  └─ pattern-repeat.html
+      └─ warranty/
+         ├─ wear-warranty.html
+         ├─ waterproof-warranty.html
+         ├─ commercial-warranty.html
+         └─ structural-warranty.html
+
+
+
+
+
+
+
+
+materials/hardwood/
+├─ index.html
+├─ solid/
+│  ├─ index.html
+│  └─ specs/
+│     ├─ index.html
+│     ├─ construction/
+│     │  ├─ thickness.html
+│     │  ├─ width.html
+│     │  ├─ length-range.html
+│     │  ├─ grade.html
+│     │  ├─ cut.html
+│     │  ├─ species.html
+│     │  └─ milling-profile.html
+│     ├─ finish/
+│     │  ├─ finish-type.html
+│     │  ├─ sheen.html
+│     │  └─ surface-texture.html
+│     ├─ performance/
+│     │  ├─ janka-hardness.html
+│     │  ├─ dimensional-stability.html
+│     │  ├─ moisture-movement.html
+│     │  └─ refinish-potential.html
+│     ├─ installation/
+│     │  ├─ installation-methods.html
+│     │  ├─ fasteners.html
+│     │  ├─ adhesives.html
+│     │  ├─ subfloor-types.html
+│     │  ├─ moisture-testing.html
+│     │  ├─ acclimation.html
+│     │  ├─ expansion-gap.html
+│     │  └─ radiant-heat.html
+│     ├─ environmental/
+│     │  ├─ fsc-certification.html
+│     │  ├─ voc-compliance.html
+│     │  └─ epd-hpd.html
+│     └─ warranty/
+│        ├─ structural-warranty.html
+│        ├─ finish-warranty.html
+│        └─ moisture-warranty.html
+├─ engineered/
+│  ├─ index.html
+│  └─ specs/
+│     ├─ index.html
+│     ├─ construction/
+│     │  ├─ total-thickness.html
+│     │  ├─ veneer-thickness.html
+│     │  ├─ core-construction.html
+│     │  ├─ width.html
+│     │  ├─ length-range.html
+│     │  ├─ grade.html
+│     │  ├─ species.html
+│     │  └─ milling-profile.html
+│     ├─ finish/
+│     │  ├─ finish-type.html
+│     │  ├─ sheen.html
+│     │  └─ surface-texture.html
+│     ├─ performance/
+│     │  ├─ dimensional-stability.html
+│     │  ├─ moisture-movement.html
+│     │  ├─ refinish-potential.html
+│     │  └─ radiant-heat-compatibility.html
+│     ├─ installation/
+│     │  ├─ installation-methods.html
+│     │  ├─ adhesives.html
+│     │  ├─ underlayment.html
+│     │  ├─ subfloor-types.html
+│     │  ├─ moisture-testing.html
+│     │  ├─ acclimation.html
+│     │  ├─ expansion-gap.html
+│     │  └─ max-run-length.html
+│     ├─ environmental/
+│     │  ├─ fsc-certification.html
+│     │  ├─ voc-compliance.html
+│     │  └─ epd-hpd.html
+│     └─ warranty/
+│        ├─ structural-warranty.html
+│        ├─ finish-warranty.html
+│        └─ moisture-warranty.html
+├─ site-finished/
+│  └─ index.html
+└─ prefinished/
+   └─ index.html
+
+
+
+
+
+
+
+materials/laminate/
+├─ index.html
+└─ specs/
+   ├─ index.html
+   ├─ construction/
+   │  ├─ thickness.html
+   │  ├─ core-type.html
+   │  ├─ wear-layer.html
+   │  ├─ edge-treatment.html
+   │  ├─ locking-system.html
+   │  └─ plank-size.html
+   ├─ performance/
+   │  ├─ ac-rating.html
+   │  ├─ abrasion-resistance.html
+   │  ├─ impact-resistance.html
+   │  ├─ water-resistance.html
+   │  ├─ stain-resistance.html
+   │  └─ fade-resistance.html
+   ├─ installation/
+   │  ├─ subfloor-tolerance.html
+   │  ├─ underlayment.html
+   │  ├─ expansion-gap.html
+   │  ├─ max-run-length.html
+   │  ├─ transition-requirements.html
+   │  └─ radiant-heat.html
+   ├─ environmental/
+   │  ├─ voc-certifications.html
+   │  ├─ formaldehyde-compliance.html
+   │  └─ epd-hpd.html
+   └─ warranty/
+      ├─ residential-warranty.html
+      ├─ commercial-warranty.html
+      └─ water-warranty.html
