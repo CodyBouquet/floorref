@@ -16,7 +16,7 @@ const OUT_FILE = path.join(ROOT, "sitemap.xml");
 const SITE_ORIGIN = "https://floorref.com"; //
 
 // Only include these folders in sitemap
-const INCLUDE_DIRS = ["materials", "specs"];
+const INCLUDE_DIRS = ["materials"];
 
 // Root files to include (homepage only by default)
 const INCLUDE_ROOT_FILES = ["index.html"];
@@ -55,7 +55,7 @@ function fileToUrl(filePath) {
     return `/${dir}`;
   }
 
-  // other html files keep .html (matches your /specs/*.html)
+  // other html files keep .html (matches your /materials/*.html)
   return `/${rel}`;
 }
 

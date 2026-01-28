@@ -17,8 +17,7 @@ const OUT_FILE = path.join(ROOT, "search-index.json");
 
 // Folders to crawl (edit freely)
 const INCLUDE_DIRS = [
-  "materials",
-  "specs"
+  "materials"
 ];
 
 // Specific root files to include (optional)
@@ -178,7 +177,7 @@ function fileToUrl(filePath) {
     return `/${dir}`;
   }
 
-  // other html files keep .html (matches your existing patterns in /specs/)
+  // other html files keep .html (matches your existing patterns in /materials/)
   if (rel.endsWith(".html")) return `/${rel}`;
 
   return `/${rel}`;
