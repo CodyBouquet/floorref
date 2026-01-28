@@ -2,8 +2,44 @@
 # FloorRef Canonical URL Redirects
 # ----------------------------------------
 
-# 1) Specs: /specs/name/  -> /specs/name.html
-/specs/:name/            /specs/:name.html    301
+# 1) Legacy spec pages -> updated targets
+/specs/ac-rating/            /materials/laminate/specs/performance/ac-rating.html    301
+/specs/ac-rating.html        /materials/laminate/specs/performance/ac-rating.html    301
+/materials/specs/ac-rating.html /materials/laminate/specs/performance/ac-rating.html 301
+/specs/acoustic-rating/      /materials/lvt/rigid-core/specs/performance/sound-ratings.html    301
+/specs/acoustic-rating.html  /materials/lvt/rigid-core/specs/performance/sound-ratings.html    301
+/materials/specs/acoustic-rating.html /materials/lvt/rigid-core/specs/performance/sound-ratings.html 301
+/specs/hardwood-finish/      /materials/hardwood/solid-hardwood/specs/finish/finish-type.html    301
+/specs/hardwood-finish.html  /materials/hardwood/solid-hardwood/specs/finish/finish-type.html    301
+/materials/specs/hardwood-finish.html /materials/hardwood/solid-hardwood/specs/finish/finish-type.html 301
+/specs/locking-system/       /materials/laminate/specs/construction/locking-system.html    301
+/specs/locking-system.html   /materials/laminate/specs/construction/locking-system.html    301
+/materials/specs/locking-system.html /materials/laminate/specs/construction/locking-system.html 301
+/specs/moisture-resistance/  /materials/laminate/specs/performance/water-resistance.html    301
+/specs/moisture-resistance.html /materials/laminate/specs/performance/water-resistance.html    301
+/materials/specs/moisture-resistance.html /materials/laminate/specs/performance/water-resistance.html 301
+/specs/plank-width-standards/ /materials/hardwood/solid-hardwood/specs/construction/width.html    301
+/specs/plank-width-standards.html /materials/hardwood/solid-hardwood/specs/construction/width.html    301
+/materials/specs/plank-width-standards.html /materials/hardwood/solid-hardwood/specs/construction/width.html 301
+/specs/species/              /materials/hardwood/solid-hardwood/specs/construction/species.html    301
+/specs/species.html          /materials/hardwood/solid-hardwood/specs/construction/species.html    301
+/materials/specs/species.html /materials/hardwood/solid-hardwood/specs/construction/species.html 301
+/specs/static-load-resistance/ /materials/lvt/rigid-core/specs/performance/indentation-resistance.html    301
+/specs/static-load-resistance.html /materials/lvt/rigid-core/specs/performance/indentation-resistance.html    301
+/materials/specs/static-load-resistance.html /materials/lvt/rigid-core/specs/performance/indentation-resistance.html 301
+/specs/thickness/            /materials/laminate/specs/construction/thickness.html    301
+/specs/thickness.html        /materials/laminate/specs/construction/thickness.html    301
+/materials/specs/thickness.html /materials/laminate/specs/construction/thickness.html 301
+/materials/specs/fiber-types.html /materials/carpet/specs/construction/fiber-types.html 301
+/materials/specs/face-weight.html /materials/carpet/specs/construction/face-weight.html 301
+/materials/specs/density.html /materials/carpet/specs/construction/density.html 301
+/materials/specs/backing.html /materials/carpet/specs/backing/backing-types.html 301
+/materials/specs/twist-level.html /materials/carpet/specs/construction/twist-level.html 301
+/materials/specs/pile-height.html /materials/carpet/specs/construction/pile-height.html 301
+/materials/specs/janka.html /materials/hardwood/specs/janka.html 301
+/materials/specs/veneer-thickness.html /materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html 301
+/materials/specs/wear-layer.html /materials/lvt/specs/wear-layer.html 301
+/materials/specs/core-type.html /materials/lvt/specs/core-type.html 301
 
 # 2) Materials: force trailing slash on /materials/section
 /materials/:section      /materials/:section/ 301

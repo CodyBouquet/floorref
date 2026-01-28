@@ -160,7 +160,7 @@ materials/lvt/
 
 materials/hardwood/
 ├─ index.html
-├─ solid/
+├─ solid-hardwood/
 │  ├─ index.html
 │  └─ specs/
 │     ├─ index.html
@@ -198,7 +198,7 @@ materials/hardwood/
 │        ├─ structural-warranty.html
 │        ├─ finish-warranty.html
 │        └─ moisture-warranty.html
-├─ engineered/
+├─ engineered-hardwood/
 │  ├─ index.html
 │  └─ specs/
 │     ├─ index.html
@@ -237,9 +237,9 @@ materials/hardwood/
 │        ├─ structural-warranty.html
 │        ├─ finish-warranty.html
 │        └─ moisture-warranty.html
-├─ site-finished/
+├─ site-finished-hardwood/
 │  └─ index.html
-└─ prefinished/
+└─ prefinished-hardwood/
    └─ index.html
 
 
@@ -281,3 +281,9 @@ materials/laminate/
       ├─ residential-warranty.html
       ├─ commercial-warranty.html
       └─ water-warranty.html
+
+
+
+
+
+
