@@ -13,16 +13,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Core Type Explained (SPC vs WPC) | Flooring Reference</title>
-  <meta name="description" content="Plain-English explanation of core type in rigid core LVT/LVP: SPC vs WPC, what it means on technical data sheets, and which related specs matter. Reference-only." />
+  <title>Core Type Explained | Flooring Reference</title>
+  <meta name="description" content="Learn what core type means in LVT, how SPC and WPC differ, and which companion specs to review. Reference-only." />
 
-
-
-  <!-- Tailwind CSS (FREE via CDN) -->
+  <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
   <link rel="icon" href="data:," />
 
-  <!-- FAQ Schema (keep consistent with on-page FAQs) -->
+  <!-- FAQ Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,34 +28,18 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What does core type mean in LVT/LVP?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Core type describes the main structural layer inside many vinyl planks/tiles, which can influence stiffness, stability, and how the product performs as part of a flooring system."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does SPC mean in vinyl flooring?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SPC commonly refers to a stone-plastic (or stone-polymer) composite core family used in rigid core vinyl products; it generally indicates a dense, stiff core construction."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What does WPC mean in vinyl flooring?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "WPC commonly refers to a wood-plastic composite core family used in rigid core vinyl products; it generally indicates a core construction that may be less dense than SPC depending on formulation."
-        }
-      },
-      {
-        "@type": "Question",
         "name": "Is SPC always better than WPC?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not automatically. SPC and WPC are core families, and real-world performance depends on the full construction: wear layer, total thickness, backing/attached pad, locking profile, and manufacturing tolerances."
+          "text": "Not inherently. Core type is one part of the construction; performance depends on the full system."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does core type matter for glue-down LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Glue-down LVT is typically flexible, so core type references may differ from rigid core products."
         }
       }
     ]
@@ -68,8 +50,8 @@
 <link rel="canonical" href="https://floorref.com/materials/lvt/specs/core-type.html" />
 <meta property="og:site_name" content="Flooring Reference" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Core Type Explained (SPC vs WPC) | Flooring Reference" />
-<meta property="og:description" content="Plain-English explanation of core type in rigid core LVT/LVP: SPC vs WPC, what it means on technical data sheets, and which related specs matter. Reference-only." />
+<meta property="og:title" content="Core Type Explained | Flooring Reference" />
+<meta property="og:description" content="Learn what core type means in LVT, how SPC and WPC differ, and which companion specs to review. Reference-only." />
 <meta property="og:url" content="https://floorref.com/materials/lvt/specs/core-type.html" />
 <meta property="og:image" content="https://floorref.com/assets/og-default.png" />
 <meta name="twitter:card" content="summary" />
@@ -77,218 +59,131 @@
 </head>
 
 <body class="bg-slate-50 text-slate-900">
-  <!-- Injected header -->
   <div id="site-header"></div>
 
   <main class="mx-auto max-w-5xl px-4 py-10">
-    <!-- Hero -->
     <section class="space-y-4">
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
-        Core Type Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">
-          SPC vs WPC
-        </span>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Core Type Explained
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT/LVP • SPC vs WPC • Flexible vs Rigid</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        “SPC” and “WPC” are common labels for the <span class="font-semibold">core type</span> in rigid core vinyl.
-        This page explains what core type usually refers to, how it appears on technical data sheets,
-        and which related specs are commonly read alongside it.
+        Core type describes the main structural layer in many LVT products, such as rigid SPC, WPC, or flexible vinyl constructions, which influences stiffness and stability.
         <span class="text-slate-500">Reference-only: no product recommendations.</span>
       </p>
 
-      <!-- Quick Answer -->
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">
-          The <span class="font-semibold">core</span> is the main structural layer in many vinyl planks/tiles.
-          <span class="font-semibold">SPC</span> and <span class="font-semibold">WPC</span> are two common core “families.”
-          They don’t describe the entire product (wear layer, backing, locking profile, etc.), so core type is best read together with
-          specs like <span class="font-semibold">wear layer (mil)</span>, <span class="font-semibold">total thickness (mm)</span>,
-          <span class="font-semibold">dimensional stability</span>, and <span class="font-semibold">indentation/static load</span>.
-        </p>
+        <p class="mt-2 text-slate-800">The core affects dimensional stability, indentation response, and locking performance, making it a key spec alongside wear layer and thickness. Review total thickness, locking system, and indentation resistance to understand how the core performs in the full assembly.</p>
       </div>
 
-
-
-      <!-- On-page jump links -->
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#table" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">SPC vs WPC Table</a>
-        <a href="#explainer" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Explainers</a>
+        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
+        <a href="#details" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Details</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
+        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Pitfalls</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <!-- Main Table -->
-    <section id="table" class="mt-10">
-      <div class="flex items-end justify-between gap-4 flex-wrap">
-        <h2 class="text-2xl font-bold">SPC vs WPC</h2>
-        <div class="text-sm text-slate-500">Compare like-for-like using the full assembly of specs.</div>
-      </div>
-
-      <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
-        <table class="min-w-[980px] w-full text-sm">
-          <thead class="bg-slate-100 text-slate-700">
-            <tr>
-              <th class="px-4 py-3 text-left font-semibold">Category</th>
-              <th class="px-4 py-3 text-left font-semibold">SPC (core family)</th>
-              <th class="px-4 py-3 text-left font-semibold">WPC (core family)</th>
-              <th class="px-4 py-3 text-left font-semibold">Notes (reference-only)</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-200">
-            <tr class="hover:bg-slate-50">
-              <td class="px-4 py-3 font-semibold">What it Labels</td>
-              <td class="px-4 py-3 text-slate-700">Core construction family (stone/plastic or stone/polymer wording varies).</td>
-              <td class="px-4 py-3 text-slate-700">Core construction family (wood/plastic wording varies).</td>
-              <td class="px-4 py-3 text-slate-700">Exact formulations vary by manufacturer.</td>
-            </tr>
-
-            <tr class="hover:bg-slate-50">
-              <td class="px-4 py-3 font-semibold">How It Appears on Spec Sheets</td>
-              <td class="px-4 py-3 text-slate-700">Often listed as “SPC core,” “stone polymer,” or “rigid core.”</td>
-              <td class="px-4 py-3 text-slate-700">Often listed as “WPC core,” “wood polymer,” or “rigid core.”</td>
-              <td class="px-4 py-3 text-slate-700">Sometimes only “rigid core” is listed without SPC/WPC.</td>
-            </tr>
-
-            <tr class="hover:bg-slate-50">
-              <td class="px-4 py-3 font-semibold">Commonly Tied-to Specs</td>
-              <td class="px-4 py-3 text-slate-700">Dimensional stability, indentation/static load, locking profile, thickness.</td>
-              <td class="px-4 py-3 text-slate-700">Dimensional stability, indentation/static load, locking profile, thickness.</td>
-              <td class="px-4 py-3 text-slate-700">Those tests describe results under defined lab conditions.</td>
-            </tr>
-
-            <tr class="hover:bg-slate-50">
-              <td class="px-4 py-3 font-semibold">What It Does NOT Tell You</td>
-              <td class="px-4 py-3 text-slate-700">Wear layer thickness, coating chemistry, or overall product quality.</td>
-              <td class="px-4 py-3 text-slate-700">Wear layer thickness, coating chemistry, or overall product quality.</td>
-              <td class="px-4 py-3 text-slate-700">Core type is only one piece of the construction.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="mt-4 text-sm text-slate-600">
-        <span class="font-semibold">Reminder:</span> Core type (SPC/WPC) is separate from wear layer (mil) and total thickness (mm).
-      </div>
-
-
-
-    <!-- Explainers -->
-    <section id="explainer" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <section id="overview" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Deep Dive</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What “Core” Means</h3>
-        <p class="mt-2 text-slate-700">
-          Many vinyl products are layered. The <span class="font-semibold">core</span> is the central structural layer that helps the plank/tile
-          hold its shape and connect as a system (especially in floating/click formats). “SPC” and “WPC” are common labels used to describe
-          the core family — not the entire product build.
-        </p>
+        <h3 class="text-lg font-semibold">In-depth overview</h3>
+        <p class="mt-2 text-slate-700">Core type describes the main structural layer in many LVT products, such as rigid SPC, WPC, or flexible vinyl constructions, which influences stiffness and stability.</p><p class="mt-3 text-slate-700">This spec provides a high-level reference for LVT evaluation.</p>
       </div>
+    
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why Core Type Alone Isn’t a Full Comparison</h3>
-        <p class="mt-2 text-slate-700">
-          Two floors can share the same core label and still perform differently due to differences in formulation, thickness,
-          locking profile, backing/attached pad, wear layer, coatings, and manufacturing tolerances.
-          That’s why technical sheets often list multiple measurements that should be read together.
-        </p>
+        <h3 class="text-lg font-semibold">Why it matters</h3>
+        <p class="mt-2 text-slate-700">The core affects dimensional stability, indentation response, and locking performance, making it a key spec alongside wear layer and thickness.</p><p class="mt-3 text-slate-700">Core type alone does not define quality; compare core thickness, density, and stability metrics together.</p>
       </div>
+    
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Specs Commonly Read Alongside Core Type</h3>
-        <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-5">
-          <li><span class="font-semibold">Wear layer (mil)</span> — clear protective top layer thickness.</li>
-          <li><span class="font-semibold">Total thickness (mm)</span> — full build height including backing/pad.</li>
-          <li><span class="font-semibold">Dimensional stability</span> — movement under defined test conditions.</li>
-          <li><span class="font-semibold">Indentation/static load</span> — deformation under defined loads for defined time.</li>
-          <li><span class="font-semibold">Locking system</span> — edge profile terminology for floating systems.</li>
+        <h3 class="text-lg font-semibold">Related specs</h3>
+        <p class="mt-2 text-slate-700">Review total thickness, locking system, and indentation resistance to understand how the core performs in the full assembly.</p><p class="mt-3 text-slate-700">Use companion specs to create a complete view of the product system.</p>
+      </div>
+    
+    </section>
+
+
+    <section id="details" class="mt-10">
+      <h2 class="text-2xl font-bold">Spec Sheet Details to Look For</h2>
+      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="text-slate-700">Use these details to read the fine print and avoid relying on a single number or label.</p>
+        <ul class="mt-4 list-disc pl-5 space-y-2 text-slate-700">
+          <li>Core type is usually described as SPC, WPC, or flexible LVT, sometimes without a standardized density value.</li>
+          <li>If density is listed, use it alongside thickness to understand stiffness and point-load performance.</li>
+          <li>Confirm the unit of measure and whether the value is listed as nominal, minimum, or tested result.</li>
+          <li>Look for the test standard or method cited; results are only comparable when the method matches.</li>
+          <li>Check whether the value applies to the full assembly (plank + underlayment + subfloor) or a single layer.</li>
         </ul>
       </div>
+    </section>
+    
 
-      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Core Type vs Wear Layer (common confusion)</h3>
-        <p class="mt-2 text-slate-700">
-          <span class="font-semibold">Core</span> = the structural middle layer.
-          <span class="font-semibold">Wear layer</span> = the clear top protective layer.
-          A floor can be SPC or WPC with many different wear layer thicknesses — these are separate specifications.
-        </p>
+
+    <section id="checklist" class="mt-10">
+      <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
+      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+          <li>Identify whether the product is rigid core (SPC/WPC) or flexible LVT.</li>
+          <li>Check density or core thickness if provided.</li>
+          <li>Review dimensional stability and impact/indentation tests.</li>
+          <li>Confirm locking system compatibility for rigid core planks.</li>
+          <li>Note if an attached pad is included.</li>
+        </ul>
       </div>
+    </section>
+    
 
+    <section id="pitfalls" class="mt-10">
+      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
+      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+          <li>Assuming SPC always outperforms WPC without looking at other specs.</li>
+          <li>Comparing core types without matching total thickness or wear layer.</li>
+          <li>Ignoring installation requirements tied to core stiffness.</li>
+        </ul>
+      </div>
+    </section>
 
-
-    <!-- FAQ -->
     <section id="faq" class="mt-10">
-      <div class="flex items-end justify-between gap-4 flex-wrap">
-        <h2 class="text-2xl font-bold">FAQ</h2>
-        <div class="text-sm text-slate-500">Short answers. Reference only.</div>
-      </div>
+      <h2 class="text-2xl font-bold">FAQ</h2>
 
       <div class="mt-4 space-y-3">
-        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-          <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">What does core type mean in LVT/LVP?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <p class="mt-3 text-slate-700">
-            Core type describes the main structural layer inside many vinyl products, which can influence stiffness, stability, and how the product behaves as part of a flooring system.
-          </p>
-        </details>
-
-        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-          <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">What does SPC mean in vinyl flooring?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <p class="mt-3 text-slate-700">
-            SPC commonly refers to a stone-plastic (or stone-polymer) composite core family used in rigid core vinyl products; it generally indicates a dense, stiff core construction.
-          </p>
-        </details>
-
-        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-          <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">What does WPC mean in vinyl flooring?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <p class="mt-3 text-slate-700">
-            WPC commonly refers to a wood-plastic composite core family used in rigid core vinyl products; it generally indicates a core construction that may be less dense than SPC depending on formulation.
-          </p>
-        </details>
-
-        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-          <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">Is SPC always better than WPC?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <p class="mt-3 text-slate-700">
-            Not automatically. SPC and WPC are core families, and real-world performance depends on the full construction: wear layer, total thickness, backing/attached pad, locking profile, and manufacturing tolerances.
-          </p>
-        </details>
+<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+  <summary class="cursor-pointer list-none flex items-center justify-between">
+    <span class="font-semibold">Is SPC always better than WPC?</span>
+    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+  </summary>
+  <p class="mt-3 text-slate-700">Not inherently. Core type is one part of the construction; performance depends on the full system.</p>
+</details>
+<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+  <summary class="cursor-pointer list-none flex items-center justify-between">
+    <span class="font-semibold">Does core type matter for glue-down LVT?</span>
+    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+  </summary>
+  <p class="mt-3 text-slate-700">Glue-down LVT is typically flexible, so core type references may differ from rigid core products.</p>
+</details>
       </div>
 
-      <!-- Related topics (internal linking) -->
       <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related Topics</h2>
+        <h2 class="text-lg font-semibold">Related topics</h2>
         <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/specs/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">
-            Wear Layer Thickness Explained
-          </a>
-          <a href="/materials/laminate/specs/construction/thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">
-            Total Thickness Explained
-          </a>
-          <a href="/materials/lvt/rigid-core/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">
-            Indentation & Static Load Explained
-          </a>
+          <a href="/materials/lvt/specs/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
+          <a href="/materials/lvt/rigid-core/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
+          <a href="/materials/lvt/rigid-core/specs/construction/locking-system.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Locking System</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Injected footer -->
   <div id="site-footer"></div>
 
-  <!-- Shared site behavior -->
-  <script src="/assets/js/site.js" defer></script>
+  <script src="/assets/js/header-footer.js"></script>
+  <script src="/assets/js/site.js"></script>
 </body>
 </html>
