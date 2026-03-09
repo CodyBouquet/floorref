@@ -1,26 +1,122 @@
 [
   {
+    "title": "Edge Profile Explained | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/specs/construction/edge-profile.html",
+    "blurb": "Edge profile defines how LVT plank or tile edges are shaped and how seams will appear. Learn what to check on data sheets. Reference-only.",
+    "score": 64
+  },
+  {
+    "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
+    "url": "/materials/lvt/",
+    "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
+    "score": 14
+  },
+  {
+    "title": "Carpet Specs | Flooring Reference",
+    "url": "/materials/carpet/specs/",
+    "blurb": "Plain-English index of carpet specifications across construction, backing, performance, and warranty topics — reference-only.",
+    "score": 9
+  },
+  {
+    "title": "What Is Hardwood Flooring? Types, Finishes & Installation Methods Explained",
+    "url": "/materials/hardwood/",
+    "blurb": "Reference explanation of hardwood flooring. Learn the difference between solid and engineered hardwood, prefinished vs site-finished products, and common hardwood installation methods.",
+    "score": 3
+  },
+  {
     "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
     "url": "/materials/laminate/",
     "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
-    "score": 2
+    "score": 3
   },
   {
     "title": "What Is Carpet Flooring? Formats, Specs & Terms Explained",
     "url": "/materials/carpet/",
     "blurb": "Reference explanation of carpet flooring. Learn what carpet is, the difference between stretch-in, glue-down, and carpet tile formats, and common carpet specifications like face weight, density, and pile height.",
+    "score": 2
+  },
+  {
+    "title": "Solid Hardwood Explained | Flooring Reference",
+    "url": "/materials/hardwood/solid-hardwood/",
+    "blurb": "Plain-English explanation of solid hardwood: what it is, how it differs from engineered hardwood, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
+    "score": 2
+  },
+  {
+    "title": "Carpet EPD and HPD Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/environmental/epd-hpd.html",
+    "blurb": "Carpet EPDs and HPDs explained — what Environmental Product Declarations and Health Product Declarations are, how they differ, LEED credit use, and what they do and do not disclose. Reference-only.",
     "score": 1
   },
   {
-    "title": "Face Weight Explained (Carpet) | Flooring Reference",
-    "url": "/specs/face-weight.html",
-    "blurb": "What face weight means in carpet specs (oz/yd²), typical ranges, and why face weight alone doesn’t determine density or performance — reference-only.",
+    "title": "Carpet Manufacturing Origin Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/environmental/manufacturing-origin.html",
+    "blurb": "Why carpet manufacturing origin matters, how country-of-origin is reported, what it affects for compliance and supply chain — reference-only.",
     "score": 1
   },
   {
-    "title": "Locking System Explained (Click, Locking Mechanisms in LVT)",
-    "url": "/specs/locking-system.html",
-    "blurb": "What locking systems mean in floating LVT/LVP flooring. Learn common locking mechanism terms, what they describe on spec sheets, and what they don’t — reference-only.",
+    "title": "Carpet Recycled Content Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/environmental/recycled-content.html",
+    "blurb": "Carpet recycled content explained — post-consumer vs pre-consumer distinction, how percentages are calculated and verified, LEED credit applications, and whether recycled content affects performance. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Carpet VOC Certifications Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/environmental/voc-certifications.html",
+    "blurb": "Carpet VOC certifications explained — CRI Green Label Plus, FloorScore, what emissions limits mean, adhesive and cushion requirements, and how certifications relate to LEED indoor air quality credits. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Carpet Texture Retention Warranty Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/warranty/texture-retention.html",
+    "blurb": "Carpet texture retention warranties explained — what matting and crushing mean, how appearance change is judged, what rating scales indicate, and how this differs from wear warranty. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Engineered Hardwood Core Construction Explained | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/construction/core-construction.html",
+    "blurb": "What engineered hardwood core construction means, common core types, and why core design affects stability and installation — reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Engineered Hardwood Specs | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/",
+    "blurb": "Plain-English index of engineered hardwood specifications across construction, finish, installation, and warranty topics — reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Solid Hardwood Specs | Flooring Reference",
+    "url": "/materials/hardwood/solid-hardwood/specs/",
+    "blurb": "Plain-English index of solid hardwood specifications across construction, finish, installation, and warranty topics — reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Laminate Specs | Flooring Reference",
+    "url": "/materials/laminate/specs/",
+    "blurb": "Plain-English index of laminate specifications. Definitions, typical ranges, and how specs appear on technical data sheets.",
+    "score": 1
+  },
+  {
+    "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
+    "url": "/materials/lvt/",
+    "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
+    "score": 1
+  },
+  {
+    "title": "Rigid Core (Floating) LVT Explained | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/",
+    "blurb": "Plain-English explanation of rigid core (floating) LVT: what it is, how it differs from glue-down LVT, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
+    "score": 1
+  },
+  {
+    "title": "Rigid Core (Floating) LVT Explained | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/",
+    "blurb": "Plain-English explanation of rigid core (floating) LVT: what it is, how it differs from glue-down LVT, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
+    "score": 1
+  },
+  {
+    "title": "Rigid Core LVT Specs | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/specs/",
+    "blurb": "Plain-English index of rigid core LVT specifications across construction, performance, installation, environmental, and warranty topics — reference-only.",
     "score": 1
   }
 ]
