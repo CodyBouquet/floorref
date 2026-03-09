@@ -41,7 +41,13 @@
 /materials/specs/wear-layer.html /materials/lvt/specs/wear-layer.html 301
 /materials/specs/core-type.html /materials/lvt/specs/core-type.html 301
 
-# 2) Materials: force trailing slash on /materials/section
+# 2) Merged duplicate pages
+/materials/laminate/specs/performance/abrasion-resistance.html  /materials/laminate/specs/performance/ac-rating.html  301
+/materials/carpet/carpet-tile/specs/tile-backing-systems.html  /materials/carpet/carpet-tile/specs/tile-backing-system.html  301
+/materials/hardwood/engineered-hardwood/specs/installation/moisture-testing.html  /materials/hardwood/solid-hardwood/specs/installation/moisture-testing.html  301
+/materials/lvt/glue-down/specs/construction/wear-layer.html  /materials/lvt/rigid-core/specs/construction/wear-layer.html  301
+
+# 3) Materials: force trailing slash on /materials/section
 /materials/:section      /materials/:section/ 301
 
 # 3) Materials: index.html -> folder URL
