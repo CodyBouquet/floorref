@@ -70,12 +70,16 @@ function isExternalHref(href) {
 }
 
 function getHrefTargets(html) {
+  // Strip script and style blocks first to avoid matching template literals inside JS
+  const stripped = html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, "");
   // Very small anchor href extractor (good enough for static HTML)
   // Matches href="..." and href='...'
   const hrefs = [];
   const re = /<a\b[^>]*?\bhref\s*=\s*(["'])(.*?)\1/gi;
   let m;
-  while ((m = re.exec(html)) !== null) {
+  while ((m = re.exec(stripped)) !== null) {
     const href = (m[2] || "").trim();
     if (href) hrefs.push(href);
   }
