@@ -2,7 +2,7 @@
   "name": "floorref",
   "private": true,
   "scripts": {
-    "build:css": "tailwindcss -i ./src/tailwind.css -o ./tailwind.css --minify",
+    "build:css": "npx tailwindcss -i ./src/tailwind.css -o ./tailwind.css --minify",
     "watch:css": "tailwindcss -i ./src/tailwind.css -o ./tailwind.css --content \"./**/*.html\" -w",
     "build": "npm run build:css && node scripts/build-search-index.mjs && node scripts/inject-social-meta.mjs && node scripts/build-sitemap.mjs && node scripts/check-links.mjs && node scripts/inject-ga4.mjs"
   },
