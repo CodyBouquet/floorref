@@ -3,7 +3,9 @@
     "allow": [
       "Bash(npm install:*)",
       "Bash(npm run:*)",
-      "Bash(git update-index:*)"
+      "Bash(git update-index:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)"
     ]
   }
 }
