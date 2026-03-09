@@ -1,5 +1,5 @@
 // scripts/build-search-index.mjs
-// Auto-generates /search-index.json from your HTML files (static-site friendly).
+// Generates /search-index.json from HTML files.
 // Run: node scripts/build-search-index.mjs
 
 import fs from "fs";
@@ -8,43 +8,75 @@ import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-// Project root = parent of /scripts
 const ROOT = path.resolve(__dirname, "..");
-
-// Where to write (matches your site.js fetch("/search-index.json"))
 const OUT_FILE = path.join(ROOT, "search-index.json");
 
-// Folders to crawl (edit freely)
-const INCLUDE_DIRS = [
-  "materials"
-];
-
-// Specific root files to include (optional)
+const INCLUDE_DIRS = ["materials"];
 const INCLUDE_ROOT_FILES = ["index.html"];
-
-// Files/dirs to skip
 const SKIP_DIRS = new Set(["assets", "data", ".netlify", ".git", "node_modules"]);
 const SKIP_FILES = new Set(["_headers", "_redirects", "robots.txt", "sitemap.xml", "ads.txt", "404.html"]);
 
-const STOPWORDS = new Set([
-  "a","an","and","are","as","at","be","by","can","do","does","for","from","get","how",
-  "if","in","into","is","it","its","of","on","or","our","that","the","their","this",
-  "to","used","use","vs","what","when","where","which","why","with","without","you",
-  "your","we","they","them","also","about","page","pages","site","reference","only",
-  "information","explained","explains","common","including","overview"
+// Path segments to skip when building URL-derived keywords
+const SKIP_PATH_SEGMENTS = new Set(["materials", "specs", "index", ""]);
+
+// Flooring domain synonyms — if a token matches a key, add the values as extra keywords
+const DOMAIN_SYNONYMS = new Map([
+  ["lvt",           ["luxury vinyl", "vinyl plank", "luxury vinyl tile", "luxury vinyl plank"]],
+  ["lvp",           ["luxury vinyl plank", "vinyl plank", "lvt"]],
+  ["spc",           ["rigid core", "stone plastic composite"]],
+  ["wpc",           ["wood plastic composite", "flexible core"]],
+  ["rigid core",    ["spc", "stone plastic composite"]],
+  ["wear layer",    ["mil thickness", "wear layer mil"]],
+  ["janka",         ["hardness", "janka hardness", "janka rating"]],
+  ["ac rating",     ["abrasion class", "wear rating", "ac class"]],
+  ["face weight",   ["pile weight", "carpet weight", "oz per sq yd"]],
+  ["twist level",   ["twist per inch", "tpi", "yarn twist"]],
+  ["pile height",   ["pile depth", "nap height"]],
+  ["hardwood",      ["solid hardwood", "real wood", "wood flooring"]],
+  ["engineered",    ["engineered hardwood", "engineered wood", "multi-ply"]],
+  ["laminate",      ["laminate flooring", "hdf", "fiberboard"]],
+  ["underlayment",  ["underlay", "foam pad", "attached pad"]],
+  ["click lock",    ["floating floor", "snap lock", "click install"]],
+  ["glue down",     ["glue-down", "adhesive install", "direct glue"]],
+  ["carpet tile",   ["modular carpet", "interface", "carpet squares"]],
+  ["broadloom",     ["wall to wall", "stretch-in carpet", "roll carpet"]],
 ]);
 
-function readText(filePath) {
-  return fs.readFileSync(filePath, "utf8");
-}
+const STOPWORDS = new Set([
+  "a","an","and","are","as","at","be","by","can","do","does","don","for","from",
+  "get","how","if","in","into","is","it","its","not","of","on","or","our",
+  "that","the","their","this","to","used","use","vs","what","when","where",
+  "which","why","with","without","you","your","we","they","them","also","about",
+  "page","pages","site","reference","only","information","explained","explains",
+  "common","including","overview","often","usually","most","some","many","any",
+  "more","less","than","just","so","no","yes","all","both","each","few","same",
+  "own","such","then","than","too","very","will","was","were","been","being",
+  "have","has","had","may","might","would","could","should","shall","must",
+  "floor","flooring","start","type","types","people","room","choosing","choose",
+  "see","look","find","help","read","note","below","above","here","there","like",
+  "need","want","know","make","take","give","come","go","way","time","good",
+  "best","right","first","last","new","old","high","low","large","small",
+  "different","other","another","next","back","well","even","still","already",
+  "always","never","often","sometimes","usually","generally","typically",
+  "important","useful","simple","basic","key","main","major","minor",
+  "doesn","don't","isn","isn't","aren","aren't","wasn","wasn't","weren",
+  "can't","cannot","won't","wouldn","couldn","shouldn","mustn",
+  "tell","says","means","meaning","refers","called","known","defined",
+  "necessarily","commonly","associated","typically","generally","usually",
+  "describes","describe","orientation","method","methods","process",
+  "universally","primarily","directly","indirectly","essentially","simply",
+  "certain","particular","specific","various","several","multiple",
+  "include","includes","including","such","per","between","among",
+  "because","since","while","although","however","therefore","thus",
+  "affect","affects","affected","effect","effects","impacts","impact",
+]);
+
+// ── HTML utilities ────────────────────────────────────────────────────────────
 
 function stripTags(html) {
-  // Remove scripts/styles then strip remaining tags.
-  const noScripts = html
+  return html
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ");
-  return noScripts
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
     .replace(/<!--[\s\S]*?-->/g, " ")
     .replace(/<\/?[^>]+>/g, " ")
     .replace(/\s+/g, " ")
@@ -56,22 +88,24 @@ function pickFirstMatch(html, regex) {
   return m ? (m[1] || "").trim() : "";
 }
 
+function decodeEntities(s) {
+  return String(s || "")
+    .replaceAll("&amp;", "&").replaceAll("&lt;", "<").replaceAll("&gt;", ">")
+    .replaceAll("&quot;", '"').replaceAll("&#039;", "'").replaceAll("&nbsp;", " ");
+}
+
 function getMetaDescription(html) {
-  // Handles: <meta name="description" content="...">
-  // and:     <meta content="..." name="description">
   const m1 = html.match(/<meta[^>]*name=["']description["'][^>]*content=["']([^"']+)["'][^>]*>/i);
   if (m1?.[1]) return m1[1].trim();
   const m2 = html.match(/<meta[^>]*content=["']([^"']+)["'][^>]*name=["']description["'][^>]*>/i);
-  if (m2?.[1]) return m2[1].trim();
-  return "";
+  return m2?.[1]?.trim() || "";
 }
 
 function getTitle(html) {
   const t = pickFirstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i);
   if (t) return decodeEntities(t);
   const h1 = pickFirstMatch(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i);
-  if (h1) return decodeEntities(stripTags(h1));
-  return "";
+  return h1 ? decodeEntities(stripTags(h1)) : "";
 }
 
 function getH1(html) {
@@ -90,118 +124,154 @@ function getHeadings(html) {
   return headings;
 }
 
-function getFirstParagraph(html) {
-  const p = pickFirstMatch(html, /<p[^>]*>([\s\S]*?)<\/p>/i);
-  return p ? decodeEntities(stripTags(p)) : "";
+// Extract FAQ Q&A from JSON-LD schema on the page
+function extractFaqSchema(html) {
+  const faqs = [];
+  const re = /<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    try {
+      const obj = JSON.parse(m[1]);
+      if (obj["@type"] === "FAQPage" && Array.isArray(obj.mainEntity)) {
+        for (const q of obj.mainEntity) {
+          if (q["@type"] === "Question") {
+            faqs.push({
+              question: String(q.name || ""),
+              answer: String(q.acceptedAnswer?.text || ""),
+            });
+          }
+        }
+      }
+    } catch { /* malformed JSON-LD, skip */ }
+  }
+  return faqs;
 }
 
-function decodeEntities(s) {
-  return String(s || "")
-    .replaceAll("&amp;", "&")
-    .replaceAll("&lt;", "<")
-    .replaceAll("&gt;", ">")
-    .replaceAll("&quot;", '"')
-    .replaceAll("&#039;", "'")
-    .replaceAll("&nbsp;", " ");
-}
-
-function normalizeToken(t) {
-  return String(t)
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
+// ── Keyword building ──────────────────────────────────────────────────────────
 
 function tokenize(text) {
-  const norm = normalizeToken(text);
-  if (!norm) return [];
-  return norm.split(/\s+/).filter(Boolean);
+  return String(text || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .split(" ")
+    .filter(t => t.length >= 3 && !STOPWORDS.has(t));
 }
 
-function buildKeywords({ title, h1, headings, bodyText }) {
-  const source = [title, h1, ...(headings || []), bodyText].join(" ");
-  const tokens = tokenize(source);
+// URL path → keyword phrases
+// /materials/lvt/rigid-core/specs/construction/wear-layer.html
+// → ["lvt", "rigid core", "construction", "wear layer"]
+function urlToKeywords(urlPath) {
+  const segments = urlPath
+    .replace(/\.html$/, "")
+    .split("/")
+    .filter(s => s && !SKIP_PATH_SEGMENTS.has(s));
 
-  // word frequencies
-  const freq = new Map();
-  for (const tok of tokens) {
-    if (tok.length < 3) continue;
-    if (STOPWORDS.has(tok)) continue;
-    freq.set(tok, (freq.get(tok) || 0) + 1);
-  }
-
-  // prioritize words that appear in title/h1/headings
-  const boostSource = [title, h1, ...(headings || [])].join(" ");
-  const boostTokens = new Set(tokenize(boostSource));
-  for (const tok of boostTokens) {
-    if (!freq.has(tok)) continue;
-    freq.set(tok, freq.get(tok) + 3);
-  }
-
-  // sort by score
-  const topWords = [...freq.entries()]
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .slice(0, 12)
-    .map(([w]) => w);
-
-  // add a few phrase keywords from headings/title (bigrams)
-  const phraseSource = [title, h1, ...(headings || [])].join(" ");
-  const phraseTokens = tokenize(phraseSource);
-  const phrases = [];
-  for (let i = 0; i < phraseTokens.length - 1; i++) {
-    const a = phraseTokens[i], b = phraseTokens[i + 1];
-    if (STOPWORDS.has(a) || STOPWORDS.has(b)) continue;
-    if (a.length < 3 || b.length < 3) continue;
-    const phrase = `${a} ${b}`;
-    // avoid duplicates / junk
-    if (!phrases.includes(phrase)) phrases.push(phrase);
-    if (phrases.length >= 6) break;
-  }
-
-  // Final: phrases first (more “human”), then top single words
-  const out = [...phrases, ...topWords];
-
-  // de-dupe
-  return [...new Set(out)].slice(0, 18);
+  return segments.map(s => s.replace(/-/g, " ")).filter(s => !STOPWORDS.has(s));
 }
+
+// Expand known domain terms → add synonyms
+function expandSynonyms(phrases) {
+  const extras = [];
+  for (const phrase of phrases) {
+    const p = phrase.toLowerCase();
+    const syns = DOMAIN_SYNONYMS.get(p);
+    if (syns) extras.push(...syns);
+    // Also check if phrase contains a key
+    for (const [key, vals] of DOMAIN_SYNONYMS) {
+      if (p.includes(key) && !extras.includes(...vals)) {
+        extras.push(...vals);
+      }
+    }
+  }
+  return extras;
+}
+
+// Extract spec-value patterns like "12 mil", "20 mil", "6mm", "8 mm", "40 oz"
+function extractSpecValues(text) {
+  const values = [];
+  const re = /\b(\d+(?:\.\d+)?)\s*(mil|mm|oz|lbs?|psi|inch(?:es)?|in\b|sq\s*yd|g\/m2|g\/m²|tpi)\b/gi;
+  let m;
+  while ((m = re.exec(text)) !== null) {
+    const v = `${m[1]} ${m[2].toLowerCase()}`;
+    if (!values.includes(v)) values.push(v);
+  }
+  return values;
+}
+
+// Build final keywords array for one entry
+function buildKeywords({ title, h1, headings, faqs, bodyText, urlPath }) {
+  const all = [];
+
+  // 1. URL path tokens (highest signal — encode category + spec name)
+  const urlTokens = urlToKeywords(urlPath);
+  all.push(...urlTokens);
+
+  // 2. Synonyms for URL tokens
+  all.push(...expandSynonyms(urlTokens));
+
+  // 3. Title and h1 tokens
+  const titleTokens = tokenize(`${title} ${h1}`);
+  all.push(...titleTokens);
+
+  // 4. FAQ question phrases — search users ask questions, match them
+  for (const { question, answer } of faqs) {
+    // Whole question as a phrase (great for partial matching)
+    const qClean = decodeEntities(question).toLowerCase();
+    if (qClean && qClean.length < 120) all.push(qClean);
+    // Key nouns from question + first sentence of answer only
+    all.push(...tokenize(question));
+    const firstSentence = answer.split(/[.!?]/)[0] || "";
+    all.push(...tokenize(firstSentence).slice(0, 5));
+  }
+
+  // 5. Heading tokens
+  for (const h of headings) all.push(...tokenize(h));
+
+  // 6. Spec values found in body
+  all.push(...extractSpecValues(bodyText));
+
+  // 7. Synonyms for all collected phrases
+  const phrases = [...new Set(all.filter(k => k.includes(" ")))];
+  all.push(...expandSynonyms(phrases));
+
+  // De-duplicate, preserve insertion order
+  const seen = new Set();
+  const out = [];
+  for (const k of all) {
+    const key = k.toLowerCase().trim();
+    if (key && key.length >= 2 && !seen.has(key)) {
+      seen.add(key);
+      out.push(key);
+    }
+  }
+
+  return out.slice(0, 30);
+}
+
+// ── File traversal ────────────────────────────────────────────────────────────
 
 function fileToUrl(filePath) {
   const rel = path.relative(ROOT, filePath).split(path.sep).join("/");
-
-  // Root index.html -> "/"
   if (rel === "index.html") return "/";
-
-  // Folder index.html -> "/folder/subfolder/"
-  if (rel.endsWith("/index.html")) {
-    const dir = rel.replace(/index\.html$/, "");
-    return `/${dir}`;
-  }
-
-  // other html files keep .html (matches your existing patterns in /materials/)
-  if (rel.endsWith(".html")) return `/${rel}`;
-
+  if (rel.endsWith("/index.html")) return `/${rel.replace(/index\.html$/, "")}`;
   return `/${rel}`;
 }
 
 function* walk(dirPath) {
-  const entries = fs.readdirSync(dirPath, { withFileTypes: true });
-  for (const e of entries) {
+  for (const e of fs.readdirSync(dirPath, { withFileTypes: true })) {
     const full = path.join(dirPath, e.name);
-
     if (e.isDirectory()) {
-      if (SKIP_DIRS.has(e.name)) continue;
-      yield* walk(full);
+      if (!SKIP_DIRS.has(e.name)) yield* walk(full);
     } else {
-      if (SKIP_FILES.has(e.name)) continue;
-      yield full;
+      if (!SKIP_FILES.has(e.name)) yield full;
     }
   }
 }
 
 function collectHtmlFiles() {
   const files = [];
-
-  // Include specified directories
   for (const d of INCLUDE_DIRS) {
     const p = path.join(ROOT, d);
     if (fs.existsSync(p) && fs.statSync(p).isDirectory()) {
@@ -210,53 +280,51 @@ function collectHtmlFiles() {
       }
     }
   }
-
-  // Include selected root files
   for (const f of INCLUDE_ROOT_FILES) {
     const p = path.join(ROOT, f);
     if (fs.existsSync(p) && fs.statSync(p).isFile()) files.push(p);
   }
-
   return files;
 }
 
+// ── Entry builder ─────────────────────────────────────────────────────────────
+
 function buildEntry(filePath) {
-  const html = readText(filePath);
+  const html = fs.readFileSync(filePath, "utf8");
+  const urlPath = fileToUrl(filePath);
 
   const title = getTitle(html);
+  if (!title) return null;
+
   const h1 = getH1(html);
   const headings = getHeadings(html);
-
+  const faqs = extractFaqSchema(html);
   const metaDesc = getMetaDescription(html);
-  const firstP = getFirstParagraph(html);
+  const bodyText = stripTags(html).slice(0, 10000);
 
-  // snippet: prefer meta description, else first paragraph, else fallback
-  const snippet = (metaDesc || firstP || "").trim();
+  // Snippet: meta description is best; fall back to first FAQ answer
+  const snippet =
+    metaDesc ||
+    (faqs[0]?.answer ? faqs[0].answer.slice(0, 200) : "") ||
+    bodyText.slice(0, 180);
 
-  // body text (for keyword derivation only, keep it short-ish)
-  const bodyText = stripTags(html).slice(0, 8000);
+  const keywords = buildKeywords({ title, h1, headings, faqs, bodyText, urlPath });
 
-  const keywords = buildKeywords({ title, h1, headings, bodyText });
-
-  const url = fileToUrl(filePath);
-
-  // Basic guardrails
-  if (!title) return null;
-  return { title, url, snippet, keywords };
+  return { title, url: urlPath, snippet: snippet.trim(), keywords };
 }
+
+// ── Main ──────────────────────────────────────────────────────────────────────
 
 function main() {
   const files = collectHtmlFiles();
-
   const entries = [];
+
   for (const f of files) {
     const entry = buildEntry(f);
     if (entry) entries.push(entry);
   }
 
-  // Sort stable by URL
   entries.sort((a, b) => a.url.localeCompare(b.url));
-
   fs.writeFileSync(OUT_FILE, JSON.stringify(entries, null, 2) + "\n", "utf8");
   console.log(`✅ Wrote ${entries.length} entries to ${path.relative(ROOT, OUT_FILE)}`);
 }
