@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(cat:*)",
-      "Bash(xargs sed:*)",
-      "Bash(xargs wc -l)"
-    ]
-  }
-}
