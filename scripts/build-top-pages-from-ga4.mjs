@@ -19,7 +19,7 @@ const ROOT = path.resolve(__dirname, "..");
 const PROPERTY_ID = process.env.GA4_PROPERTY_ID;
 const SA_JSON = process.env.GA4_SERVICE_ACCOUNT_JSON;
 
-const TOP_PAGES_LIMIT = Number(process.env.TOP_PAGES_LIMIT || 24);
+const TOP_PAGES_LIMIT = Number(process.env.TOP_PAGES_LIMIT || 300);
 const TOP_PAGES_DAYS = Number(process.env.TOP_PAGES_DAYS || 7);
 
 if (!PROPERTY_ID) {

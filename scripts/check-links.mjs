@@ -91,7 +91,7 @@ function exists(p) {
 }
 
 function urlPathToCandidateFiles(urlPath) {
-  // urlPath is like "/materials/lvt/" or "/specs/wear-layer.html"
+  // urlPath is like "/materials/lvt/" or "/materials/lvt/specs/wear-layer.html"
   // Return an array of possible filesystem targets.
   if (!urlPath.startsWith("/")) return [];
 

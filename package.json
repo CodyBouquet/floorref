@@ -2,6 +2,12 @@
   "name": "floorref",
   "private": true,
   "scripts": {
-    "build": "node scripts/build-search-index.mjs && node scripts/inject-social-meta.mjs && node scripts/build-sitemap.mjs && node scripts/check-links.mjs && node scripts/inject-ga4.mjs"
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./tailwind.css --content \"./**/*.html\" --minify",
+    "watch:css": "tailwindcss -i ./src/tailwind.css -o ./tailwind.css --content \"./**/*.html\" -w",
+    "build": "npm run build:css && node scripts/build-search-index.mjs && node scripts/inject-social-meta.mjs && node scripts/build-sitemap.mjs && node scripts/check-links.mjs && node scripts/inject-ga4.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }
