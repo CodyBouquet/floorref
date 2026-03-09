@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,18 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Can I use any foam underlayment with rigid core?",
+        "name": "Can I use any foam underlayment with rigid core LVT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Many products require specific pads to protect the locking system and meet acoustic targets."
+          "text": "No. For products with factory-attached underlayment, additional underlayment is typically prohibited. For products without attached pads, manufacturers specify maximum thickness and compressive strength limits for any separate underlayment used. Using a foam that is too thick or too soft creates an unstable base that causes locking joints to flex under foot traffic, accelerating joint fatigue and causing clicking or separation. Common limits are 3mm maximum thickness and minimum compressive strength of approximately 45 psi — specifications that exclude very soft or thick foam products that might seem desirable for cushioning."
         }
       },
       {
         "@type": "Question",
-        "name": "Do underlayment rules apply to glue-down floors?",
+        "name": "Do underlayment rules apply to glue-down installations?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Glue-down systems typically do not use underlayment, but check manufacturer guidance."
+          "text": "Glue-down LVT installations do not use an underlayment layer — the adhesive is applied directly to the subfloor and the LVT is pressed into it. Using any type of foam or cushion layer under glue-down LVT would interfere with the adhesive bond and is universally prohibited in glue-down installations. The subfloor must be clean, flat, and properly prepared to receive the adhesive directly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does the underlayment affect the product's published sound ratings?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, significantly. A product's published IIC and STC sound ratings are test results for a specific assembly — including whatever underlayment configuration was used in the test. If the product was tested with its factory-attached IXPE pad only (no additional underlayment), the published rating reflects that configuration. If you install the same product with a different underlayment or add a supplemental pad, the actual acoustic performance may differ from the published rating — it could be better or worse depending on the materials involved. This is why matching the installed assembly to the tested assembly is important when acoustic performance must meet a specific standard."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the maximum underlayment thickness typically allowed under floating rigid core LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For products that permit separate underlayment, most manufacturers specify a maximum thickness of 3mm (approximately 1/8 inch). Some manufacturers are more restrictive — 2mm maximum — particularly for products with lighter-duty locking systems. The thickness limit exists because excessive underlayment compressibility destabilizes the locking joint. Compressive strength specifications (typically 45 psi minimum, sometimes higher for commercial applications) are often listed alongside the thickness limit — both constraints must be satisfied by the selected underlayment."
         }
       }
     ]
@@ -64,43 +80,62 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Underlayment Rules Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Rigid Core LVT • Approved Pads • Assembly</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">What's Allowed · Thickness Limits · Compressive Strength · Sound Rating Implications</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Underlayment rules describe if a separate underlayment may be used and which materials or thicknesses are approved for the product.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Underlayment rules define whether a separate foam or cork pad may be used beneath a floating rigid core LVT installation — and if so, what thickness and compressive strength limits apply. The rules vary significantly between products: some prohibit any additional underlayment, some require it (for products with no attached pad), and some permit it within specific limits. Using an incompatible underlayment destabilizes the locking joint system and typically voids the structural warranty.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Incorrect underlayment can weaken locking systems, change sound ratings, or void warranties. Pair underlayment rules with attached underlayment and sound ratings to match the tested assembly.</p>
+        <p class="mt-2 text-slate-800">
+          Products with factory-attached underlayment typically prohibit any additional pad. Products without an attached pad may require or permit separate underlayment with a maximum thickness (usually 3mm) and minimum compressive strength (usually 45 psi). The installed underlayment configuration also affects acoustic ratings — the published IIC/STC numbers reflect the tested assembly, which may differ from your actual installation.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#three-scenarios" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Three scenarios</a>
+        <a href="#why-limits-matter" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Why limits matter</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="three-scenarios" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Three Underlayment Scenarios</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Underlayment rules describe if a separate underlayment may be used and which materials or thicknesses are approved for the product.</p>
+        <h3 class="text-lg font-semibold">Scenario 1: Product has attached underlayment — no additional pad</h3>
+        <p class="mt-2 text-slate-700">When a rigid core LVT product ships with a factory-attached IXPE, EVA, or cork pad, most manufacturers prohibit adding any separate underlayment beneath it. Stacking two compressible layers creates excessive total compliance beneath the floor — the locking joints flex with every footstep rather than resting on a stable base. This cyclic flexing fatigues the click-lock profile over time, resulting in joint loosening, clicking sounds, and eventual separation. Published sound ratings for the product were established with only the factory pad; adding additional underlayment changes the assembly and voids both the acoustic rating and the structural warranty.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Incorrect underlayment can weaken locking systems, change sound ratings, or void warranties.</p>
+        <h3 class="text-lg font-semibold">Scenario 2: Product has no attached pad — separate underlayment permitted with limits</h3>
+        <p class="mt-2 text-slate-700">When a product ships without any attached pad, the installation guide will typically specify whether a separate underlayment is required or optional, and if so, what properties it must have. Commonly specified limits are: maximum thickness of 3mm (some manufacturers allow 2mm maximum); minimum compressive strength of 45 psi; and sometimes specific approved products. These limits exist to ensure the underlayment is firm enough to support the locking joints without excessive compression. Soft foam underlayments marketed for use under hardwood — which may be very thick and soft — are typically not suitable for rigid core LVT unless the manufacturer explicitly approves them.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Pair underlayment rules with attached underlayment and sound ratings to match the tested assembly.</p>
+        <h3 class="text-lg font-semibold">Scenario 3: Product has no attached pad — underlayment required</h3>
+        <p class="mt-2 text-slate-700">Some rigid core products without attached pads require a separate underlayment as part of the installation — particularly when being installed in jurisdictions with multi-family acoustic code requirements. In this scenario, the manufacturer will specify approved underlayment options that have been tested in combination with the flooring product to achieve the stated IIC/STC ratings. Using a different underlayment not included in the approved list may affect acoustic performance and may not satisfy code requirements for multi-family installations.</p>
+      </div>
+    </section>
+
+    <section id="why-limits-matter" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Why Thickness and Compressive Strength Limits Matter</h2>
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="text-slate-700">The stability of a floating floor's locking system depends on the floor resting on a sufficiently firm base. When a plank is loaded by foot traffic at a point near a locking joint, the joint experiences a small amount of rotation or flex. If the underlayment beneath the plank compresses significantly under load — as soft foam does — this flex is amplified. Over thousands of loading cycles, even small amounts of joint flex cause the locking profile's tongue and groove to wear against each other, producing a "clicking" sound and eventually allowing visible gaps to form. Underlayment thickness limits (3mm) and compressive strength minimums (45 psi) are derived from testing to identify the threshold below which joint fatigue becomes a predictable failure mode within the warranty period.</p>
       </div>
     </section>
 
@@ -108,60 +143,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Determine whether additional underlayment is allowed or prohibited.</li>
-          <li>Check maximum underlayment thickness and density.</li>
-          <li>Review sound ratings tied to specific underlayment types.</li>
-          <li>Confirm moisture barrier requirements.</li>
-          <li>Match underlayment approvals to warranty terms.</li>
+          <li>First, determine whether the product has a factory-attached underlayment — if yes, additional underlayment is typically prohibited.</li>
+          <li>If no attached pad, check the installation guide for whether separate underlayment is required, permitted, or prohibited.</li>
+          <li>If underlayment is permitted, verify the maximum allowable thickness (commonly 3mm or less) and minimum compressive strength (commonly 45 psi or higher).</li>
+          <li>Note whether specific approved underlayment products or brands are listed — some manufacturers require approved products to maintain warranty coverage.</li>
+          <li>Check whether the published IIC/STC sound ratings reflect the product with or without a separate underlayment — the rating only applies to the tested assembly.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Adding a second pad on products with attached underlayment.</li>
-          <li>Using underlayment not approved by the manufacturer.</li>
-          <li>Assuming thicker pads always improve acoustics.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Can I use any foam underlayment with rigid core?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. Many products require specific pads to protect the locking system and meet acoustic targets.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Do underlayment rules apply to glue-down floors?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Glue-down systems typically do not use underlayment, but check manufacturer guidance.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Can I use any foam underlayment with rigid core LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. For products with factory-attached underlayment, additional underlayment is typically prohibited. For products without attached pads, manufacturers specify maximum thickness and compressive strength limits. Using foam that is too thick or too soft creates an unstable base that causes locking joints to flex under foot traffic, accelerating joint fatigue. Common limits are 3mm maximum thickness and 45 psi minimum compressive strength.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Do underlayment rules apply to glue-down installations?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Glue-down LVT does not use an underlayment layer — the adhesive is applied directly to the prepared subfloor and the LVT is pressed into it. Using any foam or cushion layer under glue-down LVT would interfere with the adhesive bond and is universally prohibited in glue-down installations.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does the underlayment affect the product's published sound ratings?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes, significantly. A product's published IIC and STC ratings reflect a specific tested assembly — including whatever underlayment was used. Installing with a different underlayment may change the actual acoustic performance. This is important when acoustic performance must meet a specific code standard — the installed assembly must match the tested assembly for the published rating to apply.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is the maximum underlayment thickness typically allowed?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">For products that permit separate underlayment, most manufacturers specify a maximum of 3mm (approximately 1/8 inch). Some manufacturers are more restrictive — 2mm maximum. Compressive strength specifications (typically 45 psi minimum) are often listed alongside the thickness limit — both constraints must be satisfied by the selected underlayment product.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/construction/attached-underlayment.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Attached Underlayment</a>
-          <a href="/materials/lvt/rigid-core/specs/performance/sound-ratings.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Sound Ratings</a>
-          <a href="/materials/lvt/rigid-core/specs/installation/subfloor-tolerance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Subfloor Tolerance</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/construction/attached-underlayment.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Attached Underlayment</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/sound-ratings.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Sound Ratings</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/subfloor-tolerance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Subfloor Tolerance</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/locking-system.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Locking System</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about underlayment rules for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

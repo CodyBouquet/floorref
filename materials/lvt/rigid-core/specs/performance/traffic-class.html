@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
         "name": "Is traffic class the same as AC rating?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. AC rating is primarily for laminate abrasion; traffic class is a broader use classification."
+          "text": "No — they are different systems used for different product categories. AC rating (Abrasion Class) is a classification system primarily associated with laminate flooring, not LVT. It measures abrasion resistance of the surface using a Taber abrasion test and is classified AC1 through AC6. Traffic class for LVT is based on ISO 10874 (formerly EN 685), which uses a two-digit code like 23 or 33 that encodes use category (residential vs. commercial) and traffic intensity. Some LVT manufacturers publish AC ratings for marketing familiarity, but ISO 10874 traffic class is the more appropriate standard for vinyl flooring products."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Do all LVT products have traffic class ratings?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not always; some manufacturers use different classification systems or omit it."
+          "text": "Not all products publish a traffic class. Some manufacturers, particularly those selling through home improvement channels, may describe products only as 'residential' or 'commercial' without publishing an ISO 10874 class. Products sold through the commercial or contract flooring market are more likely to carry a published class. When traffic class is not stated, the wear layer thickness and warranty terms are the most useful proxies — a 20 mil wear layer with a commercial warranty typically indicates commercial-grade performance even if the product does not carry a specific use class designation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Class 33 mean for LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under ISO 10874, Class 33 means 'commercial — heavy traffic.' The first digit (3) indicates the use category: 2 = residential, 3 = commercial. The second digit indicates traffic intensity: 1 = moderate, 2 = general, 3 = heavy. So Class 23 is residential heavy traffic, Class 31 is commercial moderate traffic, and Class 33 is commercial heavy traffic. Class 34 (commercial very heavy) is also published in EN 685 but less commonly cited for standard LVT. When a product is rated 33, it is intended for high-traffic commercial environments such as retail, offices, and corridors."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does traffic class account for rolling loads and chair casters?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ISO 10874 traffic class does not directly test or rate rolling load performance — it assesses overall fitness for use categories through a battery of tests including wear, indentation, chemical resistance, and dimensional stability. Rolling load resistance (from office chairs with hard casters, for example) is addressed separately under EN 425 (castor chair test). Some manufacturers publish castor chair test results alongside traffic class. For spaces with significant wheeled traffic — office environments, for example — look specifically for rolling load or castor chair test data in addition to the traffic class."
         }
       }
     ]
@@ -64,43 +80,110 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Traffic Class Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Performance • Use Class Ratings</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">ISO 10874 Use Classes · Residential vs. Commercial · How to Read the Numbers</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Traffic class is a rating system (e.g., 23/31/33) that indicates the level of residential or commercial use the product is designed to handle.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Traffic class is a standardized use classification — most commonly ISO 10874 (formerly EN 685) — that describes what intensity of foot traffic and use conditions a flooring product is designed to withstand. For rigid core LVT, it is expressed as a two-digit code (e.g., 23, 31, 33) where the first digit indicates the use category and the second indicates traffic intensity. Not all manufacturers publish this rating, but understanding it helps match product selection to actual space conditions.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">It helps match product performance to expected foot traffic and rolling load conditions. Review traffic class alongside wear layer thickness and commercial warranty for a full performance picture.</p>
+        <p class="mt-2 text-slate-800">
+          Under ISO 10874, the first digit of the traffic class code describes the environment: 2 = residential, 3 = commercial. The second digit describes traffic intensity: 1 = moderate, 2 = general, 3 = heavy. A product rated Class 33 is designed for heavy commercial traffic; Class 23 handles heavy residential use. When no traffic class is published, wear layer thickness and warranty terms are the best available proxies.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#classification" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Classification system</a>
+        <a href="#classes" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Class reference table</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="classification" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">How the Classification System Works</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Traffic class is a rating system (e.g., 23/31/33) that indicates the level of residential or commercial use the product is designed to handle.</p>
+        <h3 class="text-lg font-semibold">ISO 10874 — the standard behind the numbers</h3>
+        <p class="mt-2 text-slate-700">ISO 10874 (which replaced EN 685) is a performance classification standard that assigns flooring products a use class based on a comprehensive suite of tests, including wear resistance, indentation resistance under static and dynamic loads, dimensional stability, chemical resistance, and other properties. Products must pass all tests for their claimed class — it is not a single-test rating. The standard covers hard floor coverings including LVT, laminate, and hardwood, using a shared numerical framework. A product that meets Class 33 requirements has been tested across all applicable test methods for that class, not just one.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">It helps match product performance to expected foot traffic and rolling load conditions.</p>
+        <h3 class="text-lg font-semibold">What the numbers represent</h3>
+        <p class="mt-2 text-slate-700">The first digit indicates the intended environment of use. Class 2x products are designed for residential settings — private homes, apartments, and similar light-use environments. Class 3x products are designed for commercial settings — offices, retail spaces, hospitality, healthcare, and public buildings. The second digit indicates traffic intensity within that environment: x1 = moderate, x2 = general, x3 = heavy. A product rated 23 handles heavy residential traffic (large households, high-use rooms); rated 31 handles moderate commercial traffic; rated 33 handles heavy commercial traffic. Some standards also define Class 34 (commercial very heavy) for extreme applications.</p>
       </div>
+    </section>
 
-      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Review traffic class alongside wear layer thickness and commercial warranty for a full performance picture.</p>
+    <section id="classes" class="mt-10">
+      <h2 class="text-2xl font-bold">Use Class Reference</h2>
+      <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-[580px] w-full text-sm">
+          <thead class="bg-slate-100 text-slate-700">
+            <tr>
+              <th class="px-4 py-3 text-left font-semibold">Class</th>
+              <th class="px-4 py-3 text-left font-semibold">Environment</th>
+              <th class="px-4 py-3 text-left font-semibold">Traffic level</th>
+              <th class="px-4 py-3 text-left font-semibold">Typical spaces</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">21</td>
+              <td class="px-4 py-3 text-slate-700">Residential</td>
+              <td class="px-4 py-3 text-slate-700">Moderate</td>
+              <td class="px-4 py-3 text-slate-700">Bedrooms, infrequently used rooms</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">22</td>
+              <td class="px-4 py-3 text-slate-700">Residential</td>
+              <td class="px-4 py-3 text-slate-700">General</td>
+              <td class="px-4 py-3 text-slate-700">Living rooms, dining rooms</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">23</td>
+              <td class="px-4 py-3 text-slate-700">Residential</td>
+              <td class="px-4 py-3 text-slate-700">Heavy</td>
+              <td class="px-4 py-3 text-slate-700">Hallways, kitchens, high-use areas</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">31</td>
+              <td class="px-4 py-3 text-slate-700">Commercial</td>
+              <td class="px-4 py-3 text-slate-700">Moderate</td>
+              <td class="px-4 py-3 text-slate-700">Hotel rooms, small offices</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">32</td>
+              <td class="px-4 py-3 text-slate-700">Commercial</td>
+              <td class="px-4 py-3 text-slate-700">General</td>
+              <td class="px-4 py-3 text-slate-700">Offices, classrooms, retail</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">33</td>
+              <td class="px-4 py-3 text-slate-700">Commercial</td>
+              <td class="px-4 py-3 text-slate-700">Heavy</td>
+              <td class="px-4 py-3 text-slate-700">High-traffic retail, corridors, healthcare</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">34</td>
+              <td class="px-4 py-3 text-slate-700">Commercial</td>
+              <td class="px-4 py-3 text-slate-700">Very heavy</td>
+              <td class="px-4 py-3 text-slate-700">Airports, transit facilities, heavy public use</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -108,60 +191,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Identify the rating system used (ISO 10874/EN 685).</li>
-          <li>Match the class to the intended space type.</li>
-          <li>Check if ratings differ for residential vs commercial use.</li>
-          <li>Confirm wear layer and indentation specs that support the class.</li>
-          <li>Review warranty coverage tied to the use class.</li>
+          <li>Identify whether a traffic class is published and which standard it references (ISO 10874, EN 685, or other).</li>
+          <li>Match the class to the intended installation space — a bedroom has very different requirements than a retail corridor.</li>
+          <li>Check whether the commercial warranty aligns with the published traffic class — discrepancies are a red flag.</li>
+          <li>For spaces with heavy wheeled traffic (office chairs, medical equipment), look specifically for castor chair test results (EN 425) — traffic class alone does not address rolling loads.</li>
+          <li>When no traffic class is published, use wear layer thickness and warranty scope as proxies — 20 mil+ wear layer with commercial warranty is a reasonable commercial-grade indicator.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming a higher class means suitability for any environment.</li>
-          <li>Ignoring rolling load or chair caster requirements.</li>
-          <li>Comparing classes across different standards.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is traffic class the same as AC rating?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. AC rating is primarily for laminate abrasion; traffic class is a broader use classification.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Do all LVT products have traffic class ratings?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not always; some manufacturers use different classification systems or omit it.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is traffic class the same as AC rating?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No — they are different systems. AC rating (Abrasion Class) is primarily associated with laminate flooring and measures surface abrasion resistance using a Taber test. Traffic class for LVT is based on ISO 10874 and uses a two-digit code that encodes use category and traffic intensity across a broader set of tests. Some LVT manufacturers publish AC ratings for marketing familiarity, but ISO 10874 traffic class is the more appropriate standard for vinyl flooring.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Do all LVT products have traffic class ratings?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Not all products publish a traffic class. Products sold through home improvement channels often describe suitability only as 'residential' or 'commercial' without a specific ISO class. Commercial and contract-market products are more likely to carry a published class. When traffic class is not stated, wear layer thickness and warranty terms are the most useful proxies.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What does Class 33 mean for LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Under ISO 10874, Class 33 means 'commercial — heavy traffic.' The first digit (3) indicates commercial use; the second digit (3) indicates heavy traffic intensity. Class 33 products are intended for high-traffic commercial environments such as retail, corridors, and healthcare facilities. They must pass a comprehensive suite of tests at that level, not just a single measurement.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does traffic class account for rolling loads and chair casters?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">ISO 10874 traffic class does not directly test rolling load performance. Rolling load resistance from office chairs with hard casters is addressed separately under EN 425 (castor chair test). For office environments or spaces with significant wheeled traffic, look specifically for rolling load or castor chair test data in addition to the traffic class designation.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
-          <a href="/materials/lvt/rigid-core/specs/warranty/commercial-warranty.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Commercial Warranty</a>
-          <a href="/materials/lvt/rigid-core/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Indentation Resistance</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
+        <a href="/materials/lvt/rigid-core/specs/warranty/commercial-warranty.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Commercial Warranty</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Indentation Resistance</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/dimensional-stability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Dimensional Stability</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about traffic class ratings for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

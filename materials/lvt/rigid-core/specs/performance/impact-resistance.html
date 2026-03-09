@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,18 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Does higher impact resistance prevent all dents?",
+        "name": "Does higher impact resistance prevent all surface damage?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. It indicates better performance in defined tests, but heavy impacts can still cause damage."
+          "text": "No. Impact resistance test results describe performance under defined test conditions — specific drop heights, specified impact objects — not unlimited real-world impacts. A product that passes a steel ball drop test at 1000mm height can still be damaged by a cast iron pan dropped from that same height, because the shape, hardness, and mass distribution of the impacting object differ from the standardized test. Impact resistance is one data point in a broader durability picture that also includes wear layer thickness, surface coating hardness, and core stiffness."
         }
       },
       {
         "@type": "Question",
-        "name": "Is impact resistance more critical for rigid core?",
+        "name": "Is impact resistance the same as dent resistance?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rigid core constructions can benefit from higher impact resistance due to their stiffness."
+          "text": "No — they measure different failure modes. Impact resistance describes how the floor responds to a dynamic, falling object — a short-duration, high-force event. Dent resistance (indentation resistance) describes how the floor responds to a sustained static load — a heavy object resting in one place for a long time. A product can score well on impact resistance while having mediocre indentation resistance, or vice versa. Both specs are relevant; they are typically tested separately and should be read together for a complete picture of load tolerance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the subfloor affect impact resistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Subfloor stiffness significantly affects how impact energy is absorbed. A floating floor installed over a compressible underlayment has slightly more give than one installed glue-down on concrete, which means the impact energy can be partially absorbed by the underlayment assembly — sometimes improving impact performance. Conversely, a floating floor installed on a soft or insufficiently stiff subfloor may flex too much under impact, stressing the core material in ways that can cause cracking or joint damage even if the product otherwise has good impact resistance. This is why product testing is typically conducted on a defined, rigid substrate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What test is typically used for LVT impact resistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EN ISO 6603-1 (drop-weight impact testing of rigid plastics) and ASTM D5420 are referenced for some LVT impact resistance claims. However, impact resistance is not universally standardized for LVT in the way indentation resistance is. Some manufacturers reference proprietary drop tests or describe performance qualitatively. When published, the result is typically reported as the drop height or energy level at which no visible damage was observed on the surface, or as a pass/fail result at a specified test condition."
         }
       }
     ]
@@ -64,43 +80,57 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Impact Resistance Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Rigid Core LVT • Drop Tests • Surface Damage</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Drop Tests · Dynamic Load · How It Differs from Dent Resistance</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Impact resistance measures how well a floor withstands dropping objects without cracking, denting, or damaging the surface.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Impact resistance measures how well rigid core LVT withstands damage from objects dropped onto its surface — pots, tools, heavy items that fall rather than rest in place. It is a dynamic property, testing the floor's response to a brief, concentrated energy transfer. This is distinct from indentation resistance, which measures response to sustained static loads. The core material's density, brittleness, and the surface coating's toughness all contribute to impact performance.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">It helps gauge performance in kitchens, commercial spaces, and areas where items may be dropped. Compare impact resistance with wear layer, surface coating, and indentation resistance to understand overall durability.</p>
+        <p class="mt-2 text-slate-800">
+          Impact resistance describes how the floor handles objects dropped on it — a dynamic, short-duration event. It is tested differently from indentation resistance (static loads) and they should not be conflated. SPC cores are harder than WPC, which affects surface chip and crack resistance from impact. Impact resistance is not universally standardized for LVT and published results should be compared only when using the same test method and conditions.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#what-it-measures" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What it measures</a>
+        <a href="#vs-indentation" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">vs. Indentation resistance</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="what-it-measures" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">What Impact Resistance Measures</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Impact resistance measures how well a floor withstands dropping objects without cracking, denting, or damaging the surface.</p>
+        <h3 class="text-lg font-semibold">Dynamic energy absorption</h3>
+        <p class="mt-2 text-slate-700">When an object falls onto a floor surface, it transfers kinetic energy to the floor material at the contact point. The floor must either absorb this energy elastically (deforming and recovering), absorb it plastically (deforming permanently), or resist it without deforming. Rigid materials like SPC core can resist more energy before deforming, but when they do deform, the failure mode is typically surface chipping or cracking rather than a smooth dent. WPC cores are slightly more compliant, which can mean a dent rather than a chip when failure occurs — but both are damage modes. The surface coating and wear layer's toughness also play a role in whether impact energy chips or scuffs the visible surface.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">It helps gauge performance in kitchens, commercial spaces, and areas where items may be dropped.</p>
+        <h3 class="text-lg font-semibold">How testing is conducted</h3>
+        <p class="mt-2 text-slate-700">Impact resistance for LVT is not as uniformly standardized as indentation resistance. Common approaches include drop-weight tests where a steel ball or other standardized mass is dropped from a defined height onto the floor surface, and the surface is then inspected for visible damage (cracking, chipping, delamination). The result is typically a pass/fail at a specified drop height or energy level, or the maximum height at which no visible damage was observed. Some manufacturers reference EN ISO 6603-1 (drop-weight impact for rigid plastics) or ASTM D5420; others publish proprietary test results. Comparing impact resistance data across products requires that the same test method and conditions be used.</p>
       </div>
+    </section>
 
+    <section id="vs-indentation" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Impact Resistance vs. Indentation Resistance</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Compare impact resistance with wear layer, surface coating, and indentation resistance to understand overall durability.</p>
+        <p class="text-slate-700">These two specs are frequently confused but measure fundamentally different things. Indentation resistance (ASTM F1914, EN ISO 24343) measures the permanent depth of impression left by a sustained static load applied for an extended period — like a refrigerator foot sitting in place for months. Impact resistance measures the surface's response to a momentary dynamic event — like dropping a heavy pot. A product can have excellent indentation resistance (dense SPC core) while having moderate impact resistance if its surface coating is brittle. Conversely, a product with softer WPC core may absorb impact energy as a smooth dent without chipping, but show more permanent indentation from static furniture loads. Both specs are relevant to real-world use and should be read together.</p>
       </div>
     </section>
 
@@ -108,60 +138,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Look for the test method and drop height/weight used.</li>
-          <li>Check whether results apply to the full plank assembly.</li>
-          <li>Confirm any conditions like temperature or backing used.</li>
-          <li>Review core type and thickness that support impact resistance.</li>
-          <li>Pair with wear layer and coating specs for surface durability.</li>
+          <li>Identify the test method cited — published impact resistance data is only comparable when using the same standard and conditions.</li>
+          <li>Note whether the result is expressed as pass/fail at a specific energy level or as the maximum drop height before damage.</li>
+          <li>Do not confuse impact resistance with indentation resistance — they test different failure modes with different test methods.</li>
+          <li>Consider the core type: SPC cores are harder and more brittle under extreme impact; WPC cores are more compliant but softer under static load.</li>
+          <li>For kitchens, workshops, or high-drop-risk environments, look for impact resistance data alongside surface coating hardness.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming impact resistance covers scratch or abrasion resistance.</li>
-          <li>Comparing results from different test methods.</li>
-          <li>Ignoring how subfloor stiffness affects impact outcomes.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does higher impact resistance prevent all dents?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. It indicates better performance in defined tests, but heavy impacts can still cause damage.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is impact resistance more critical for rigid core?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Rigid core constructions can benefit from higher impact resistance due to their stiffness.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does higher impact resistance prevent all surface damage?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. Impact resistance test results describe performance under defined test conditions — specific drop heights and standardized impact objects. Real-world impacts with different object shapes, masses, and hardness can still cause damage. Impact resistance is one data point in a broader durability picture that also includes wear layer thickness, surface coating hardness, and core stiffness.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is impact resistance the same as dent resistance?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No — they measure different failure modes. Impact resistance describes how the floor responds to a dynamic, falling object — a brief, high-force event. Indentation resistance describes how the floor responds to a sustained static load — heavy furniture sitting in place for months. A product can score well on one while being mediocre on the other. Both specs are relevant and should be read together.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How does the subfloor affect impact resistance?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Subfloor stiffness affects how impact energy is absorbed. A floating floor with compressible underlayment has slightly more give, which can partially absorb impact energy. Conversely, a floor installed on a soft or flexible subfloor may flex excessively under impact, stressing the core in ways that cause cracking or joint damage. Product testing is typically conducted on a defined rigid substrate, so installed performance may vary.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What test is typically used for LVT impact resistance?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Impact resistance is not universally standardized for LVT. Some manufacturers reference EN ISO 6603-1 or ASTM D5420; others publish proprietary drop tests or describe performance qualitatively. When published, results are typically reported as pass/fail at a specified condition, or as the maximum drop height at which no visible surface damage was observed. Comparisons are only valid when the same test method and conditions were used.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Indentation Resistance</a>
-          <a href="/materials/lvt/rigid-core/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
-          <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Indentation Resistance</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/surface-coating.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Surface Coating</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about impact resistance specifications for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

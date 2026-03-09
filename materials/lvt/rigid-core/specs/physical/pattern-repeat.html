@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
         "name": "Is pattern repeat the same as number of faces?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "They are related. The repeat may be expressed as a length or the count of unique visuals."
+          "text": "These two specifications are related but not identical. Number of faces refers to how many distinct printed visual designs exist in a collection — a product with 8 faces has 8 unique plank appearances. Pattern repeat, when expressed as a length dimension rather than a face count, indicates the distance over which the printed pattern completes one cycle before starting again. For products where the repeat is expressed as a length (common in tile-format LVT), the repeat determines the minimum offset needed between adjacent rows to avoid a visible seam. Most rigid core plank products express this as a face count (4, 6, 8, 10, or more unique visuals) rather than a repeat length."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Does pattern repeat affect performance?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not directly; it is primarily a visual specification."
+          "text": "Pattern repeat does not directly affect physical performance specifications such as wear resistance, indentation resistance, or dimensional stability — it is a visual specification. However, the number of unique faces and the randomness of their distribution in a carton does affect how realistic the installed floor looks. More unique faces, combined with embossing-in-register (EIR) technology that aligns surface texture to the printed pattern, create a more convincing natural material appearance. This visual authenticity is a relevant factor in specification and design decisions even though it is not captured by performance test standards."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many unique faces is considered good for LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Entry-level LVT collections often feature 4–6 unique face designs. Mid-range and premium products commonly offer 8–12 unique faces. High-end collections may advertise 20 or more unique faces using digital printing technology that generates unique prints for every plank — effectively making the repeat length the full run of the installation rather than a fixed cycle. For large commercial installations covering thousands of square feet, higher face counts significantly reduce the risk of noticeable pattern repetition that disrupts the visual impression of a natural material."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does mixing cartons affect pattern repeat visibility?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Installers are generally instructed to open and shuffle planks from multiple cartons before installing — drawing from several open boxes at a time rather than completing one box before opening the next. This practice mixes the face distribution from multiple cartons and reduces the likelihood that a run of identical faces from one carton ends up in adjacent rows of the finished floor. The benefit is more pronounced for products with fewer unique faces, where sequential planks from a single carton are more likely to be visually similar."
         }
       }
     ]
@@ -64,43 +80,96 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Pattern Repeat Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Visuals • Design Repeat • Layout</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Unique Faces · Repeat Length · EIR · Installation Randomization</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Pattern repeat describes the length or number of unique printed visuals before the design repeats across planks or tiles.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Pattern repeat describes how often the printed decorative design in a rigid core LVT product repeats across the installation. It is typically expressed either as the number of unique face designs (e.g., 6 faces, 8 faces) or as a repeat length dimension (common in tile format products). A longer repeat or more unique faces creates a more natural-looking floor with less obvious visual repetition across large installations.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Longer repeats reduce visible repetition and create more natural-looking floors, especially in large spaces. Pair pattern repeat with plank size and embossing to plan visuals and layout strategies.</p>
+        <p class="mt-2 text-slate-800">
+          More unique faces = less visible repetition. Entry-level products have 4–6 faces; premium products offer 8–20+ faces. Pattern repeat is a visual specification only — it does not affect wear resistance or dimensional stability. Shuffling planks from multiple open cartons during installation minimizes clustering of similar faces.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#how-expressed" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">How it's expressed</a>
+        <a href="#eir" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">EIR and embossing</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="how-expressed" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">How Pattern Repeat Is Expressed</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Pattern repeat describes the length or number of unique printed visuals before the design repeats across planks or tiles.</p>
+        <h3 class="text-lg font-semibold">Face count (number of unique designs)</h3>
+        <p class="mt-2 text-slate-700">The most common way LVT manufacturers express pattern repeat for plank products is as a count of unique face designs. A product with 6 faces has 6 distinct printed designs — planks labeled 1 through 6 with different wood grain, knot, color variation, or texture characteristics. These 6 designs are distributed among the planks in a carton in some sequence. When the carton runs out of unique face designs, the sequence repeats. Entry-level products typically have 4 unique faces; mid-range products 6–8; premium products 10 or more. High-end products using digitally generated unique patterns can effectively provide a different face for every plank in the installation.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Longer repeats reduce visible repetition and create more natural-looking floors, especially in large spaces.</p>
+        <h3 class="text-lg font-semibold">Repeat length (tile format and some plank formats)</h3>
+        <p class="mt-2 text-slate-700">For tile-format LVT and some plank products, pattern repeat may be expressed as a linear dimension — the distance in inches or centimeters before the design starts over. This is more common in stone-look or abstract geometric designs where the pattern is continuous rather than distinct per-plank. A 24-inch repeat means the design tiles every 24 inches across the installation. When installing tile-format LVT with a defined repeat length, maintaining consistent offset between rows prevents the repeat seam from aligning in consecutive rows, which would create a visible grid pattern. Manufacturer layout instructions typically specify the recommended row offset to break up the repeat.</p>
       </div>
 
+      <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-full text-sm">
+          <thead class="bg-slate-50 text-slate-600 text-left">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Face Count</th>
+              <th class="px-4 py-3 font-semibold">Typical Segment</th>
+              <th class="px-4 py-3 font-semibold">Repetition Visibility</th>
+              <th class="px-4 py-3 font-semibold">Room Size Impact</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-4 py-3">4 faces</td>
+              <td class="px-4 py-3">Entry-level</td>
+              <td class="px-4 py-3">Noticeable in large rooms</td>
+              <td class="px-4 py-3">Best in small/medium rooms</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="px-4 py-3">6–8 faces</td>
+              <td class="px-4 py-3">Mid-range</td>
+              <td class="px-4 py-3">Minimal in typical rooms</td>
+              <td class="px-4 py-3">Suitable for most applications</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">10–12 faces</td>
+              <td class="px-4 py-3">Premium</td>
+              <td class="px-4 py-3">Very low</td>
+              <td class="px-4 py-3">Well-suited for open layouts</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="px-4 py-3">Unique per plank</td>
+              <td class="px-4 py-3">High-end / digital</td>
+              <td class="px-4 py-3">Effectively none</td>
+              <td class="px-4 py-3">Suitable for any installation size</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="eir" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Embossing-in-Register (EIR)</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Pair pattern repeat with plank size and embossing to plan visuals and layout strategies.</p>
+        <p class="text-slate-700">Embossing-in-register (EIR) is a manufacturing process where the surface texture of the wear layer is mechanically registered to the printed pattern beneath it. In a wood-look plank with EIR, the grain lines, knot depressions, and pore texture in the surface align precisely with the same features in the print — creating a synchronized visual and tactile effect that more closely resembles real hardwood. Without EIR, the surface texture is a generic emboss pattern that may or may not align with the printed design. EIR is a separate specification from face count — a product can have many faces but lack EIR, or have few faces with EIR. Both contribute to the realism of the finished floor and are relevant when evaluating the visual quality of a collection.</p>
       </div>
     </section>
 
@@ -108,60 +177,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Check the repeat length or the number of unique faces.</li>
-          <li>Confirm whether the repeat is per carton or per pallet.</li>
-          <li>Review layout guidance to avoid visible repetition.</li>
-          <li>Consider plank size and room width for visual balance.</li>
-          <li>Match embossing (EIR) to printed patterns when applicable.</li>
+          <li>Check whether pattern repeat is expressed as a face count or a repeat length dimension — both are common and mean different things for installation planning.</li>
+          <li>Note the number of unique faces — for large commercial installations covering 500+ sq ft, 8 or more faces is typically recommended to avoid noticeable repetition.</li>
+          <li>Check whether the product features embossing-in-register (EIR) — this specification is separate from face count and significantly affects the visual quality of the installed floor.</li>
+          <li>Review manufacturer layout instructions for recommended row offset or installation pattern to minimize visible repetition for the specific face count.</li>
+          <li>Plan to shuffle planks from multiple open cartons during installation — this distributes face designs more randomly across the floor and reduces clustering of similar visuals.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming a large repeat eliminates pattern matching needs.</li>
-          <li>Overlooking how directionality affects repetition.</li>
-          <li>Mixing cartons without shuffling planks.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is pattern repeat the same as number of faces?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">They are related. The repeat may be expressed as a length or the count of unique visuals.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does pattern repeat affect performance?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not directly; it is primarily a visual specification.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is pattern repeat the same as number of faces?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Related but not identical. Face count refers to the number of distinct printed designs in a collection. Pattern repeat, when expressed as a length, indicates the distance before the design tiles again — common in tile-format LVT. For plank products, face count is the more commonly reported specification. More faces means the design cycle covers more planks before repeating, reducing visible repetition.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does pattern repeat affect performance?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Pattern repeat does not affect physical performance specifications — it is a visual specification. It does not change wear resistance, indentation resistance, or dimensional stability. The number of unique faces affects only how realistic and natural the installed floor looks, which is relevant for specification and design decisions even though it is not captured by performance test standards.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How many unique faces is considered good for LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Entry-level products have 4–6 faces. Mid-range and premium products commonly offer 8–12 faces. High-end collections may generate unique prints for every plank using digital printing. For large commercial installations over 500 sq ft, 8 or more faces is typically recommended to avoid noticeable repetition. The specific threshold depends on plank size — in large rooms with long planks, even 8 faces can appear repetitive in long open runs.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does mixing cartons affect pattern repeat visibility?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes. Shuffling planks from multiple open cartons during installation distributes face designs more randomly across the floor and reduces the risk that a run of similar-looking planks from one carton ends up in adjacent rows. This practice is universally recommended in manufacturer installation guides. The benefit is most significant for products with fewer unique faces, where sequential planks from a single carton are more likely to look similar.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/glue-down/specs/physical/plank-size.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Plank Size</a>
-          <a href="/materials/lvt/glue-down/specs/construction/embossing.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Embossing</a>
-          <a href="/materials/lvt/glue-down/specs/construction/edge-profile.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Edge Profile</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/physical/plank-size.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Plank Size</a>
+        <a href="/materials/lvt/rigid-core/specs/physical/carton-coverage.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Carton Coverage</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/edge-profile.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Edge Profile</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/telegraphing-risk.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Telegraphing Risk</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about pattern repeat for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

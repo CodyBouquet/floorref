@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,18 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Do glue-down floors have max run lengths?",
+        "name": "Do glue-down floors have max run length limits?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Typically no, because the floor is bonded to the substrate, but confirm manufacturer guidance."
+          "text": "Generally, no. Glue-down LVT does not require intermediate transitions for run length management because each plank is bonded individually to the subfloor — there is no accumulated floating assembly that moves as a unit. Dimensional movement in glue-down products is absorbed at the adhesive bond line rather than displaced to the perimeter. However, some manufacturers still recommend perimeter control joints or movement joints in very large glue-down installations (over 1,000 square feet or more), particularly in commercial applications. Always confirm with the specific product's installation guide."
         }
       },
       {
         "@type": "Question",
-        "name": "Can I exceed max run length with extra expansion gaps?",
+        "name": "Can I exceed the max run length if I use wider expansion gaps?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Usually not. Follow the specified limit and use transitions as required."
+          "text": "No — not in a straightforward way. Wider perimeter gaps alone do not substitute for intermediate transitions. The reason is physics: when a floating floor is too long in one direction, the cumulative expansion force builds internally in the floor assembly and can cause buckling at interior joints rather than simply pressing more forcefully against the perimeter. Intermediate T-molding transitions physically break the floor assembly into independent sections, each of which then moves independently and is managed by its own set of perimeter gaps. Adding extra width to wall gaps does not relieve internal stresses in a floor that is too long."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if I exceed the max run length?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When a floating floor exceeds its maximum run length, the floor assembly becomes too long for perimeter gaps to adequately relieve thermal expansion. Over time — particularly when the room heats up seasonally or with sunlight — the floor buckles at interior plank joints, lifting planks off the subfloor in the middle of the room. Buckling typically occurs at the weakest joint or at the point of maximum accumulated expansion force, which is usually somewhere in the middle of the run rather than at the perimeter. Correcting a buckled floor requires removing planks back to the buckle point, re-installing with a transition that breaks the run, and potentially relaying damaged planks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a typical max run length for rigid core LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most rigid core LVT manufacturers specify maximum run lengths of 25–30 feet (approximately 7.5–9 meters) in any single direction before an intermediate transition is required. Some premium products with especially high dimensional stability (SPC with low thermal expansion) may permit longer runs — up to 40 feet or more. The specified limit applies independently to both the length direction and the width direction of the installation — a room that is 30 feet in one direction and 25 feet in the other requires transitions if either dimension exceeds the limit."
         }
       }
     ]
@@ -64,43 +80,57 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Max Run Length Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Rigid Core LVT • Long Runs • Transitions</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Why Runs Are Limited · Typical Limits · Transition Placement · Open Layouts</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Max run length is the maximum distance a floating rigid core floor can run in one direction without a break or transition.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Maximum run length is the longest dimension a floating rigid core LVT floor can extend in any single direction before an intermediate transition — typically a T-molding — is required to break the floor into independent sections. The limit exists because floating floors accumulate dimensional movement across their total length: the longer the run, the larger the total expansion force that builds up against perimeter walls. Exceeding the limit increases buckling risk at interior plank joints.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Long runs accumulate expansion and contraction; exceeding the limit can cause buckling or joint failure. Check dimensional stability, expansion gap, and transition requirements to plan layout and breaks.</p>
+        <p class="mt-2 text-slate-800">
+          Most rigid core LVT products specify a maximum run length of 25–30 feet (7.5–9m) in any direction. This limit applies independently to both length and width. Rooms that exceed the limit require an intermediate T-molding transition that physically divides the floor into two independent floating sections. Wider perimeter gaps alone do not substitute for a required intermediate transition — the floor must be physically broken.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#why-limits" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Why limits exist</a>
+        <a href="#open-layouts" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Open-plan layouts</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="why-limits" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Why Run Length Is Limited</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Max run length is the maximum distance a floating rigid core floor can run in one direction without a break or transition.</p>
+        <h3 class="text-lg font-semibold">Cumulative dimensional movement</h3>
+        <p class="mt-2 text-slate-700">A floating floor moves as a single assembly — all planks locked together push and pull against the fixed structure at the perimeter. The total expansion force is the sum of all individual plank movements across the entire run length. A plank that expands 0.15mm contributes that amount to the total; 150 such planks in a row contribute 22.5mm of total expansion. Perimeter expansion gaps of 6–8mm accommodate this movement for runs within the specified limit. When a run is too long, the gap size required to accommodate the movement would be impractically large, and the floor begins to buckle internally before the perimeter gap can fully absorb the expansion.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Long runs accumulate expansion and contraction; exceeding the limit can cause buckling or joint failure.</p>
+        <h3 class="text-lg font-semibold">How intermediate transitions solve the problem</h3>
+        <p class="mt-2 text-slate-700">A T-molding transition physically separates a long floor run into two independent floating sections. Each section has its own perimeter gaps and moves independently of the other. The T-molding sits over a gap between the two floor sections and is typically attached to the subfloor (not to the floor itself), allowing each side of the transition to move freely. The transition strip covers the gap visually while permitting independent movement. Properly installed T-moldings allow floors to continue across doorways and large open spaces without violating max run length limits.</p>
       </div>
+    </section>
 
+    <section id="open-layouts" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Open-Plan Layouts</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Check dimensional stability, expansion gap, and transition requirements to plan layout and breaks.</p>
+        <p class="text-slate-700">Open-plan homes and commercial spaces where flooring runs continuously through multiple zones — from kitchen to living to dining — present the most common max run length challenges. In these layouts, the floor may run 40, 50, or even 60 feet without a natural wall or doorway to provide a visual break. In these situations, intermediate transitions are typically required, usually placed at furniture arrangement boundaries, under partial walls or columns, or at natural visual transitions in the space. Transition strip placement in open layouts requires planning before installation — it is much easier to design the break location into the original installation plan than to add it later after buckling occurs.</p>
       </div>
     </section>
 
@@ -108,60 +138,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Find the max run length in feet or meters.</li>
-          <li>Note whether limits differ by width or direction.</li>
-          <li>Plan transitions at doorways or large openings.</li>
-          <li>Account for sunlight exposure and temperature swings.</li>
-          <li>Verify subfloor flatness to avoid joint stress.</li>
+          <li>Confirm the maximum run length in both directions — most products specify 25–30 feet but verify from the installation guide.</li>
+          <li>Measure the room dimensions in both directions independently — the limit applies to both length and width separately.</li>
+          <li>Identify transition locations before installation in open-plan layouts — transitions must be planned into the layout from the start.</li>
+          <li>Select T-molding transitions that allow independent movement of both floor sections rather than rigidly connecting them.</li>
+          <li>Account for radiant heat applications, where dimensional movement is higher — some manufacturers reduce the max run length specification when radiant heat is involved.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Skipping transitions in open-concept layouts.</li>
-          <li>Assuming a higher stability core eliminates run length limits.</li>
-          <li>Forgetting to leave expansion gaps at walls.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Do glue-down floors have max run lengths?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Typically no, because the floor is bonded to the substrate, but confirm manufacturer guidance.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Can I exceed max run length with extra expansion gaps?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Usually not. Follow the specified limit and use transitions as required.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Do glue-down floors have max run length limits?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Generally, no. Glue-down LVT does not require intermediate transitions for run length management because each plank is bonded individually to the subfloor — there is no accumulated floating assembly that moves as a unit. Some manufacturers recommend movement joints in very large glue-down installations in commercial applications. Always confirm with the specific product's installation guide.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Can I exceed the max run length if I use wider expansion gaps?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. Wider perimeter gaps alone do not substitute for intermediate transitions. When a floating floor is too long, cumulative expansion force builds internally and causes buckling at interior joints — not just increased force at the wall. Intermediate T-molding transitions physically break the floor into independent sections, each of which moves independently and is managed by its own perimeter gaps.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What happens if I exceed the max run length?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">The floor will eventually buckle at interior plank joints — typically somewhere in the middle of the run rather than at the perimeter. Buckling usually occurs when the room heats seasonally or with sunlight. Correcting it requires removing planks back to the buckle, reinstalling with a transition that breaks the run, and potentially replacing damaged planks.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is a typical max run length for rigid core LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Most rigid core LVT manufacturers specify 25–30 feet (7.5–9 meters) in any single direction. Some premium products with high dimensional stability may permit longer runs. The limit applies independently to both the length and width directions of the installation.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/installation/transition-requirements.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Transition Requirements</a>
-          <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
-          <a href="/materials/lvt/rigid-core/specs/performance/dimensional-stability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Dimensional Stability</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/installation/transition-requirements.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Transition Requirements</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/dimensional-stability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Dimensional Stability</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/radiant-heat.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Radiant Heat</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about max run length specifications for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

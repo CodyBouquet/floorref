@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
         "name": "Is SPC always better than WPC?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not inherently. Core type is one part of the construction; performance depends on the full system."
+          "text": "Not inherently. SPC is denser and more dimensionally stable under temperature swings, which makes it perform better in spaces with significant climate variation or radiant heat. WPC is thicker and typically softer underfoot, which some people prefer in residential settings. The right core type depends on the specific use case — both formats have valid applications, and quality varies within each category."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Does core type matter for glue-down LVT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Glue-down LVT is typically flexible, so core type references may differ from rigid core products."
+          "text": "Glue-down LVT is typically a flexible format, so the SPC/WPC rigid-core distinction doesn't apply the same way. Rigid-core products are floating-floor formats. Glue-down LVT has its own construction specs — flexibility, dimensional stability, and backing type are the relevant specs to check for adhesive-installed products."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does SPC stand for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SPC stands for Stone Plastic Composite (sometimes Stone Polymer Composite). It refers to a rigid core formulation made primarily from limestone powder and PVC resin. The high mineral content makes SPC denser and harder than WPC, and significantly more dimensionally stable under temperature changes. SPC cores typically have a density of around 1.8–2.0 g/cm³."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does WPC stand for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WPC stands for Wood Plastic Composite. It combines wood flour (fine wood fiber) with PVC resin, creating a lighter, slightly softer core than SPC. WPC products are typically thicker (6–8mm total) and have a warmer, slightly more cushioned feel underfoot. The lower density also means WPC is somewhat less thermally stable than SPC, though it still outperforms flexible LVT significantly."
         }
       }
     ]
@@ -64,43 +80,122 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Core Type Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT/LVP • SPC vs WPC • Flexible vs Rigid</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">SPC vs. WPC · Rigid Core LVT · What the Core Actually Does</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Core type describes the main structural layer in many LVT products, such as rigid SPC, WPC, or flexible vinyl constructions, which influences stiffness and stability.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Core type is one of the most commonly cited specs in rigid-core LVT, but the SPC/WPC distinction gets simplified or misrepresented in marketing. Understanding what each core is made of, how they differ in practice, and what trade-offs each brings is the foundation for reading LVT data sheets accurately.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">The core affects dimensional stability, indentation response, and locking performance, making it a key spec alongside wear layer and thickness. Review total thickness, locking system, and indentation resistance to understand how the core performs in the full assembly.</p>
+        <p class="mt-2 text-slate-800">
+          SPC (Stone Plastic Composite) uses limestone and PVC for a denser, harder, more thermally stable core — typically 4–6mm total product thickness. WPC (Wood Plastic Composite) uses wood fiber and PVC for a softer, thicker, slightly warmer-feeling product — typically 6–9mm total. Neither is universally superior; trade-offs between density, feel, and stability depend on the specific application.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#spc" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">SPC explained</a>
+        <a href="#wpc" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">WPC explained</a>
+        <a href="#comparison" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Side-by-side</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec sheet checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="spc" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">SPC: Stone Plastic Composite</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Core type describes the main structural layer in many LVT products, such as rigid SPC, WPC, or flexible vinyl constructions, which influences stiffness and stability.</p>
+        <h3 class="text-lg font-semibold">What it's made of</h3>
+        <p class="mt-2 text-slate-700">SPC cores are formulated primarily from limestone powder (calcium carbonate) and PVC resin, compressed into a dense, rigid slab. The high mineral content — often 60–70% of the core by weight — is what makes SPC significantly harder and heavier than WPC. Typical SPC core density is around 1.8–2.0 g/cm³, compared to WPC at approximately 0.9–1.2 g/cm³. This density difference is why SPC is noticeably heavier to handle at the same plank dimensions.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">The core affects dimensional stability, indentation response, and locking performance, making it a key spec alongside wear layer and thickness.</p>
+        <h3 class="text-lg font-semibold">Dimensional stability</h3>
+        <p class="mt-2 text-slate-700">SPC's high mineral content makes it significantly more dimensionally stable than WPC under temperature changes. Where flexible LVT might expand and contract several millimeters across a room-sized installation, SPC moves very little. This stability is why SPC is the preferred core type for radiant heat installations (where surface temperature fluctuates), large open areas, and spaces that experience pronounced seasonal temperature swings. Expansion gaps are still required, but the movement SPC must accommodate is much less than flexible vinyl.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Review total thickness, locking system, and indentation resistance to understand how the core performs in the full assembly.</p>
+        <h3 class="text-lg font-semibold">Feel and typical thickness</h3>
+        <p class="mt-2 text-slate-700">Because SPC is so dense, it feels firm underfoot — similar to a thin stone or tile feel rather than the softer compression of carpet or cushioned vinyl. Total product thickness for SPC-core LVT typically ranges from 4–6mm, with pre-attached underlayment adding 1–2mm more. Thinner overall profile can be an advantage at transitions between flooring types, and the density also supports locking joint strength.</p>
+      </div>
+    </section>
+
+    <section id="wpc" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">WPC: Wood Plastic Composite</h2>
+
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">What it's made of</h3>
+        <p class="mt-2 text-slate-700">WPC cores blend wood flour (finely ground wood fiber) with PVC resin and foaming agents, creating a lighter, slightly cellular structure compared to SPC. The wood fiber content gives WPC a different feel and acoustic property than the pure stone-and-PVC composition of SPC. Because of the foaming in many WPC formulations, the core has some inherent cushioning — which is why WPC products feel warmer and softer underfoot than equivalent SPC products without added underlayment.</p>
+      </div>
+
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Thickness and comfort</h3>
+        <p class="mt-2 text-slate-700">WPC products are typically thicker than SPC — 6–9mm total product thickness is common, sometimes with a built-in foam underlayment layer. This greater thickness contributes to a more substantial underfoot feel and slightly better impact sound absorption compared to thin SPC. For spaces where comfort underfoot is a priority — such as bedrooms or living areas where people stand or walk barefoot — the WPC thickness and foam layer are relevant factors.</p>
+      </div>
+
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Stability trade-offs</html>
+        <p class="mt-2 text-slate-700">WPC is less dimensionally stable than SPC under temperature changes, though it is still far more stable than flexible LVT. In spaces with large temperature swings or radiant heat systems, WPC requires more careful management of expansion gaps and climate conditions. The wood fiber content is also a consideration in very high humidity environments — WPC cores are not inherently moisture-resistant in the way SPC's limestone core is, though the PVC surrounding the fiber provides substantial protection.</p>
+      </div>
+    </section>
+
+    <section id="comparison" class="mt-10">
+      <h2 class="text-2xl font-bold">Side-by-Side Comparison</h2>
+      <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-[640px] w-full text-sm">
+          <thead class="bg-slate-100 text-slate-700">
+            <tr>
+              <th class="px-4 py-3 text-left font-semibold">Characteristic</th>
+              <th class="px-4 py-3 text-left font-semibold">SPC</th>
+              <th class="px-4 py-3 text-left font-semibold">WPC</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Primary materials</td>
+              <td class="px-4 py-3 text-slate-700">Limestone + PVC</td>
+              <td class="px-4 py-3 text-slate-700">Wood flour + PVC + foaming agents</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Typical total thickness</td>
+              <td class="px-4 py-3 text-slate-700">4–6mm</td>
+              <td class="px-4 py-3 text-slate-700">6–9mm</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Underfoot feel</td>
+              <td class="px-4 py-3 text-slate-700">Firm, dense</td>
+              <td class="px-4 py-3 text-slate-700">Slightly softer, warmer</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Dimensional stability</td>
+              <td class="px-4 py-3 text-slate-700">Higher</td>
+              <td class="px-4 py-3 text-slate-700">Good, but lower than SPC</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Weight</td>
+              <td class="px-4 py-3 text-slate-700">Heavier</td>
+              <td class="px-4 py-3 text-slate-700">Lighter</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Radiant heat compatibility</td>
+              <td class="px-4 py-3 text-slate-700">Generally better</td>
+              <td class="px-4 py-3 text-slate-700">Varies; verify per product</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -108,60 +203,77 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Identify whether the product is rigid core (SPC/WPC) or flexible LVT.</li>
-          <li>Check density or core thickness if provided.</li>
-          <li>Review dimensional stability and impact/indentation tests.</li>
-          <li>Confirm locking system compatibility for rigid core planks.</li>
-          <li>Note if an attached pad is included.</li>
+          <li>Note whether core type is listed as SPC, WPC, or a proprietary name — many brands use trade names that don't reveal the composition.</li>
+          <li>Check total product thickness alongside core type — SPC tends to be thinner overall, WPC thicker.</li>
+          <li>Review dimensional stability data if available — this is a more direct measure of performance than the core label alone.</li>
+          <li>If radiant heat is a factor, verify the manufacturer explicitly approves the product for that use regardless of core type.</li>
+          <li>Review whether pre-attached underlayment is included — this affects total height at transitions and whether additional underlay is permitted.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming SPC always outperforms WPC without looking at other specs.</li>
-          <li>Comparing core types without matching total thickness or wear layer.</li>
-          <li>Ignoring installation requirements tied to core stiffness.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is SPC always better than WPC?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not inherently. Core type is one part of the construction; performance depends on the full system.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does core type matter for glue-down LVT?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Glue-down LVT is typically flexible, so core type references may differ from rigid core products.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is SPC always better than WPC?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Not inherently. SPC is denser and more dimensionally stable under temperature swings, which makes it perform better in spaces with significant climate variation or radiant heat. WPC is thicker and typically softer underfoot, which some people prefer in residential settings. The right core type depends on the specific use case — both formats have valid applications, and quality varies within each category.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does core type matter for glue-down LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Glue-down LVT is typically a flexible format, so the SPC/WPC rigid-core distinction doesn't apply the same way. Rigid-core products are floating-floor formats. Glue-down LVT has its own construction specs — flexibility, dimensional stability, and backing type are the relevant specs to check for adhesive-installed products.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What does SPC stand for?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">SPC stands for Stone Plastic Composite (sometimes Stone Polymer Composite). It refers to a rigid core formulation made primarily from limestone powder and PVC resin. The high mineral content makes SPC denser and harder than WPC, and significantly more dimensionally stable under temperature changes. SPC cores typically have a density of around 1.8–2.0 g/cm³.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What does WPC stand for?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">WPC stands for Wood Plastic Composite. It combines wood flour (fine wood fiber) with PVC resin, creating a lighter, slightly softer core than SPC. WPC products are typically thicker (6–9mm total) and have a warmer, slightly more cushioned feel underfoot. The lower density also means WPC is somewhat less thermally stable than SPC, though it still outperforms flexible LVT significantly.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
-          <a href="/materials/lvt/rigid-core/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
-          <a href="/materials/lvt/rigid-core/specs/construction/locking-system.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Locking System</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/dimensional-stability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Dimensional Stability</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Indentation Resistance</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/radiant-heat.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Radiant Heat</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/attached-underlayment.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Attached Underlayment</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about LVT core type specifications. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

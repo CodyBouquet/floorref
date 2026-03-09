@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,18 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Is radiant heat allowed for rigid core and glue-down?",
+        "name": "Is radiant heat allowed under both floating and glue-down rigid core LVT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Many products allow it, but limits and requirements differ by construction and adhesive."
+          "text": "Many rigid core LVT products allow radiant heat under both floating and glue-down installations, but the requirements differ significantly. Floating installations over radiant heat require the expansion gap and max run length specifications to be strictly followed, because the heated floor expands more than in ambient temperature installations. Glue-down products over radiant heat must be compatible with the adhesive at elevated floor temperatures — not all pressure-sensitive adhesives maintain adequate bond strength at the maximum surface temperatures reached by radiant heat systems. Always verify both the flooring product and the adhesive are rated for radiant heat use."
         }
       },
       {
         "@type": "Question",
-        "name": "Do I need a thermostat or floor sensor?",
+        "name": "Do I need a thermostat or floor temperature sensor with LVT over radiant heat?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most manufacturers require a thermostat and sensor to control surface temperature."
+          "text": "Yes — most manufacturers require a floor temperature sensor embedded in or near the radiant heat system, connected to a thermostat that limits the floor surface temperature to the manufacturer's specified maximum, typically 80–85°F (27–29°C). The sensor must measure floor surface temperature, not room air temperature, because the floor surface can reach temperatures significantly higher than the room air, especially in concentrated zones above heating elements. Without a floor sensor, there is no reliable way to confirm the floor surface remains within the specified limit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I turn radiant heat on full power immediately after installing LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Most manufacturers require a gradual ramp-up protocol after installation. A common requirement is to increase the floor temperature by no more than 5°F (3°C) per day until the target operating temperature is reached. This allows the LVT and any adhesive to acclimatize gradually to elevated temperatures without the rapid thermal shock that can cause dimensional stress, joint failure, or adhesive breakdown. The ramp-up protocol applies to initial commissioning and also to seasonal restarts after the system has been off for extended periods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What surface temperature limit is typical for LVT over radiant heat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most rigid core LVT manufacturers specify a maximum floor surface temperature of 80–85°F (approximately 27–29°C). Some products allow up to 90°F (32°C), while others are more restrictive. This limit applies to the floor surface, not the temperature of the heating element or the water circulating in a hydronic system. Exceeding the floor surface temperature limit causes accelerated dimensional movement, joint stress, and in glue-down systems, adhesive softening. The specified limit is a warranty condition and should be verified against the thermostat setting controlling the radiant system."
         }
       }
     ]
@@ -64,43 +80,88 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Radiant Heat Compatibility Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Installation • Temperature Limits • Ramp Rates</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Surface Temperature Limits · Ramp-Up Protocols · Floating vs. Glue-Down</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Radiant heat compatibility indicates whether LVT can be installed over heated subfloors and under what temperature or ramp-rate limits.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Radiant heat compatibility describes whether a rigid core LVT product can be installed over in-floor radiant heating systems — and if so, under what conditions. Most rigid core LVT products permit radiant heat use, but compatibility requires strict adherence to maximum floor surface temperature limits, slow ramp-up protocols, and proper sensor setup. Exceeding the temperature limit drives accelerated dimensional movement and can cause joint failure or adhesive degradation.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Excess heat can cause expansion, adhesive failure, or surface damage, so following limits protects performance and warranty. Review dimensional stability, expansion gaps, and moisture limits to ensure the system works with heated slabs.</p>
+        <p class="mt-2 text-slate-800">
+          Most rigid core LVT allows radiant heat with a maximum floor surface temperature of 80–85°F (27–29°C), a floor temperature sensor connected to a thermostat, and a gradual ramp-up of no more than 5°F per day after installation. The limit applies to the floor surface, not the thermostat setpoint or water temperature. Floating installations over radiant heat require more attention to expansion gaps because elevated temperature increases dimensional movement.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#compatibility" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Compatibility overview</a>
+        <a href="#temp-limits" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Temperature limits</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="compatibility" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Radiant Heat Compatibility Overview</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Radiant heat compatibility indicates whether LVT can be installed over heated subfloors and under what temperature or ramp-rate limits.</p>
+        <h3 class="text-lg font-semibold">Why LVT is sensitive to heat</h3>
+        <p class="mt-2 text-slate-700">Rigid core LVT is a thermoplastic composite — its dimensional behavior changes with temperature. When the floor surface temperature rises, the PVC-based material expands; when it cools, it contracts. Radiant heat systems create a temperature gradient from the subfloor upward through the floor assembly, which means the LVT is experiencing elevated temperatures from below rather than just from warm room air. This bottom-up heating creates more pronounced dimensional movement than ambient room temperature changes, because the heat source is in direct contact with the floor assembly and cannot be moderated by the thermal lag of air temperature.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Excess heat can cause expansion, adhesive failure, or surface damage, so following limits protects performance and warranty.</p>
+        <h3 class="text-lg font-semibold">Hydronic vs. electric radiant systems</h3>
+        <p class="mt-2 text-slate-700">Hydronic radiant systems circulate warm water through tubing embedded in or beneath the subfloor — they heat gradually and maintain relatively stable temperatures once the system reaches equilibrium. Electric radiant systems use resistance heating mats or cables embedded in a thin mortar bed or the subfloor — they can heat more quickly and reach higher localized temperatures than hydronic systems. Both system types require floor surface temperature control, but electric systems require more attentive monitoring because their localized heating can create temperature hotspots if the LVT is not uniformly covering the heating element zone. The thermostat sensor placement is critical for electric systems.</p>
       </div>
+    </section>
 
-      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Review dimensional stability, expansion gaps, and moisture limits to ensure the system works with heated slabs.</p>
+    <section id="temp-limits" class="mt-10">
+      <h2 class="text-2xl font-bold">Temperature Limits at a Glance</h2>
+      <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-[560px] w-full text-sm">
+          <thead class="bg-slate-100 text-slate-700">
+            <tr>
+              <th class="px-4 py-3 text-left font-semibold">Specification</th>
+              <th class="px-4 py-3 text-left font-semibold">Typical requirement</th>
+              <th class="px-4 py-3 text-left font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Max floor surface temp</td>
+              <td class="px-4 py-3 text-slate-700">80–85°F (27–29°C)</td>
+              <td class="px-4 py-3 text-slate-700">Measured at floor surface, not room air or thermostat setpoint</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Ramp-up rate</td>
+              <td class="px-4 py-3 text-slate-700">≤5°F (3°C) per day</td>
+              <td class="px-4 py-3 text-slate-700">Applied after installation; prevents thermal shock</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">System status during installation</td>
+              <td class="px-4 py-3 text-slate-700">Off (typically 24–48 hrs before/after)</td>
+              <td class="px-4 py-3 text-slate-700">Allows adhesive to cure or locking joints to set at stable temperature</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Floor sensor required</td>
+              <td class="px-4 py-3 text-slate-700">Yes</td>
+              <td class="px-4 py-3 text-slate-700">Must measure floor surface temperature, not room air</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="px-4 py-3 text-xs text-slate-500">Values are general ranges only. Always verify against the specific product's installation guide.</p>
       </div>
     </section>
 
@@ -108,60 +169,77 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Confirm maximum surface temperature (often 80–85°F / 27–29°C).</li>
-          <li>Check required ramp-up and cool-down rates.</li>
-          <li>Verify whether the system must be off during installation.</li>
-          <li>Review expansion gap requirements for floating floors.</li>
-          <li>Check adhesive compatibility for glue-down systems.</li>
+          <li>Confirm that the product explicitly permits use over radiant heat — do not assume; some products prohibit it entirely.</li>
+          <li>Note the maximum floor surface temperature and verify that the radiant system's thermostat can enforce this limit using a floor sensor.</li>
+          <li>Check the required ramp-up protocol for initial commissioning — typically no more than 5°F increase per day.</li>
+          <li>Verify whether the heating system must be off before, during, and after installation, and for how long.</li>
+          <li>For floating installations, confirm that expansion gap and max run length requirements account for elevated temperature conditions — standard gaps may need to be wider in radiant heat applications.</li>
+          <li>For glue-down installations, verify that the specified adhesive is rated for use at the maximum floor surface temperature — not all adhesives maintain bond strength at 85°F+.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Running heat too high or too quickly after installation.</li>
-          <li>Ignoring moisture testing on heated slabs.</li>
-          <li>Assuming all LVT products allow radiant heat.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is radiant heat allowed for rigid core and glue-down?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Many products allow it, but limits and requirements differ by construction and adhesive.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Do I need a thermostat or floor sensor?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Most manufacturers require a thermostat and sensor to control surface temperature.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is radiant heat allowed under both floating and glue-down rigid core LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Many rigid core LVT products allow radiant heat under both installation methods, but requirements differ. Floating installations need strict expansion gap compliance because the floor expands more at elevated temperatures. Glue-down installations require the adhesive to be rated for use at maximum floor surface temperatures — not all pressure-sensitive adhesives maintain adequate bond strength at 85°F+. Always verify both the flooring product and the adhesive are rated for radiant heat use.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Do I need a thermostat or floor temperature sensor with LVT over radiant heat?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes — most manufacturers require a floor temperature sensor connected to a thermostat that limits floor surface temperature to the specified maximum. The sensor must measure floor surface temperature, not room air, because the floor can reach much higher temperatures than the room air, especially in zones concentrated above heating elements.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Can I turn radiant heat on full power immediately after installing LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. Most manufacturers require a gradual ramp-up of no more than 5°F (3°C) per day until the target operating temperature is reached. This allows the LVT and adhesive to acclimatize to elevated temperatures without thermal shock that can cause joint failure or adhesive breakdown. The ramp-up applies to initial commissioning and to seasonal restarts after extended off periods.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What surface temperature limit is typical for LVT over radiant heat?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Most rigid core LVT manufacturers specify a maximum floor surface temperature of 80–85°F (27–29°C). Some products allow up to 90°F. This limit applies to the floor surface, not the thermostat setpoint or water temperature. Exceeding the floor surface limit causes accelerated dimensional movement and joint stress, and is a warranty condition.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
-          <a href="/materials/lvt/glue-down/specs/installation/adhesive-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Adhesive Type</a>
-          <a href="/materials/lvt/rigid-core/specs/performance/dimensional-stability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Dimensional Stability</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/dimensional-stability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Dimensional Stability</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/moisture-limits.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Moisture Limits</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about radiant heat compatibility for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

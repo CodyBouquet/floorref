@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,10 +28,10 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Is waterproof warranty the same as water-resistant?",
+        "name": "Is a waterproof warranty the same as water-resistant?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Terms vary by manufacturer and the coverage details matter."
+          "text": "These terms are not standardized across manufacturers, so coverage details must be read from the warranty document rather than assumed from the label. A 'waterproof warranty' typically covers the floor surface and planks themselves against damage from topical water exposure — spills, wet mopping, and bathroom humidity. A 'water-resistant' claim may describe the material's properties without a specific warranty backing. Neither term covers subfloor moisture intrusion from below, flooding, or standing water that penetrates below the planks for extended periods. Always read the specific warranty exclusions rather than relying on marketing terminology."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Does waterproof mean the floor can be submerged?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Typically no. Most warranties only cover topical water exposure."
+          "text": "No. Waterproof warranty for rigid core LVT refers to the planks' ability to withstand topical water exposure — spills and moisture on the surface — without swelling, warping, or delaminating. This is a property of the PVC core and layers, which do not absorb water. However, water that penetrates beneath the floating floor assembly through joints, perimeter gaps, or subfloor seams can become trapped, causing moisture issues at the subfloor and potentially requiring floor removal regardless of the plank warranty. The waterproof warranty covers the plank material; it does not warrant the overall assembly against water intrusion from any source."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does waterproof warranty cover bathroom or kitchen installations?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rigid core LVT is widely installed in kitchens and bathrooms, and the waterproof warranty typically applies to these wet-area applications for normal use conditions — humidity, steam, spills, and damp mopping. However, standing water left on the floor for extended periods — overflowing toilets, leaking appliances, or flooding — typically exceeds what is covered, even in waterproof warranty products. Additionally, perimeter installation details matter in wet areas: gaps at walls and thresholds must be sealed or covered to prevent water from reaching the subfloor beneath the floating assembly. Warranty coverage does not substitute for proper perimeter sealing in wet areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the typical coverage period for a waterproof warranty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Waterproof warranty coverage periods vary significantly by manufacturer and product tier. Residential waterproof warranties are commonly stated as lifetime — covering the original purchaser for as long as they own the home. Some manufacturers specify a defined term (25 years, 30 years) rather than lifetime. Commercial waterproof coverage, if offered at all, is typically for a shorter defined period (5–10 years). The warranty period reflects how long the manufacturer expects the product to maintain waterproof performance under the specified conditions; longer warranties indicate greater confidence in the material's long-term moisture resistance."
         }
       }
     ]
@@ -64,43 +80,57 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Waterproof Warranty Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Rigid Core LVT • Water Exposure • Limits</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Topical Water Coverage · Subfloor Moisture Exclusion · Wet Areas · Standing Water Limits</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Waterproof warranty coverage addresses how the floor handles topical water exposure, usually for a defined time period and with exclusions.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Waterproof warranty for rigid core LVT covers the planks' ability to resist damage from topical water exposure — spills, damp mopping, humidity, and surface moisture — without swelling, warping, or delaminating. It is a property warranty on the material itself, not a warranty against all water-related damage to the installation. Critical exclusions typically include subfloor moisture intrusion, flooding, standing water beyond specified limits, and water that enters beneath the floor assembly through unsealed perimeter gaps.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Understanding coverage limits helps set expectations for kitchens, bathrooms, or spill-prone areas. Review waterproof warranty with moisture limits, installation requirements, and maintenance guidance.</p>
+        <p class="mt-2 text-slate-800">
+          Waterproof warranty covers the planks against topical water — spills, bathroom humidity, damp mopping. It does not cover subfloor moisture exceeding installation limits, flooding, or standing water that penetrates beneath the assembly. Perimeter gaps in wet areas should be sealed or covered. Always read the warranty exclusions rather than relying on "waterproof" marketing language.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#what-waterproof-means" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What waterproof means</a>
+        <a href="#exclusions" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Key exclusions</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="what-waterproof-means" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">What Waterproof Means for Rigid Core LVT</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Waterproof warranty coverage addresses how the floor handles topical water exposure, usually for a defined time period and with exclusions.</p>
+        <h3 class="text-lg font-semibold">Why rigid core LVT is waterproof</h3>
+        <p class="mt-2 text-slate-700">Rigid core LVT planks are manufactured entirely from PVC and mineral compounds — none of which absorb water. Unlike wood-based flooring (hardwood, laminate, engineered wood) that swells, warps, and degrades when exposed to moisture, the PVC core, wear layer, print film, and backing of rigid core LVT are dimensionally stable when exposed to surface water. This inherent material property is the basis of the waterproof claim. A plank left exposed to a water spill for several hours will not swell or delaminate — the water remains on the surface or at most penetrates between joint lines without affecting the plank material itself. This property applies to SPC and WPC cores alike.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Understanding coverage limits helps set expectations for kitchens, bathrooms, or spill-prone areas.</p>
+        <h3 class="text-lg font-semibold">What the warranty commits to</h3>
+        <p class="mt-2 text-slate-700">A waterproof warranty is the manufacturer's commitment that the planks themselves will not swell, buckle, delaminate, or suffer material damage due to topical water exposure under normal conditions. It defines the scope of that commitment — for example, "will not swell, buckle, or delaminate due to topical water exposure for the life of the original owner's ownership" — and specifies conditions: the installation must have been completed per the installation guide, subfloor moisture must have been within specified limits at installation, perimeter gaps must be maintained, and the water exposure must be topical rather than from subfloor intrusion or flooding. The warranty does not promise that the overall installation will remain problem-free after any water event — it protects the plank material, not the assembly.</p>
       </div>
+    </section>
 
+    <section id="exclusions" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Key Exclusions</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Review waterproof warranty with moisture limits, installation requirements, and maintenance guidance.</p>
+        <p class="text-slate-700">The most important exclusions from waterproof warranties for rigid core LVT are: <strong>subfloor moisture</strong> — water vapor or moisture rising through the concrete slab or wooden subfloor and accumulating beneath the floating assembly is excluded; the waterproof warranty covers only the planks, not the installation system; <strong>flooding</strong> — water intrusion events that submerge the floor or allow water to penetrate extensively beneath the floating assembly are excluded; <strong>standing water</strong> — in some warranties, prolonged standing water (beyond 24 hours or a similar specified duration) on the surface is excluded if it results in water penetrating the perimeter gaps; and <strong>installation defects</strong> — floors where perimeter gaps were not maintained, where water entry points were not sealed in wet areas, or where subfloor moisture limits were exceeded at installation are excluded from coverage.</p>
       </div>
     </section>
 
@@ -108,60 +138,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Confirm whether coverage is for topical water only.</li>
-          <li>Check the duration and any time limits for standing water.</li>
-          <li>Review exclusions like flooding or subfloor moisture.</li>
-          <li>Verify installation requirements such as sealing or transitions.</li>
-          <li>Follow maintenance guidelines to keep coverage intact.</li>
+          <li>Confirm the warranty duration for waterproof coverage — lifetime residential is common; commercial coverage for water resistance is typically a defined shorter term.</li>
+          <li>Check the specific exclusions: subfloor moisture, flooding, and standing water are almost universally excluded despite the "waterproof" label.</li>
+          <li>Verify whether wet-area installations (bathrooms, laundry rooms, kitchens) require any additional perimeter sealing or transition details to maintain warranty coverage.</li>
+          <li>Confirm that pre-installation subfloor moisture testing is required and that results were within specified limits — subfloor moisture exceeding limits at installation typically voids both the waterproof and structural warranty.</li>
+          <li>Note whether the waterproof warranty requires using specific grout, caulk, or transition products at perimeter edges in wet areas — some warranties specify sealant requirements for bathroom installations.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming waterproof warranty covers subfloor moisture issues.</li>
-          <li>Leaving standing water beyond the allowed time.</li>
-          <li>Ignoring required expansion gaps or transitions.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is waterproof warranty the same as water-resistant?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. Terms vary by manufacturer and the coverage details matter.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does waterproof mean the floor can be submerged?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Typically no. Most warranties only cover topical water exposure.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is a waterproof warranty the same as water-resistant?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">These terms are not standardized across manufacturers — coverage details must be read from the warranty document. A "waterproof warranty" typically covers the floor surface against topical water damage. Neither term covers subfloor moisture intrusion from below, flooding, or extended standing water. Always read the specific warranty exclusions rather than relying on marketing terminology.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does waterproof mean the floor can be submerged?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. Waterproof warranty refers to the planks' ability to withstand topical water exposure — spills and surface moisture. Water penetrating beneath the floating floor assembly through joints or perimeter gaps can become trapped, causing subfloor issues requiring floor removal even if the planks themselves are undamaged. The waterproof warranty covers the plank material, not the overall assembly against water intrusion from any source.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does waterproof warranty cover bathroom or kitchen installations?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Rigid core LVT is widely installed in kitchens and bathrooms, and waterproof warranty typically applies to these wet-area applications under normal use — humidity, steam, spills, and damp mopping. Flooding and extended standing water typically exceed coverage. Perimeter installation details matter: gaps at walls and thresholds must be sealed or covered to prevent water from reaching the subfloor. Warranty coverage does not substitute for proper perimeter sealing in wet areas.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is the typical coverage period for a waterproof warranty?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Residential waterproof warranties are commonly stated as lifetime — covering the original purchaser for as long as they own the home. Some manufacturers specify a defined term (25 or 30 years). Commercial waterproof coverage, if offered, is typically a shorter defined period (5–10 years). Longer warranty periods reflect greater confidence in the material's long-term moisture resistance.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/installation/moisture-limits.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Moisture Limits</a>
-          <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
-          <a href="/materials/lvt/rigid-core/specs/warranty/wear-warranty.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Warranty</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/installation/moisture-limits.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Moisture Limits</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
+        <a href="/materials/lvt/rigid-core/specs/warranty/structural-warranty.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Structural Warranty</a>
+        <a href="/materials/lvt/rigid-core/specs/warranty/wear-warranty.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Warranty</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about waterproof warranty for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

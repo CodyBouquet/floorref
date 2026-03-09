@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,10 +28,10 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Do EPDs mean a product is \u201cgreen\u201d?",
+        "name": "Do EPDs mean a product is green?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. EPDs report impacts; they do not certify that a product is environmentally superior."
+          "text": "No. An EPD (Environmental Product Declaration) is a transparency document, not a certification of sustainability. It reports quantified environmental impacts — global warming potential, ozone depletion, water consumption, and others — without making a judgment about whether those impacts are acceptable or better than alternatives. Having an EPD means the manufacturer has disclosed this data under a standardized framework; it does not mean the product has lower impacts than a product without an EPD. Comparing two products' EPDs is useful only when they follow the same Product Category Rules (PCR) and the same system boundary."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Are HPDs required for all projects?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not always, but many commercial projects request them for transparency."
+          "text": "HPDs (Health Product Declarations) are not required by building code, but many commercial specifications, institutional owners, and green building rating systems (LEED, WELL, Living Building Challenge) require or strongly prefer them. The WELL Building Standard's Materials concept requires ingredient disclosure above defined thresholds, which HPDs satisfy. Some owners require HPDs as standard submittals for healthcare, education, or government projects where occupant health transparency is a priority."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between an EPD and an HPD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An EPD focuses on environmental impacts of the product over its lifecycle — greenhouse gas emissions, resource consumption, water use, and similar metrics, measured from raw material extraction through manufacturing (cradle-to-gate) or through end of life (cradle-to-grave). An HPD focuses on what the product is made of — listing chemical ingredients above a 100 ppm threshold, with associated health hazard characterizations. EPDs answer 'what environmental impact does this product have?' while HPDs answer 'what is this product made of and what health hazards are associated with those ingredients?'"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does cradle-to-gate vs cradle-to-grave mean in an EPD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "These terms describe the system boundary of a lifecycle assessment. Cradle-to-gate (Modules A1–A3 in ISO 14044 terminology) covers raw material extraction, transportation, and manufacturing only — it stops at the factory gate. Cradle-to-gate EPDs are the most common for building products because end-of-life scenarios are harder to model. Cradle-to-grave extends the boundary through product use, maintenance, and end-of-life disposal or recycling. Cradle-to-gate EPDs cannot be directly compared to cradle-to-grave EPDs because the system boundaries are different."
         }
       }
     ]
@@ -63,44 +79,91 @@
 
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">EPD & HPD Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Environmental Declarations • Transparency</span>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">EPD &amp; HPD Explained
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Environmental Product Declaration · Health Product Declaration · Lifecycle Scope · LEED Credits</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        EPDs (Environmental Product Declarations) summarize lifecycle impacts, while HPDs (Health Product Declarations) disclose material ingredients and health-related information.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Environmental Product Declarations (EPDs) and Health Product Declarations (HPDs) are two distinct transparency documents that manufacturers provide for rigid core LVT. An EPD quantifies the product's environmental impacts across its lifecycle. An HPD discloses the product's chemical ingredients and their associated health hazard characteristics. Neither document is a certification of quality or environmental superiority — both are disclosure frameworks that allow project teams to compare products and demonstrate transparency for green building rating systems.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">These documents support transparency and sustainability requirements in commercial or green building projects. Pair EPD/HPD documents with VOC certifications and recycled content for a complete environmental profile.</p>
+        <p class="mt-2 text-slate-800">
+          An EPD answers "what environmental impact does this product have?" An HPD answers "what is this product made of?" Both are used for LEED v4 MR credits. EPDs are governed by ISO 14044 and product-specific PCR documents; HPDs follow the HPD Collaborative's Open Standard. Neither document constitutes a product performance certification.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#epd" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">EPD explained</a>
+        <a href="#hpd" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">HPD explained</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="epd" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Environmental Product Declaration (EPD)</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">EPDs (Environmental Product Declarations) summarize lifecycle impacts, while HPDs (Health Product Declarations) disclose material ingredients and health-related information.</p>
+        <h3 class="text-lg font-semibold">What an EPD contains</h3>
+        <p class="mt-2 text-slate-700">An EPD is a standardized document that quantifies a product's environmental impacts based on a lifecycle assessment (LCA) conducted according to ISO 14044. For building products, EPDs typically cover at minimum a cradle-to-gate boundary (Modules A1–A3 in EN 15804 terminology): raw material extraction, transportation to manufacturing, and the manufacturing process itself. The EPD reports impact category values for global warming potential (GWP, in kg CO₂ equivalent), ozone depletion potential, acidification potential, eutrophication, photochemical ozone creation, and resource consumption metrics. EPDs for flooring must follow a Product Category Rule (PCR) document that specifies how the LCA should be conducted for that product type — ensuring consistency across manufacturers. In the US, flooring EPDs often follow the NSF-PCR-332 (Sustainability Assessment for Resilient Floor Coverings) or the EC3 database framework.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">These documents support transparency and sustainability requirements in commercial or green building projects.</p>
+        <h3 class="text-lg font-semibold">Industry-average vs product-specific EPDs</h3>
+        <p class="mt-2 text-slate-700">There are two types of EPDs relevant to flooring: industry-average EPDs (sometimes called generic or sector EPDs) that represent the average impact across a product category, and product-specific EPDs that reflect a particular manufacturer's product. For LEED v4 MR Credit: Building Product Disclosure and Optimization, product-specific EPDs earn full credit, while EPDs compliant with ISO 14044 but not product-specific may earn partial credit. LEED requires EPDs to be third-party verified — self-declared lifecycle assessments do not qualify. Checking whether an EPD is product-specific versus industry-average is essential for accurate credit documentation.</p>
+      </div>
+    </section>
+
+    <section id="hpd" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Health Product Declaration (HPD)</h2>
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="text-slate-700">An HPD is a transparency document created under the HPD Collaborative's Open Standard. It lists all ingredients in the product above a 100 ppm threshold (by default), along with associated hazard characterizations drawn from reference databases including GreenScreen, IARC, OSHA, and California Proposition 65. For each listed ingredient, the HPD indicates the role in the product (plasticizer, binder, filler, etc.), the weight percentage range, and whether there are residual hazard characterizations. The HPD does not certify that a product is safe — it discloses what is known about the ingredients and associated hazards. Some HPDs are created with full disclosure (all ingredients above threshold); others use a "nested" or "GreenScreen Benchmark 1" approach where ingredients below a threshold are characterized only by hazard level without full disclosure.</p>
       </div>
 
-      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Pair EPD/HPD documents with VOC certifications and recycled content for a complete environmental profile.</p>
+      <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-full text-sm">
+          <thead class="bg-slate-50 text-slate-600 text-left">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Document</th>
+              <th class="px-4 py-3 font-semibold">Focuses On</th>
+              <th class="px-4 py-3 font-semibold">Governed By</th>
+              <th class="px-4 py-3 font-semibold">LEED v4 Credit</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-4 py-3">EPD</td>
+              <td class="px-4 py-3">Environmental impacts (GWP, resources)</td>
+              <td class="px-4 py-3">ISO 14044, EN 15804, PCR</td>
+              <td class="px-4 py-3">MR Credit: Disclosure &amp; Optimization</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="px-4 py-3">HPD</td>
+              <td class="px-4 py-3">Chemical ingredients and health hazards</td>
+              <td class="px-4 py-3">HPD Collaborative Open Standard v2.3</td>
+              <td class="px-4 py-3">MR Credit: Ingredient Disclosure</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">Both</td>
+              <td class="px-4 py-3">Transparency, not certification</td>
+              <td class="px-4 py-3">Third-party verified preferred</td>
+              <td class="px-4 py-3">Different credit paths</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -108,60 +171,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Verify whether the document is product-specific or industry-average.</li>
-          <li>Check the program operator and validity dates.</li>
-          <li>Confirm the scope (cradle-to-gate vs full lifecycle).</li>
-          <li>Review disclosed ingredients and thresholds in the HPD.</li>
-          <li>Align documentation with project requirements (LEED, WELL, etc.).</li>
+          <li>For EPDs, verify whether the document is product-specific or industry-average — product-specific EPDs are required for full LEED credit.</li>
+          <li>Check the EPD's system boundary: cradle-to-gate (A1–A3) is the minimum; some products disclose cradle-to-gate-plus-use or cradle-to-grave, which enables more complete comparisons.</li>
+          <li>Confirm the EPD is third-party verified and follows a recognized PCR — NSF-PCR-332 is common for resilient flooring in North America.</li>
+          <li>For HPDs, review the disclosure completeness level — full ingredient disclosure above 100 ppm is preferred over partially disclosed or "screened" formulations.</li>
+          <li>Check document validity dates — both EPDs and HPDs have defined validity periods (typically 5 years) and must be current at the time of project submittal.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming an EPD is a certification of sustainability—it is a disclosure tool.</li>
-          <li>Overlooking expiration dates or outdated versions.</li>
-          <li>Comparing EPDs that use different system boundaries.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Do EPDs mean a product is “green”?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. EPDs report impacts; they do not certify that a product is environmentally superior.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Are HPDs required for all projects?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not always, but many commercial projects request them for transparency.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Do EPDs mean a product is "green"?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. An EPD is a transparency document, not a certification of sustainability. It reports quantified environmental impacts without making a judgment about acceptability or superiority. Having an EPD means the manufacturer disclosed this data under a standardized framework. Comparing EPDs between products is only valid when both follow the same PCR and the same system boundary.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Are HPDs required for all projects?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">HPDs are not required by building code but are frequently required by commercial project specifications, institutional owners, and green building rating systems including LEED, WELL, and the Living Building Challenge. The WELL Building Standard's Materials concept requires ingredient disclosure above defined thresholds, which HPDs satisfy. Some owners require HPDs as standard submittals for healthcare, education, and government projects.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is the difference between an EPD and an HPD?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">An EPD focuses on environmental impacts across the lifecycle — greenhouse gas emissions, resource consumption, water use. An HPD focuses on chemical ingredients — listing what the product contains above 100 ppm with associated health hazard characterizations. EPDs answer "what environmental impact does this have?" while HPDs answer "what is this made of and what health hazards are known?" Both are required for full LEED v4 MR credit but through different credit pathways.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What does cradle-to-gate vs cradle-to-grave mean in an EPD?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Cradle-to-gate (Modules A1–A3) covers raw material extraction, transportation, and manufacturing only — it stops at the factory gate. This is the most common scope for building product EPDs. Cradle-to-grave extends through product use, maintenance, and end-of-life disposal or recycling. EPDs with different system boundaries cannot be directly compared — always verify scope alignment before comparing environmental impact values between products.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/environmental/voc-certifications.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">VOC Certifications</a>
-          <a href="/materials/lvt/glue-down/specs/environmental/recycled-content.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Recycled Content</a>
-          <a href="/materials/lvt/rigid-core/specs/environmental/phthalate-free.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Phthalate Free</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/environmental/voc-certifications.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">VOC Certifications</a>
+        <a href="/materials/lvt/rigid-core/specs/environmental/recycled-content.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Recycled Content</a>
+        <a href="/materials/lvt/rigid-core/specs/environmental/phthalate-free.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Phthalate-Free</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/traffic-class.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Traffic Class</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about EPDs and HPDs for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

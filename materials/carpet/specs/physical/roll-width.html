@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Carpet Roll Width Explained | Flooring Reference</title>
-  <meta name="description" content="Standard carpet roll widths explained, how width affects seams and waste, and what to expect in broadloom — reference-only." />
+  <meta name="description" content="Standard broadloom carpet roll widths explained, how width affects seams and waste, and how to read roll width specs — reference-only." />
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
@@ -28,26 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Are 12-foot and 15-foot widths interchangeable?",
+        "name": "Are 12-foot and 15-foot carpet widths interchangeable?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "They are different products; layout and seam placement will change with width."
+          "text": "No, they are not interchangeable for a given installation plan. Switching from 12-foot to 15-foot goods (or vice versa) changes how many strips are needed, where seams fall, and how much waste results. A seam plan developed for 12-foot carpet must be completely redrawn if 15-foot carpet is substituted. The pile direction is also fixed relative to roll width, so changing width changes the aesthetic alignment of the pile across the installation. Always develop the seam plan using the specific width of the selected product."
         }
       },
       {
         "@type": "Question",
-        "name": "Does wider carpet always reduce waste?",
+        "name": "Does wider carpet always reduce seam count and waste?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not always. It depends on room shape and how the carpet is cut and seamed."
+          "text": "Not always — it depends on room dimensions and layout. In a room that is 13 feet wide, a single strip of 15-foot carpet would cover it with no seam and minimal waste, while 12-foot carpet would require two strips with a seam. But in a room that is 11 feet wide, both 12-foot and 15-foot rolls require cutting down to width, with 15-foot goods wasting more material. L-shaped rooms, hallways, and stairways often involve complex cut patterns where different widths may perform differently. Seam planning software or hand calculation is used to determine the most efficient width for a specific layout."
         }
       },
       {
         "@type": "Question",
-        "name": "Do roll widths affect pricing?",
+        "name": "Does roll width affect pile direction and seam appearance?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "They can. Wider goods may carry different pricing or availability."
+          "text": "Yes. The pile leans in a direction relative to the roll's length axis — typically toward the installer as they unroll. All strips in an installation are laid with pile running the same direction to prevent visible tonal differences (shading) between strips. Because pile direction is fixed relative to roll orientation, the width of the roll determines the maximum span that can be covered without a seam in the cross-roll direction. Seams running perpendicular to the pile direction are more noticeable and should generally be avoided in high-visibility areas."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are widths other than 12 feet and 15 feet available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, though less commonly. Some manufacturers offer 13.2-foot (4-meter) goods, particularly for products manufactured in Europe or for metric-dimensioned spaces. Very large commercial installations may have access to custom widths produced on specialized looms, but these are typically special-order with long lead times and minimum quantity requirements. Modular carpet tile eliminates roll width as a variable entirely, which is one reason tile is often preferred for complex floor plans or phased installations where continuous broadloom rolls would create difficult seam layouts."
         }
       }
     ]
@@ -59,7 +67,7 @@
   <meta property="og:site_name" content="Flooring Reference" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Carpet Roll Width Explained | Flooring Reference" />
-  <meta property="og:description" content="Standard carpet roll widths explained, how width affects seams and waste, and what to expect in broadloom — reference-only." />
+  <meta property="og:description" content="Standard broadloom carpet roll widths explained, how width affects seams and waste, and how to read roll width specs — reference-only." />
   <meta property="og:url" content="https://floorref.com/materials/carpet/specs/physical/roll-width.html" />
   <meta property="og:image" content="https://floorref.com/assets/og-default.png" />
   <meta name="twitter:card" content="summary" />
@@ -75,52 +83,118 @@
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
         Carpet Roll Width, Explained
         <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">
-          What it means • How it's reported • Why it matters
+          What it means • Standard widths • Seam and waste implications
         </span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Roll width refers to the finished width of broadloom carpet, which affects seam layout and material waste. 
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Roll width is the side-to-side dimension of broadloom carpet as manufactured. It is a fundamental constraint for seam layout, material waste calculation, and installation planning.
+        <span class="text-slate-500 text-base"> Reference-only: no product recommendations.</span>
       </p>
 
       <!-- Quick Answer -->
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
-        <div class="text-sm font-semibold text-slate-500">Quick answer</div>
+        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Quick answer</div>
         <p class="mt-2 text-slate-800">
-          Most broadloom carpets come in standard widths such as 12 ft or 15 ft. Wider rolls can reduce seams but may increase waste depending on room size.
+          Most broadloom carpet is manufactured in 12-foot (3.66 m) or 15-foot (4.57 m) widths. Roll width determines how seams are placed and directly affects how much carpet is wasted during installation. Wider rolls reduce seam count in some room configurations but are not universally more efficient.
         </p>
       </div>
 
       <!-- Jump links -->
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#definition" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What it is</a>
-        <a href="#reporting" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">How it's reported</a>
-        <a href="#impact" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Why it matters</a>
+        <a href="#standard-widths" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Standard widths</a>
+        <a href="#seam-planning" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Seam planning</a>
+        <a href="#waste" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Waste calculation</a>
+        <a href="#tolerances" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Tolerances</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="definition" class="mt-10">
-      <h2 class="text-2xl font-bold">What it is</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="text-slate-700">Roll width is the side-to-side dimension of the carpet as manufactured. It determines how the carpet can be laid out across a space.</p>
+    <!-- AdSense block 1 -->
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- Section 1: Standard widths -->
+    <section id="standard-widths" class="mt-10">
+      <h2 class="text-2xl font-bold">Standard broadloom widths</h2>
+      <div class="mt-4 space-y-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">12-foot goods</h3>
+          <p class="mt-2 text-slate-700">The 12-foot (3.66 m) width is the most common broadloom format in the United States. It aligns well with typical residential room dimensions — most rooms are under 12 feet in one dimension, allowing single-strip coverage with no seams along that axis. Twelve-foot goods are produced on the widest range of tufting and weaving equipment, giving specifiers the broadest product selection. The 12-foot format is standard for both residential and commercial broadloom products.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">15-foot goods</h3>
+          <p class="mt-2 text-slate-700">The 15-foot (4.57 m) width is used primarily in commercial applications where large open floor plates benefit from fewer seams. Hotel ballrooms, large conference rooms, open office spaces, and corridors with wider spans are common applications. Fifteen-foot goods reduce seam count where room dimensions exceed 12 feet in one direction, which improves both aesthetics and installation integrity. However, the wider roll requires more careful handling during transportation and installation, and the heavier rolls require more equipment to maneuver on site.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">13.2-foot (4-meter) goods</h3>
+          <p class="mt-2 text-slate-700">Some manufacturers, particularly those with European production or distribution, offer broadloom in 4-meter (approximately 13.2-foot) widths. This width is common in European residential and commercial markets where metric dimensions prevail. In US projects it is less common but may appear when specifying certain imported products. The width should be confirmed when evaluating European-sourced carpet for US installations, as seam plans developed for 12-foot or 15-foot goods do not translate directly to 4-meter material.</p>
+        </div>
       </div>
     </section>
 
-    <section id="reporting" class="mt-10">
-      <h2 class="text-2xl font-bold">How it's reported</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="text-slate-700">Specs list the nominal width, often with a tolerance. Some products may offer custom widths for large projects.</p>
+    <!-- Section 2: Seam planning -->
+    <section id="seam-planning" class="mt-10">
+      <h2 class="text-2xl font-bold">Seam planning and pile direction</h2>
+      <div class="mt-4 space-y-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">How roll width drives seam placement</h3>
+          <p class="mt-2 text-slate-700">Seams occur wherever one strip of carpet ends and another begins. The roll width sets the maximum coverage in the cross-roll direction before a seam is required. For a room that is 14 feet wide, 12-foot goods require a seam with a 2-foot fill strip, while 15-foot goods cover the full width without a seam. The goal of seam planning is to minimize seam count, locate seams away from high-traffic paths and focal points, and ensure all seams run parallel to the primary light source or to the longest dimension of the room.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">Pile direction requirements</h3>
+          <p class="mt-2 text-slate-700">All strips in an installation must be laid with pile running in the same direction to prevent shading — visible tonal differences caused by light reflecting differently off pile oriented in different directions. The pile direction is fixed relative to the roll length axis. This means the installer cannot rotate a strip 90 degrees without creating a visible color shift at that seam. Seam plans must account for pile direction in addition to width coverage. This constraint can affect how much material is wasted when irregular rooms require pieces cut from different points on the roll.</p>
+        </div>
       </div>
     </section>
 
-    <section id="impact" class="mt-10">
-      <h2 class="text-2xl font-bold">Why it matters</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="text-slate-700">Choosing the right roll width can reduce seam count, improve appearance, and minimize waste. It also affects handling and transportation.</p>
+    <!-- Section 3: Waste calculation -->
+    <section id="waste" class="mt-10">
+      <h2 class="text-2xl font-bold">Waste calculation principles</h2>
+      <div class="mt-4 space-y-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">Width is not the only waste factor</h3>
+          <p class="mt-2 text-slate-700">Material waste in carpet installation results from three sources: cross-roll offcuts (material wider than the room), length overrun (purchasing extra linear footage to account for cuts and pattern matching), and remnants from irregular room shapes. Roll width primarily affects cross-roll offcuts and the number of linear feet of carpet needed to assemble the seam plan. Wider rolls do not inherently reduce waste — a room that is 10 feet wide wastes more with 15-foot goods than with 12-foot goods, since the offcut strip (5 feet) is larger than with 12-foot goods (2 feet).</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">Estimating material quantity</h3>
+          <p class="mt-2 text-slate-700">Carpet is sold by the square yard (US) or square meter (international). The installed quantity is calculated from the seam plan — the linear footage of each strip multiplied by the roll width, converted to square yards. Pattern repeat adds additional waste, as each strip must be cut to align the repeat at seams. A common rule of thumb adds 10–15% to the net area for waste on rectangular rooms, and more for irregular layouts or patterns with large repeats. The seam plan, not just room area, is the accurate basis for material quantity estimation.</p>
+        </div>
       </div>
     </section>
+
+    <!-- Section 4: Tolerances -->
+    <section id="tolerances" class="mt-10">
+      <h2 class="text-2xl font-bold">Width tolerances and measurement</h2>
+      <div class="mt-4 space-y-4">
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">Manufacturing tolerance</h3>
+          <p class="mt-2 text-slate-700">Broadloom carpet is not manufactured to exact nominal width. Industry standards and manufacturer specifications typically allow a tolerance of ±¼ inch to ±½ inch (6–13 mm) from the stated nominal width. This tolerance must be factored into seam planning, particularly when a room dimension is close to the roll width. A room that nominally measures exactly 12 feet wide may require the carpet to be trimmed, or may leave a gap, depending on actual roll width at delivery. Actual roll width should be verified on-site before cutting when close tolerances matter.</p>
+        </div>
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg text-slate-800">How width is reported in specs</h3>
+          <p class="mt-2 text-slate-700">Product specifications list roll width as a nominal dimension, usually in feet and inches or in metric. Some spec sheets include the manufacturing tolerance explicitly; others reference applicable ASTM standards. ASTM D418 covers carpet pile yarn testing, but specific width tolerances are typically set by manufacturer quality standards. When evaluating products for applications where roll width is a critical constraint — such as seamless corridor coverage — confirm the actual width tolerance with the manufacturer rather than relying solely on the nominal spec.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AdSense block 2 -->
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <!-- FAQ -->
     <section id="faq" class="mt-10">
@@ -129,34 +203,50 @@
       <div class="mt-4 space-y-3">
         <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">Are 12-foot and 15-foot widths interchangeable?</span>
+            <span class="font-semibold">Are 12-foot and 15-foot carpet widths interchangeable?</span>
             <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-700">They are different products; layout and seam placement will change with width.</p>
+          <p class="mt-3 text-slate-700">No, they are not interchangeable for a given installation plan. Switching from 12-foot to 15-foot goods (or vice versa) changes how many strips are needed, where seams fall, and how much waste results. A seam plan developed for 12-foot carpet must be completely redrawn if 15-foot carpet is substituted. The pile direction is also fixed relative to roll width, so changing width changes the aesthetic alignment of the pile across the installation. Always develop the seam plan using the specific width of the selected product.</p>
         </details>
         <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">Does wider carpet always reduce waste?</span>
+            <span class="font-semibold">Does wider carpet always reduce seam count and waste?</span>
             <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-700">Not always. It depends on room shape and how the carpet is cut and seamed.</p>
+          <p class="mt-3 text-slate-700">Not always — it depends on room dimensions and layout. In a room that is 13 feet wide, a single strip of 15-foot carpet would cover it with no seam and minimal waste, while 12-foot carpet would require two strips with a seam. But in a room that is 11 feet wide, both 12-foot and 15-foot rolls require cutting down to width, with 15-foot goods wasting more material. L-shaped rooms, hallways, and stairways involve complex cut patterns where different widths may perform differently. Seam planning software or hand calculation is used to determine the most efficient width for a specific layout.</p>
         </details>
         <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">Do roll widths affect pricing?</span>
+            <span class="font-semibold">Does roll width affect pile direction and seam appearance?</span>
             <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-700">They can. Wider goods may carry different pricing or availability.</p>
+          <p class="mt-3 text-slate-700">Yes. The pile leans in a direction relative to the roll's length axis — typically toward the installer as they unroll. All strips in an installation are laid with pile running the same direction to prevent visible tonal differences (shading) between strips. Because pile direction is fixed relative to roll orientation, the width of the roll determines the maximum span that can be covered without a seam in the cross-roll direction. Seams running perpendicular to the pile direction are more noticeable and should generally be avoided in high-visibility areas.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Are widths other than 12 feet and 15 feet available?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes, though less commonly. Some manufacturers offer 13.2-foot (4-meter) goods, particularly for products manufactured in Europe or for metric-dimensioned spaces. Very large commercial installations may have access to custom widths produced on specialized looms, but these are typically special-order with long lead times and minimum quantity requirements. Modular carpet tile eliminates roll width as a variable entirely, which is one reason tile is often preferred for complex floor plans or phased installations where continuous broadloom rolls would create difficult seam layouts.</p>
         </details>
       </div>
     </section>
 
+    <!-- Related specs -->
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold text-slate-800">Related carpet specs</h2>
+      <ul class="mt-3 grid grid-cols-2 gap-2 text-sm sm:grid-cols-4">
+        <li><a href="/materials/carpet/specs/physical/total-thickness.html" class="text-blue-700 hover:underline">Total Thickness</a></li>
+        <li><a href="/materials/carpet/specs/physical/weight-per-roll.html" class="text-blue-700 hover:underline">Weight per Roll</a></li>
+        <li><a href="/materials/carpet/specs/performance/dimensional-stability.html" class="text-blue-700 hover:underline">Dimensional Stability</a></li>
+        <li><a href="/materials/carpet/specs/construction/pile-height.html" class="text-blue-700 hover:underline">Pile Height</a></li>
+      </ul>
+    </section>
+
     <!-- Reference-only note -->
-    <section class="mt-12 max-w-3xl">
-      <h2 class="text-2xl font-bold">Reference-Only Information</h2>
-      <p class="mt-2 text-slate-700 text-sm">
-        This page provides general informational reference about carpet roll width terminology.
-        It does not provide installation guidance, professional advice, or product recommendations.
+    <section class="mt-10 max-w-3xl">
+      <p class="text-slate-500 text-sm">
+        This page provides general informational reference about carpet roll width terminology and seam planning principles. It does not provide installation guidance, professional advice, or product recommendations.
       </p>
     </section>
 

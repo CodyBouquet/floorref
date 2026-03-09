@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
         "name": "Does a thicker wear layer improve indentation resistance?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not necessarily. Indentation is more tied to core density and backing support."
+          "text": "Not significantly. Indentation resistance is primarily a function of core density and stiffness, not wear layer thickness. The wear layer protects the surface from abrasion and scratches; it does not meaningfully resist point-load indentation because it is thin relative to the core. SPC cores — being denser and harder (approximately 1.8–2.0 g/cm³) — resist indentation better than WPC cores (0.9–1.2 g/cm³). Attached underlayment material also plays a role: softer EVA foam backing compresses more readily under static loads than firmer IXPE backing, which affects residual indentation depth."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Is indentation resistance required for commercial spaces?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Many commercial specs require minimum thresholds, but verify the project requirements."
+          "text": "Many commercial project specifications and procurement standards specify minimum indentation resistance thresholds. The most common test standard for LVT is ASTM F1914 (short-term indentation) or EN ISO 24343 (static and residual indentation). Commercial-grade products typically report residual indentation of 0.10mm or less under the specified test load. When a commercial specification lists a minimum indentation resistance requirement, it will typically cite the test standard and maximum allowable residual indentation depth in millimeters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What causes visible dents in LVT floors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Visible permanent dents in LVT are caused by point loads that exceed the product's indentation resistance — where a small contact area concentrates significant force. Common causes include: refrigerator feet or other appliance legs with small contact areas; high-heeled shoes with stiletto points (which can concentrate hundreds of pounds per square inch on a small area); piano legs; and heavy furniture with narrow leg tips that lack protective pads. Using floor protectors (wide-base furniture cups or felt pads) distributes the load over a larger area and dramatically reduces indentation risk even for products with moderate indentation resistance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is indentation resistance tested?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most commonly referenced tests are ASTM F1914 (for flexible and semi-rigid vinyl) and EN ISO 24343 (for resilient floor coverings). Both measure residual indentation: a specified load is applied through a standardized indenter (typically a cylindrical punch with a defined diameter) for a defined period, the load is removed, and the remaining depth of the impression is measured after a recovery period. The result is reported in millimeters of residual indentation — lower numbers indicate better resistance. ASTM F1914 uses a 250-pound load applied for one hour; EN ISO 24343-1 uses 20kg/cm² for 24 hours at room temperature."
         }
       }
     ]
@@ -64,43 +80,64 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Indentation Resistance Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Performance • Static Load • Furniture</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Static Load · Residual Indentation · ASTM F1914 · Point Loads</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Indentation resistance measures how well LVT resists permanent dents from static loads like heavy furniture or appliances.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Indentation resistance measures how well a rigid core LVT plank resists permanent denting when concentrated loads are applied to its surface. It is distinct from scratch resistance (which is a wear layer property) and from overall rigidity. A product can be very rigid as a panel while still denting under a point load — or vice versa. The key factor is the core material's density and hardness, not total thickness or wear layer mil.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">It helps predict how the floor will perform under cabinets, fixtures, and rolling loads over time. Compare indentation resistance with wear layer, core type, and underlayment to judge overall load performance.</p>
+        <p class="mt-2 text-slate-800">
+          Indentation resistance is reported as residual indentation depth in mm after a standardized static load test (ASTM F1914 or EN ISO 24343). Lower residual indentation means better resistance. SPC cores (dense, ~1.8–2.0 g/cm³) outperform WPC cores (~0.9–1.2 g/cm³) in indentation resistance. Wear layer thickness does not significantly affect this spec. Furniture protectors and wide-base pads are the most practical mitigation for point-load indentation risk.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#what-it-measures" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What it measures</a>
+        <a href="#factors" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Key factors</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="what-it-measures" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">What Indentation Resistance Measures</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Indentation resistance measures how well LVT resists permanent dents from static loads like heavy furniture or appliances.</p>
+        <h3 class="text-lg font-semibold">Static load vs. dynamic load</h3>
+        <p class="mt-2 text-slate-700">Indentation resistance testing addresses static loads — weight that sits in one place for an extended period. A refrigerator resting on its feet, a filing cabinet, an upright piano, or a bed frame are examples of static loads. This is different from dynamic or rolling loads, which are addressed by separate tests. Static load indentation is the primary concern for rigid core LVT in residential settings because furniture placement is often fixed for months or years. The test measures not the initial compression under load, but the residual — or permanent — depth of the mark after the load is removed and the material has had time to recover.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">It helps predict how the floor will perform under cabinets, fixtures, and rolling loads over time.</p>
+        <h3 class="text-lg font-semibold">How the test works</h3>
+        <p class="mt-2 text-slate-700">The most commonly referenced US standard is ASTM F1914 (Standard Test Methods for Short-Term Indentation and Residual Indentation of Resilient Floor Coverings Using a Cylindrical Indenter). A cylindrical punch of specified diameter is loaded to 250 pounds and held for a specified time period. After the load is removed, the floor surface is allowed to recover for a defined period, and the remaining depth of the impression — the residual indentation — is measured in millimeters. The European standard EN ISO 24343 follows a similar methodology at different load levels. Lower residual indentation numbers indicate better performance.</p>
+      </div>
+    </section>
+
+    <section id="factors" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Key Factors in Indentation Performance</h2>
+
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">Core type and density</h3>
+        <p class="mt-2 text-slate-700">The rigid core is the primary determinant of indentation resistance in rigid core LVT. SPC (stone polymer composite) cores — with densities of approximately 1.8–2.0 g/cm³ — are significantly harder and denser than WPC (wood polymer composite) cores, which typically measure 0.9–1.2 g/cm³. This density difference directly translates to better indentation resistance in SPC products. Within the SPC category, higher limestone filler content and tighter milling tolerances tend to correlate with better indentation results, though manufacturers do not always publish the filler percentage explicitly.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Compare indentation resistance with wear layer, core type, and underlayment to judge overall load performance.</p>
+        <h3 class="text-lg font-semibold">Backing pad material</h3>
+        <p class="mt-2 text-slate-700">The attached underlayment or backing pad affects indentation in a secondary way. A soft EVA foam backing compresses more under a concentrated point load than an IXPE foam backing, which has higher compressive strength. When a stiletto heel or narrow furniture leg applies pressure, the backing's ability to resist compression before transmitting force to the subfloor is part of the total indentation depth. Products with no backing (installed directly on subfloor) often show better indentation resistance than the same core with a thick EVA pad, because there is no compressible layer beneath the core.</p>
       </div>
     </section>
 
@@ -108,60 +145,77 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Find the test standard and load applied.</li>
-          <li>Check the reported indentation depth or pass/fail criteria.</li>
-          <li>Confirm whether results are for the full assembly or a single layer.</li>
-          <li>Review pad compressibility for rigid core products.</li>
-          <li>Match results with furniture protection guidance.</li>
+          <li>Look for residual indentation results expressed in millimeters — lower values indicate better performance.</li>
+          <li>Identify the test standard cited (ASTM F1914, EN ISO 24343, or other) to ensure apples-to-apples comparisons.</li>
+          <li>Consider core type: SPC generally outperforms WPC in indentation resistance due to higher core density.</li>
+          <li>For commercial or heavy-load applications, verify that the residual indentation meets any project specification minimums.</li>
+          <li>Note whether the backing pad (if any) is IXPE or EVA — IXPE compresses less under point loads.</li>
+          <li>Use furniture pads and protectors with wide contact areas regardless of the product's rated performance — this distributes load and is the most reliable mitigation.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming indentation resistance equals scratch resistance.</li>
-          <li>Ignoring the effect of point loads like stiletto heels.</li>
-          <li>Skipping protective pads under heavy furniture.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does a thicker wear layer improve indentation resistance?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not necessarily. Indentation is more tied to core density and backing support.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is indentation resistance required for commercial spaces?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Many commercial specs require minimum thresholds, but verify the project requirements.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does a thicker wear layer improve indentation resistance?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Not significantly. Indentation resistance is primarily a function of core density and stiffness. The wear layer protects the surface from abrasion and scratches; it does not meaningfully resist point-load indentation because it is thin relative to the core. SPC cores — being denser at approximately 1.8–2.0 g/cm³ — resist indentation better than WPC cores at 0.9–1.2 g/cm³.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is indentation resistance required for commercial spaces?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Many commercial project specifications require minimum indentation resistance thresholds. The most common test standards are ASTM F1914 and EN ISO 24343. Commercial-grade products typically report residual indentation of 0.10mm or less under the specified test load. When a commercial specification lists a minimum, it will typically cite the test standard and maximum allowable residual indentation depth in millimeters.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What causes visible dents in LVT floors?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Visible permanent dents are caused by point loads that concentrate significant force on a small contact area: refrigerator feet, stiletto heels, piano legs, and heavy furniture with narrow tips that lack protective pads. Using floor protectors — wide-base furniture cups or felt pads — distributes the load over a larger area and dramatically reduces indentation risk even for products with moderate indentation resistance.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How is indentation resistance tested?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">The most commonly referenced tests are ASTM F1914 and EN ISO 24343. Both apply a specified load through a standardized indenter for a defined period, then measure the remaining depth of the impression after the load is removed and the material has recovered. The result is reported in millimeters of residual indentation — lower is better. ASTM F1914 uses a 250-pound load applied for one hour; EN ISO 24343-1 uses 20kg/cm² for 24 hours at room temperature.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
-          <a href="/materials/lvt/rigid-core/specs/construction/attached-underlayment.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Attached Underlayment</a>
-          <a href="/materials/lvt/rigid-core/specs/performance/impact-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Impact Resistance</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/attached-underlayment.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Attached Underlayment</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/impact-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Impact Resistance</a>
+        <a href="/materials/lvt/rigid-core/specs/performance/traffic-class.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Traffic Class</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about indentation resistance specifications for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

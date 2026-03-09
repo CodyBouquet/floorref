@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
         "name": "Can I add another underlayment on top of an attached pad?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Some rigid core products allow it, but many do not. Check the underlayment rules for the specific product."
+          "text": "Most manufacturers explicitly prohibit adding a second underlayment layer under products that already have an attached pad. The reason is compressive: stacking two soft layers creates an unstable foundation that causes the locking joints to flex under foot traffic, which can lead to joint failure, clicking sounds, and eventual separation. Even if the manufacturer doesn't explicitly prohibit it, adding extra underlayment under products with attached pads typically voids the warranty. Always consult the product's installation guide before adding any supplemental underlayment."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Does a thicker pad always mean quieter floors?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not always. Sound ratings depend on the full assembly and test method, not just pad thickness."
+          "text": "Not necessarily. Sound performance depends on the density and material of the pad, not thickness alone. A 1.5mm IXPE (cross-linked polyethylene) pad can outperform a 3mm EVA foam pad in IIC ratings because IXPE has better acoustic properties per millimeter. More importantly, sound ratings reported by manufacturers are test-specific: they reflect a particular lab assembly (concrete slab, specific ceiling below, etc.), not the actual acoustic performance in a real room. Published IIC and STC numbers are useful for comparison but should not be taken as guaranteed performance in any specific installation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is IXPE and why is it used for attached underlayment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IXPE stands for irradiation cross-linked polyethylene foam. It is a closed-cell foam made by cross-linking polyethylene molecules under radiation, which creates a denser, more uniform cell structure than standard EVA foam. IXPE has higher compressive strength (resists permanent compression under heavy loads), better moisture resistance, and more stable acoustic properties over time. For these reasons, it has largely replaced standard EVA foam in premium rigid core LVT products. Some products still use EVA or cork-composite pads, though IXPE is increasingly the baseline for mid-range and premium floating rigid core products."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does attached underlayment affect transition height?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every millimeter of attached pad adds directly to the total installed height of the floor assembly. A 6mm SPC core product with a 1.5mm attached IXPE pad installs at approximately 7.5mm total thickness (plus wear layer). This matters at doorways — where door clearance is fixed — and at transitions to adjacent flooring materials. When transitioning from a rigid core LVT product with attached underlayment to a product without it (or to tile, hardwood, or carpet), the height difference must be managed with appropriate transition strips. Higher-profile transitions may be needed when the pad adds significant height relative to adjacent surfaces."
         }
       }
     ]
@@ -64,43 +80,100 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Attached Underlayment Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Rigid Core LVT • Built-In Pad • Acoustics</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Built-In Pad · IXPE vs. EVA · Acoustics · Installation Trade-Offs</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Attached underlayment is a factory-laminated pad on the back of some rigid core LVT planks or tiles that adds cushioning and can influence acoustics and feel underfoot.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Attached underlayment is a factory-laminated foam or cork pad bonded to the back of rigid core LVT planks during manufacturing. It adds acoustic dampening, slight cushion underfoot, and minor moisture protection at the subfloor interface. The presence, material, and thickness of the pad have real implications for sound ratings, transition heights, and whether additional underlayment can be used.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Pad thickness and density affect sound ratings, transition heights, and whether additional underlayment is allowed or prohibited. Review sound ratings, total thickness, and underlayment rules to understand the full assembly and any restrictions.</p>
+        <p class="mt-2 text-slate-800">
+          Attached underlayment is a factory-bonded pad — typically 1–2mm of IXPE or EVA foam — on the underside of rigid core LVT planks. It contributes to published IIC and STC sound ratings and adds to total installation height. Most manufacturers prohibit adding additional underlayment under products with attached pads, because stacking soft layers destabilizes the locking joints. Pad material matters: IXPE outperforms standard EVA foam in compressive strength and acoustic performance per millimeter.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#what-it-is" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What it is</a>
+        <a href="#materials" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Pad materials</a>
+        <a href="#acoustic" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Acoustics</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="what-it-is" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">What It Is</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Attached underlayment is a factory-laminated pad on the back of some rigid core LVT planks or tiles that adds cushioning and can influence acoustics and feel underfoot.</p>
+        <h3 class="text-lg font-semibold">Factory-laminated backing pad</h3>
+        <p class="mt-2 text-slate-700">Attached underlayment is a thin foam or cork-composite pad that is laminated directly to the underside of rigid core LVT planks at the factory. It is permanently bonded — not removable — and installs as part of the plank. Not all rigid core products have it: some products ship without any attached pad and require a separate underlayment to be laid on the subfloor before installation. Whether a product includes an attached pad is disclosed on the spec sheet and typically called out in the product description.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Pad thickness and density affect sound ratings, transition heights, and whether additional underlayment is allowed or prohibited.</p>
+        <h3 class="text-lg font-semibold">What it does and does not do</h3>
+        <p class="mt-2 text-slate-700">The attached pad provides three things: (1) minor subfloor noise dampening between the rigid core and the concrete or wood subfloor, which is captured in published IIC ratings; (2) a thin cushioned feel underfoot, though less than a floating carpet or traditional cushion-back vinyl; and (3) a slight moisture buffer at the bottom surface of the plank. What it does not do: it does not compensate for significant subfloor unevenness (rigid core products still require flat subfloors within 3/16" over 10 feet), and it does not eliminate the need for expansion gaps at perimeter walls and thresholds.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Review sound ratings, total thickness, and underlayment rules to understand the full assembly and any restrictions.</p>
+        <h3 class="text-lg font-semibold">Why adding a second underlayment is typically prohibited</h3>
+        <p class="mt-2 text-slate-700">Stacking two compressible layers — the factory-attached pad plus a separate roll of foam underlayment — creates a "floating on foam" condition where the plank assembly flexes under foot pressure rather than resting on a stable surface. This cyclic flexing at the locking joints causes the click-lock profile to fatigue over time, resulting in joint creaking, gapping, or separation. For this reason, most rigid core LVT manufacturers explicitly state in their installation instructions that products with attached underlayment must be installed directly on the subfloor surface with no additional layer beneath. Violating this typically voids the structural warranty.</p>
+      </div>
+    </section>
+
+    <section id="materials" class="mt-10">
+      <h2 class="text-2xl font-bold">Pad Materials Compared</h2>
+      <div class="mt-4 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-[620px] w-full text-sm">
+          <thead class="bg-slate-100 text-slate-700">
+            <tr>
+              <th class="px-4 py-3 text-left font-semibold">Material</th>
+              <th class="px-4 py-3 text-left font-semibold">Typical thickness</th>
+              <th class="px-4 py-3 text-left font-semibold">Characteristics</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200">
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">IXPE foam</td>
+              <td class="px-4 py-3 text-slate-700">1–1.5mm</td>
+              <td class="px-4 py-3 text-slate-700">Cross-linked polyethylene; high compressive strength, good acoustics, moisture-resistant. Premium standard.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">EVA foam</td>
+              <td class="px-4 py-3 text-slate-700">1.5–3mm</td>
+              <td class="px-4 py-3 text-slate-700">Ethylene-vinyl acetate; softer, lower compressive strength than IXPE, compresses more under rolling loads.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">Cork composite</td>
+              <td class="px-4 py-3 text-slate-700">1–2mm</td>
+              <td class="px-4 py-3 text-slate-700">Natural cork granules in binder; good thermal insulation properties, moderate acoustic performance.</td>
+            </tr>
+            <tr class="hover:bg-slate-50">
+              <td class="px-4 py-3 font-semibold">None (bare back)</td>
+              <td class="px-4 py-3 text-slate-700">0mm</td>
+              <td class="px-4 py-3 text-slate-700">Requires separate underlayment; allows specifier to select underlayment for site-specific acoustic or height requirements.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="acoustic" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Acoustic Ratings and What They Mean</h2>
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="text-slate-700">Sound ratings for floors with attached underlayment are typically reported as IIC (Impact Insulation Class) and STC (Sound Transmission Class). IIC measures reduction of impact noise — footsteps, dropped objects — traveling through the floor structure into the room below. STC measures reduction of airborne noise. Both are reported as test results from a specific lab assembly: typically a 6-inch concrete slab with specific ceiling treatment below. Published IIC ratings for rigid core LVT with attached underlayment commonly range from IIC 50–72 depending on the pad material and thickness and the test assembly used. A higher IIC number is better. However, a product rated IIC 68 in a lab concrete assembly may perform differently in a wood-framed building with a different subfloor and ceiling structure.</p>
       </div>
     </section>
 
@@ -108,60 +181,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Note pad material (foam, cork, IXPE, etc.) and thickness.</li>
-          <li>Check IIC/STC ratings and the test assembly used.</li>
-          <li>Confirm whether extra underlayment is allowed or voids warranty.</li>
-          <li>Account for height changes at transitions and doors.</li>
-          <li>Verify compressive strength if heavy loads are expected.</li>
+          <li>Confirm pad material (IXPE, EVA, cork composite, or none) — material matters more than thickness alone for compressive performance.</li>
+          <li>Note pad thickness and add it to the core + wear layer thickness to get total installation height — this affects transition strip selection and door clearances.</li>
+          <li>Check published IIC and STC ratings and identify the test assembly used — concrete vs. wood frame assemblies produce different results.</li>
+          <li>Confirm explicitly whether additional underlayment is allowed or prohibited — look in the installation guide, not just the marketing materials.</li>
+          <li>For commercial or high-load applications, check compressive strength of the pad material — softer EVA foam compresses more under rolling loads than IXPE.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming attached pad guarantees high sound ratings in every build-up.</li>
-          <li>Adding a second underlayment when the manufacturer forbids it.</li>
-          <li>Ignoring pad density differences that affect rolling loads.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Can I add another underlayment on top of an attached pad?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Some rigid core products allow it, but many do not. Check the underlayment rules for the specific product.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does a thicker pad always mean quieter floors?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not always. Sound ratings depend on the full assembly and test method, not just pad thickness.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Can I add another underlayment on top of an attached pad?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Most manufacturers explicitly prohibit adding a second underlayment layer under products that already have an attached pad. The reason is compressive: stacking two soft layers creates an unstable foundation that causes the locking joints to flex under foot traffic, which can lead to joint failure, clicking sounds, and eventual separation. Even if the manufacturer doesn't explicitly prohibit it, adding extra underlayment under products with attached pads typically voids the warranty. Always consult the product's installation guide before adding any supplemental underlayment.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does a thicker pad always mean quieter floors?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Not necessarily. Sound performance depends on the density and material of the pad, not thickness alone. A 1.5mm IXPE pad can outperform a 3mm EVA foam pad in IIC ratings because IXPE has better acoustic properties per millimeter. More importantly, sound ratings reported by manufacturers are test-specific: they reflect a particular lab assembly, not the actual acoustic performance in a real room. Published IIC and STC numbers are useful for comparison but should not be taken as guaranteed performance in any specific installation.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is IXPE and why is it used for attached underlayment?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">IXPE stands for irradiation cross-linked polyethylene foam. It is made by cross-linking polyethylene molecules under radiation, creating a denser, more uniform cell structure than standard EVA foam. IXPE has higher compressive strength — it resists permanent compression under heavy loads — better moisture resistance, and more stable acoustic properties over time. For these reasons, it has largely replaced standard EVA foam in premium rigid core LVT products. Some products still use EVA or cork-composite pads, though IXPE is increasingly the baseline for mid-range and premium floating rigid core products.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How does attached underlayment affect transition height?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Every millimeter of attached pad adds directly to the total installed height of the floor assembly. A 6mm SPC core product with a 1.5mm attached IXPE pad installs at approximately 7.5mm total thickness (plus the wear layer). This matters at doorways — where door clearance is fixed — and at transitions to adjacent flooring materials. When transitioning from a rigid core LVT product with attached underlayment to a product without it, or to tile, hardwood, or carpet, the height difference must be managed with appropriate transition strips.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/performance/sound-ratings.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Sound Ratings</a>
-          <a href="/materials/lvt/rigid-core/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
-          <a href="/materials/lvt/rigid-core/specs/installation/underlayment-rules.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Underlayment Rules</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/performance/sound-ratings.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Sound Ratings</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
+        <a href="/materials/lvt/rigid-core/specs/installation/underlayment-rules.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Underlayment Rules</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about attached underlayment specifications on rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

@@ -13,12 +13,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>EPD & HPD Explained | Flooring Reference</title>
-  <meta name="description" content="Learn what EPDs and HPDs mean for LVT, what they include, and how to read them. Reference-only." />
+  <title>EPD &amp; HPD Explained | Flooring Reference</title>
+  <meta name="description" content="What EPDs and HPDs mean for glue-down LVT — how they're structured, what program operators publish them, and how they support LEED credits. Reference-only." />
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,18 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Do EPDs mean a product is \u201cgreen\u201d?",
+        "name": "Does an EPD mean a product is environmentally superior?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. EPDs report impacts; they do not certify that a product is environmentally superior."
+          "text": "No. An EPD (Environmental Product Declaration) is a transparency document — it reports quantified lifecycle impacts but does not certify that those impacts are low or that the product is better than alternatives. Two products can both have EPDs while one has significantly higher global warming potential or primary energy use than the other. EPDs allow comparison between products that follow the same PCR (Product Category Rules), but the comparison must be made actively by reviewing the reported data — the existence of an EPD is not itself a performance claim."
         }
       },
       {
         "@type": "Question",
-        "name": "Are HPDs required for all projects?",
+        "name": "What is the difference between a product-specific EPD and an industry-average EPD?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not always, but many commercial projects request them for transparency."
+          "text": "A product-specific EPD reflects the lifecycle inventory data for a particular product from a particular manufacturing facility, based on measured inputs and outputs. An industry-average EPD uses aggregated data across multiple manufacturers and products to represent a category-wide average — it is less specific but may be the only option available when product-specific data has not been developed. For LEED v4 Material Ingredients and Building Product Disclosure credits, product-specific EPDs are preferred and typically earn more credit than industry-average documents."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is disclosed in an HPD for LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An HPD (Health Product Declaration) under the HPD Collaborative Open Standard discloses the chemical ingredients of a product down to a specified reporting threshold — typically 100 ppm (0.01% by weight) for most substances. For each disclosed substance, the HPD references available hazard characterization information including GreenScreen ratings, regulatory lists (REACH SVHC, California Prop 65, etc.), and any intentional-use or residual designations. For LVT, an HPD typically discloses the PVC resin components, plasticizer identity and hazard classification, stabilizers, fillers, and coatings used across all layers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are EPDs and HPDs required for LEED projects?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EPDs and HPDs are not universally required for all LEED projects, but they contribute to specific optional credits under LEED v4 and v4.1. The Building Product Disclosure and Optimization — Environmental Product Declarations credit awards points when products with EPDs meeting specific criteria are used for a defined percentage of the total material cost. Similarly, the Building Product Disclosure and Optimization — Material Ingredients credit awards points for products with HPDs or Declare labels. Project teams pursuing these credits must collect and document these declarations for qualifying flooring products."
         }
       }
     ]
@@ -50,8 +66,8 @@
 <link rel="canonical" href="https://floorref.com/materials/lvt/glue-down/specs/environmental/epd-hpd.html" />
 <meta property="og:site_name" content="Flooring Reference" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="EPD & HPD Explained | Flooring Reference" />
-<meta property="og:description" content="Learn what EPDs and HPDs mean for LVT, what they include, and how to read them. Reference-only." />
+<meta property="og:title" content="EPD &amp; HPD Explained | Flooring Reference" />
+<meta property="og:description" content="What EPDs and HPDs mean for glue-down LVT — how they're structured, what program operators publish them, and how they support LEED credits. Reference-only." />
 <meta property="og:url" content="https://floorref.com/materials/lvt/glue-down/specs/environmental/epd-hpd.html" />
 <meta property="og:image" content="https://floorref.com/assets/og-default.png" />
 <meta name="twitter:card" content="summary" />
@@ -63,44 +79,59 @@
 
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">EPD & HPD Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Environmental Declarations • Transparency</span>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">EPD &amp; HPD Explained
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Glue-Down LVT · Environmental Product Declaration · Health Product Declaration</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        EPDs (Environmental Product Declarations) summarize lifecycle impacts, while HPDs (Health Product Declarations) disclose material ingredients and health-related information.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        EPDs (Environmental Product Declarations) and HPDs (Health Product Declarations) are third-party transparency documents that disclose the environmental footprint and ingredient chemistry of building products. For glue-down LVT specified on commercial projects — particularly those pursuing LEED v4 credits — these documents are commonly required as part of the product submittal package.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">These documents support transparency and sustainability requirements in commercial or green building projects. Pair EPD/HPD documents with VOC certifications and recycled content for a complete environmental profile.</p>
+        <p class="mt-2 text-slate-800">
+          An EPD quantifies lifecycle environmental impacts (global warming potential, energy use, water use) under ISO 14044 and EN 15804. An HPD discloses chemical ingredients down to 100 ppm under the HPD Open Standard. Both documents support LEED v4 Building Product Disclosure credits. Neither document by itself certifies that a product is environmentally superior to alternatives — they are disclosure tools, not endorsements.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#epd" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">EPD structure</a>
+        <a href="#hpd" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">HPD structure</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="epd" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">Environmental Product Declarations (EPDs)</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">EPDs (Environmental Product Declarations) summarize lifecycle impacts, while HPDs (Health Product Declarations) disclose material ingredients and health-related information.</p>
+        <h3 class="text-lg font-semibold">What an EPD contains</h3>
+        <p class="mt-2 text-slate-700">An EPD is prepared according to ISO 14044 (lifecycle assessment methodology) and a product-specific PCR (Product Category Rules) — for resilient flooring, this is typically EN 15804 or a PCR developed by a recognized program operator such as Environdec (International EPD System) or FDRE (Floor Covering Industry). The EPD reports environmental impact indicators across lifecycle stages: raw material extraction (A1), transport to manufacturer (A2), and manufacturing (A3) — collectively referred to as cradle-to-gate (A1–A3). Some EPDs extend to end-of-life (C stages) or biogenic carbon credit (D stage).</p>
+        <p class="mt-3 text-slate-700">Key reported indicators include global warming potential (GWP in kg CO₂-eq), primary energy demand, eutrophication potential, acidification potential, and water use. These values allow specifiers to compare the environmental footprint of products that have been assessed under the same PCR and same system boundary — but comparing an EPD using EN 15804 to one using a different PCR requires caution because system boundaries and allocation methods may differ.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">These documents support transparency and sustainability requirements in commercial or green building projects.</p>
+        <h3 class="text-lg font-semibold">Product-specific vs industry-average EPDs</h3>
+        <p class="mt-2 text-slate-700">A product-specific EPD is based on primary data collected from the actual manufacturing process of the specific product — it reflects measured energy and material inputs for that product line. An industry-average EPD uses aggregated data from multiple manufacturers across a product category and represents a typical value rather than a specific product. For LEED credit purposes, product-specific EPDs are preferred because they reflect actual manufacturing conditions; industry-average EPDs are acceptable under some credit thresholds but are less valuable for differentiation.</p>
       </div>
+    </section>
 
+    <section id="hpd" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Health Product Declarations (HPDs)</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Pair EPD/HPD documents with VOC certifications and recycled content for a complete environmental profile.</p>
+        <p class="text-slate-700">An HPD is prepared under the HPD Collaborative Open Standard (current version 2.x) and discloses the chemical composition of a product by layer (for multi-layer products like LVT). Disclosure is required for substances present above the reporting threshold — typically 1,000 ppm (0.1%) for intentionally added substances and 100 ppm (0.01%) for other substances. For each disclosed substance, the HPD references available hazard characterization data including GreenScreen benchmark scores, REACH Substance of Very High Concern (SVHC) list status, California Prop 65 listing, and other regulatory classifications. For glue-down LVT, the HPD discloses the plasticizer identity (e.g., DINCH, DOTP, or legacy phthalates if present), PVC resin, stabilizer system, mineral fillers, and surface coating components across all layers. The HPD does not certify that ingredients are safe — it discloses what is known and flags hazard classifications for informed specifier review.</p>
       </div>
     </section>
 
@@ -108,60 +139,77 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Verify whether the document is product-specific or industry-average.</li>
-          <li>Check the program operator and validity dates.</li>
-          <li>Confirm the scope (cradle-to-gate vs full lifecycle).</li>
-          <li>Review disclosed ingredients and thresholds in the HPD.</li>
-          <li>Align documentation with project requirements (LEED, WELL, etc.).</li>
+          <li>Confirm whether the EPD is product-specific or industry-average — product-specific is preferred for LEED credits.</li>
+          <li>Note the program operator (Environdec, FDRE, etc.) and the PCR used — EPDs under different PCRs are not directly comparable.</li>
+          <li>Check the EPD validity date — EPDs typically have a 5-year validity period and must be current at time of submittal.</li>
+          <li>Verify the system boundary (A1–A3 cradle-to-gate minimum; A1–C4 if full lifecycle is required).</li>
+          <li>For the HPD, confirm the version of the Open Standard and check that all layers are disclosed, including backing and adhesive layer if applicable.</li>
+          <li>Align documentation with specific LEED v4 credit requirements — EPD and HPD credits have specific thresholds for qualifying product percentage by value.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming an EPD is a certification of sustainability—it is a disclosure tool.</li>
-          <li>Overlooking expiration dates or outdated versions.</li>
-          <li>Comparing EPDs that use different system boundaries.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Do EPDs mean a product is “green”?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. EPDs report impacts; they do not certify that a product is environmentally superior.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Are HPDs required for all projects?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not always, but many commercial projects request them for transparency.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does an EPD mean a product is environmentally superior?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. An EPD reports quantified lifecycle impacts but does not certify that those impacts are low or that the product is better than alternatives. Two products can both carry EPDs while one has significantly higher global warming potential than the other. EPDs allow comparison between products assessed under the same PCR, but that comparison must be made actively by reviewing the data — the existence of an EPD is a transparency claim, not a performance endorsement.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is the difference between a product-specific EPD and an industry-average EPD?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">A product-specific EPD uses primary data from the actual manufacturing process of the specific product at a specific facility. An industry-average EPD uses aggregated data across multiple manufacturers and represents a category average rather than a specific product. Product-specific EPDs are preferred for LEED credits and provide more actionable information for specifiers, because the results reflect the actual product being evaluated rather than a market average.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What is disclosed in an HPD for LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">An HPD under the HPD Collaborative Open Standard discloses chemical ingredients down to a reporting threshold of 100 ppm (0.01%) by weight, organized by product layer. For LVT, this typically includes the plasticizer type and identity (e.g., DINCH, DOTP, or legacy phthalates), PVC resin, mineral fillers, stabilizer systems, and surface coating chemistry. Each disclosed substance is referenced against hazard characterization databases including GreenScreen, REACH SVHCs, and California Prop 65 — allowing specifiers to evaluate chemical hazard profiles for project health criteria such as LEED Material Ingredients credits or WELL compliance.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Are EPDs and HPDs required for LEED projects?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">EPDs and HPDs are not universally required but contribute to optional LEED v4/v4.1 credits — specifically the Building Product Disclosure and Optimization credits for Environmental Product Declarations and for Material Ingredients. Projects pursuing these credits must collect and document qualifying EPDs and HPDs for a defined percentage of materials by total value. Flooring is typically one of the permanent product categories counted toward these credits, so glue-down LVT EPDs and HPDs are commonly assembled for project submittals on LEED-targeted commercial projects.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/environmental/voc-certifications.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">VOC Certifications</a>
-          <a href="/materials/lvt/glue-down/specs/environmental/recycled-content.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Recycled Content</a>
-          <a href="/materials/lvt/rigid-core/specs/environmental/phthalate-free.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Phthalate Free</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/glue-down/specs/environmental/voc-certifications.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">VOC Certifications</a>
+        <a href="/materials/lvt/glue-down/specs/environmental/phthalate-free.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Phthalate-Free</a>
+        <a href="/materials/lvt/glue-down/specs/environmental/recycled-content.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Recycled Content</a>
+        <a href="/materials/lvt/glue-down/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about EPDs and HPDs for glue-down LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

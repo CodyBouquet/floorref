@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Carpet Smoke Density Explained | Flooring Reference</title>
-  <meta name="description" content="What smoke density means in carpet testing, how smoke developed values are reported, and why codes reference them — reference-only." />
+  <meta name="description" content="Carpet smoke density explained — ASTM E662 specific optical density test, Ds values, flaming vs non-flaming modes, code requirements, and how backing affects smoke output. Reference-only." />
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
@@ -28,10 +28,26 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Is smoke density the same as flame spread?",
+        "name": "Is smoke density the same as flammability?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Flame spread measures how fast fire travels across a surface, while smoke density measures smoke production."
+          "text": "No — smoke density and flammability are separate fire performance characteristics measured by different tests. Flammability tests such as ASTM E648 measure critical radiant flux — how much radiant heat is needed to sustain flame propagation, which characterizes how readily the carpet will allow fire to spread. Smoke density tests such as ASTM E662 measure how much smoke is produced when the material burns or smolders, which characterizes visibility and toxicity risk during a fire event. High smoke density can impair evacuation even when the fire itself is contained. Both test results are typically required on commercial carpet specifications because they address different fire safety considerations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the Ds value in smoke density testing mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ds (specific optical density) is the metric reported in ASTM E662 smoke density testing. It measures how much a beam of light is attenuated by smoke in a closed test chamber, providing a quantitative measure of smoke concentration. The test reports Ds at specific time intervals — commonly Ds at 1.5 minutes (Ds 1.5) and the maximum Ds reached during the test (Ds max). Lower Ds values mean less smoke — better smoke density performance. Building codes and project specifications typically set maximum Ds values; a common threshold in commercial construction is Ds ≤ 450 in both flaming and non-flaming test modes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do backing and adhesive affect smoke density test results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — backing materials and adhesives can significantly affect smoke density test results because they contribute to the overall combustible mass and chemical composition of the assembly. PVC backing materials, for example, can generate substantial smoke during combustion. Urethane backing systems and adhesives also contribute their own combustion products. This is why some commercial specifications require smoke density testing of the full installation assembly rather than the carpet face alone. When reviewing spec sheet smoke density data, confirming that it applies to the same assembly configuration (backing type, with or without adhesive, cushion or no cushion) intended for the project is important for compliance accuracy."
         }
       },
       {
@@ -39,15 +55,7 @@
         "name": "Are smoke density limits code-specific?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Commercial projects often reference specific code thresholds depending on occupancy type."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does cushion or backing change smoke results?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Backing systems and adhesives can influence test results, so specifications usually require testing of the full assembly."
+          "text": "Yes — smoke density requirements for floor coverings vary by building code, occupancy type, and jurisdiction. The International Building Code (IBC) references smoke density limits for specific occupancy groups and locations within buildings. Some occupancy types — such as underground transit, high-rise buildings, and certain assembly occupancies — have stricter smoke requirements because of the difficulty of evacuation or the higher occupant density. Project specifications should identify the applicable code and authority having jurisdiction (AHJ) requirements, which may differ from the nominal code provisions depending on local amendments. Always verify smoke density requirements against the project-specific code requirements rather than assuming a single universal threshold."
         }
       }
     ]
@@ -59,7 +67,7 @@
   <meta property="og:site_name" content="Flooring Reference" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Carpet Smoke Density Explained | Flooring Reference" />
-  <meta property="og:description" content="What smoke density means in carpet testing, how smoke developed values are reported, and why codes reference them — reference-only." />
+  <meta property="og:description" content="Carpet smoke density explained — ASTM E662 specific optical density test, Ds values, flaming vs non-flaming modes, code requirements, and how backing affects smoke output. Reference-only." />
   <meta property="og:url" content="https://floorref.com/materials/carpet/specs/performance/smoke-density.html" />
   <meta property="og:image" content="https://floorref.com/assets/og-default.png" />
   <meta name="twitter:card" content="summary" />
@@ -69,97 +77,136 @@
   <div id="site-header"></div>
 
   <main class="mx-auto max-w-5xl px-4 py-10">
-
-    <!-- Hero -->
     <section class="space-y-4">
-      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">
-        Carpet Smoke Density, Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">
-          What it means • How it's reported • Why it matters
-        </span>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Carpet Smoke Density Explained
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Carpet · ASTM E662 · Specific Optical Density · Flaming vs Non-Flaming · Code Requirements</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Smoke density addresses how much smoke a carpet produces under a defined fire test, which can be part of code compliance in commercial projects. 
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Smoke density measures how much smoke a carpet assembly generates during a fire test, using specific optical density (Ds) as the metric. Lower Ds values mean less smoke. Building codes set maximum Ds thresholds based on occupancy type. Backing type and adhesive contribute to smoke output and must be matched to the tested assembly configuration.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
-      <!-- Quick Answer -->
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
         <p class="mt-2 text-slate-800">
-          Smoke density measures the amount of smoke produced during a standardized fire test. Lower smoke developed values are generally preferred and may be required by building codes.
+          Smoke density is tested per ASTM E662, which measures specific optical density (Ds) in both flaming and non-flaming modes. Lower Ds values mean less smoke. A common commercial threshold is Ds ≤ 450 in both modes. Results depend on the full assembly — backing and adhesive contribute to smoke output and must match the tested configuration. Smoke density is a separate spec from flammability (ASTM E648).
         </p>
       </div>
 
-      <!-- Jump links -->
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#definition" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What it is</a>
-        <a href="#reporting" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">How it's reported</a>
-        <a href="#impact" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Why it matters</a>
+        <a href="#what-is-measured" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What is measured</a>
+        <a href="#reading-values" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Reading Ds values</a>
+        <a href="#assembly" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Assembly and backing effects</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="definition" class="mt-10">
-      <h2 class="text-2xl font-bold">What it is</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="text-slate-700">During fire testing, materials are exposed to heat or flame and the resulting smoke is measured. The smoke density value reflects how quickly and how much smoke is generated.</p>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="what-is-measured" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">What Smoke Density Measures</h2>
+
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <h3 class="text-lg font-semibold">ASTM E662 — specific optical density</h3>
+        <p class="mt-2 text-slate-700">ASTM E662 (Standard Test Method for Specific Optical Density of Smoke Generated by Solid Materials) tests a carpet sample in a sealed chamber equipped with a photometric measurement system. The sample is exposed to heat in two separate test modes — flaming (with an ignition source) and non-flaming (radiant heat only, without ignition) — and the smoke generated in each mode is measured by how much it reduces the transmission of a light beam through the chamber. The resulting metric, specific optical density (Ds), quantifies how much smoke is present in the chamber relative to the sample area.</p>
+        <p class="mt-3 text-slate-700">Results are reported at defined time intervals — Ds at 1.5 minutes and Ds maximum are most commonly referenced. The non-flaming mode is important because it simulates smoldering conditions, which can occur before a fire is fully ignited and which can produce heavy smoke even without visible flames. High smoke density during smoldering impairs occupant detection and evacuation before a full fire develops, which is why the non-flaming test mode is included separately.</p>
       </div>
     </section>
 
-    <section id="reporting" class="mt-10">
-      <h2 class="text-2xl font-bold">How it's reported</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="text-slate-700">Specs may list smoke developed values tied to test methods such as ASTM E648 or ASTM E662. Requirements often appear as maximum values or classifications in code documents.</p>
+    <section id="reading-values" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Reading Smoke Density Values</h2>
+      <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+        <p class="text-slate-700">Smoke density values reported on commercial carpet spec sheets follow a consistent format: a Ds value with the test mode (flaming or non-flaming) and the time point or specification (maximum). Lower Ds numbers mean less smoke — a product with Ds max of 200 produces less smoke than one with Ds max of 400.</p>
+        <ul class="mt-3 list-disc pl-5 space-y-2 text-slate-700">
+          <li>A commonly referenced maximum threshold for commercial carpet is Ds ≤ 450 in both flaming and non-flaming modes, referenced by the IBC and related standards for applicable occupancies.</li>
+          <li>Some occupancies and authorities require lower thresholds — underground transportation, high-rise buildings, and certain healthcare occupancies may have stricter limits.</li>
+          <li>Spec sheets typically list both flaming and non-flaming Ds max values. Both must meet the applicable threshold — a product that passes in flaming mode but not in non-flaming mode does not comply.</li>
+          <li>When comparing spec sheet values across products, confirm that the reported values are from the same test configuration (assembly type). Values from different assembly configurations are not directly comparable.</li>
+        </ul>
       </div>
     </section>
 
-    <section id="impact" class="mt-10">
-      <h2 class="text-2xl font-bold">Why it matters</h2>
+    <section id="assembly" class="mt-10">
+      <h2 class="text-2xl font-bold">Assembly and Backing Effects on Smoke Density</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <p class="text-slate-700">Smoke density affects visibility and evacuation safety during a fire event. It is often evaluated alongside flame spread or critical radiant flux requirements.</p>
+        <ul class="list-disc pl-5 space-y-2 text-slate-700">
+          <li>Smoke density is a property of the complete installation assembly — the carpet face, backing material, cushion (if present), and adhesive all contribute to the total smoke generated during the test.</li>
+          <li>PVC-backed products can produce higher smoke density than products with other backing types because PVC combustion generates significant smoke and combustion byproducts.</li>
+          <li>Urethane and unitary backings, as well as woven polypropylene secondary backings, generally produce less smoke than PVC-backed products under the same test conditions.</li>
+          <li>Adhesive contribution is most significant in direct glue-down installations — different adhesive chemistries have different smoke generation profiles, so approved adhesives for fire-rated assemblies should be used in applications where smoke density compliance is required.</li>
+          <li>Cushion materials — polyurethane foam, rubber, and other cushion types — have their own smoke generation profiles and can significantly elevate Ds values when included in the tested assembly.</li>
+          <li>Always verify that spec sheet smoke density data applies to the same assembly configuration (cushion or no cushion, backing type, adhesive) as the intended installation before relying on it for compliance documentation.</li>
+        </ul>
       </div>
     </section>
 
-    <!-- FAQ -->
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
         <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">Is smoke density the same as flame spread?</span>
+            <span class="font-semibold">Is smoke density the same as flammability?</span>
             <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-700">No. Flame spread measures how fast fire travels across a surface, while smoke density measures smoke production.</p>
+          <p class="mt-3 text-slate-700">No — smoke density and flammability are separate fire performance characteristics measured by different tests. Flammability tests such as ASTM E648 measure critical radiant flux — how much radiant heat is needed to sustain flame propagation, which characterizes how readily the carpet will allow fire to spread. Smoke density tests such as ASTM E662 measure how much smoke is produced when the material burns or smolders, which characterizes visibility and toxicity risk during a fire event. High smoke density can impair evacuation even when the fire itself is contained. Both test results are typically required on commercial carpet specifications because they address different fire safety considerations.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What does the Ds value in smoke density testing mean?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Ds (specific optical density) is the metric reported in ASTM E662 smoke density testing. It measures how much a beam of light is attenuated by smoke in a closed test chamber, providing a quantitative measure of smoke concentration. The test reports Ds at specific time intervals — commonly Ds at 1.5 minutes (Ds 1.5) and the maximum Ds reached during the test (Ds max). Lower Ds values mean less smoke — better smoke density performance. Building codes and project specifications typically set maximum Ds values; a common threshold in commercial construction is Ds ≤ 450 in both flaming and non-flaming test modes.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Do backing and adhesive affect smoke density test results?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes — backing materials and adhesives can significantly affect smoke density test results because they contribute to the overall combustible mass and chemical composition of the assembly. PVC backing materials, for example, can generate substantial smoke during combustion. Urethane backing systems and adhesives also contribute their own combustion products. This is why some commercial specifications require smoke density testing of the full installation assembly rather than the carpet face alone. When reviewing spec sheet smoke density data, confirming that it applies to the same assembly configuration (backing type, with or without adhesive, cushion or no cushion) intended for the project is important for compliance accuracy.</p>
         </details>
         <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <summary class="cursor-pointer list-none flex items-center justify-between">
             <span class="font-semibold">Are smoke density limits code-specific?</span>
             <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-700">Yes. Commercial projects often reference specific code thresholds depending on occupancy type.</p>
-        </details>
-        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-          <summary class="cursor-pointer list-none flex items-center justify-between">
-            <span class="font-semibold">Does cushion or backing change smoke results?</span>
-            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-          </summary>
-          <p class="mt-3 text-slate-700">Backing systems and adhesives can influence test results, so specifications usually require testing of the full assembly.</p>
+          <p class="mt-3 text-slate-700">Yes — smoke density requirements for floor coverings vary by building code, occupancy type, and jurisdiction. The International Building Code (IBC) references smoke density limits for specific occupancy groups and locations within buildings. Some occupancy types — such as underground transit, high-rise buildings, and certain assembly occupancies — have stricter smoke requirements because of the difficulty of evacuation or the higher occupant density. Project specifications should identify the applicable code and authority having jurisdiction (AHJ) requirements, which may differ from the nominal code provisions depending on local amendments. Always verify smoke density requirements against the project-specific code requirements rather than assuming a single universal threshold.</p>
         </details>
       </div>
     </section>
 
-    <!-- Reference-only note -->
-    <section class="mt-12 max-w-3xl">
-      <h2 class="text-2xl font-bold">Reference-Only Information</h2>
-      <p class="mt-2 text-slate-700 text-sm">
-        This page provides general informational reference about carpet smoke density terminology.
-        It does not provide installation guidance, professional advice, or product recommendations.
-      </p>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/carpet/specs/performance/flammability.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Flammability</a>
+        <a href="/materials/carpet/specs/backing/backing-types.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Backing Types</a>
+        <a href="/materials/carpet/specs/construction/fiber-types.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Fiber Types</a>
+        <a href="/materials/carpet/specs/performance/traffic-classification.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Traffic Classification</a>
+      </div>
     </section>
 
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about carpet smoke density. It does not provide installation guidance, professional advice, or product recommendations.</p>
+    </section>
   </main>
 
   <div id="site-footer"></div>

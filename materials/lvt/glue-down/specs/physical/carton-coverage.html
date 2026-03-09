@@ -14,11 +14,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Carton Coverage Explained | Flooring Reference</title>
-  <meta name="description" content="What carton coverage means on LVT spec sheets, how to use it for takeoffs, and what can change the number. Reference-only." />
+  <meta name="description" content="Carton coverage for glue-down LVT — how coverage is calculated, typical ranges, waste factors by layout type, and how to order correctly. Reference-only." />
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,15 +31,31 @@
         "name": "Is carton coverage the same as net coverage after cuts?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Coverage is the raw area of planks/tiles in a box; you still need a waste factor for cuts."
+          "text": "No. Carton coverage is the gross area of all planks or tiles in the box calculated from their dimensions — it does not account for material cut and discarded at room edges, obstacles, or pattern offsets. Net installed coverage will always be less than the carton coverage number. The difference depends on room shape, layout direction, and pattern repeat. A waste factor is applied to the gross room area to determine how many cartons to order. Ordering to the exact coverage figure without a waste factor is likely to leave the job short."
         }
       },
       {
         "@type": "Question",
-        "name": "Why does coverage vary between collections?",
+        "name": "How much waste factor should be added for glue-down LVT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Different plank sizes and piece counts per carton change the total coverage."
+          "text": "For standard straight-lay glue-down LVT, a waste factor of 5–10% is typical for rectangular rooms. Diagonal layouts or herringbone patterns require 10–15% or more due to the additional cuts at wall lines and the inability to reuse most cut-off pieces. Complex room shapes with multiple offsets, columns, or irregular perimeters increase waste further. Commercial projects with large open areas and simple layouts can use the lower end of the range; projects with intricate layouts, multiple rooms with doorway cuts, or significant pattern matching requirements should use the higher end. Always round up to the next full carton — partial cartons cannot typically be ordered."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does coverage vary between collections of the same brand?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Carton coverage is determined by the plank or tile dimensions and the number of pieces per carton. Different product lines within a brand may use different plank sizes (e.g., 6×36 vs 9×48), different piece counts per carton to achieve a target weight or a standard coverage unit, or different packaging configurations for the same plank size. A wider or longer plank has more area per piece, so fewer pieces are needed per carton to reach a similar coverage figure. Tile-format products (12×24, 18×18) will have different coverage calculations than plank formats even within the same collection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should leftover cartons be kept after installation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, retaining unopened or partially used cartons from the same dye lot is strongly recommended for glue-down LVT. If a plank is damaged in service and needs replacement — from a dropped heavy object, a point load failure, or maintenance damage — an exact color and dye lot match is needed. Replacement from a different production run may show color or texture variation that is visible even within the same product SKU. Most manufacturers recommend storing leftover material in a climate-controlled space flat and off the floor. For large commercial projects, a small reserve quantity is sometimes specified as part of the project closeout package."
         }
       }
     ]
@@ -51,7 +67,7 @@
 <meta property="og:site_name" content="Flooring Reference" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Carton Coverage Explained | Flooring Reference" />
-<meta property="og:description" content="What carton coverage means on LVT spec sheets, how to use it for takeoffs, and what can change the number. Reference-only." />
+<meta property="og:description" content="Carton coverage for glue-down LVT — how coverage is calculated, typical ranges, waste factors by layout type, and how to order correctly. Reference-only." />
 <meta property="og:url" content="https://floorref.com/materials/lvt/glue-down/specs/physical/carton-coverage.html" />
 <meta property="og:image" content="https://floorref.com/assets/og-default.png" />
 <meta name="twitter:card" content="summary" />
@@ -64,43 +80,57 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Carton Coverage Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Packaging • Square Footage • Estimating</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Glue-Down LVT · Square Footage per Box · Waste Factors · Ordering</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Carton coverage lists the square footage (or square meters) of LVT included per box based on plank or tile size and pieces per carton.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Carton coverage is the total square footage (or square meters) of LVT contained in one carton, calculated from the plank or tile dimensions multiplied by the number of pieces per box. It is the starting point for estimating how many cartons to order, but it must be adjusted for waste before an order quantity is finalized. Ordering without a waste factor is one of the most common causes of material shortfall on glue-down LVT projects.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Accurate coverage prevents shortages or overages in estimates and helps plan freight, staging, and waste factors. Use plank size, pattern repeat, and weight per carton alongside coverage to plan layout and logistics.</p>
+        <p class="mt-2 text-slate-800">
+          Typical glue-down LVT cartons cover 12–35 sq ft. Add 5–10% waste for straight lay; 10–15% for diagonal or herringbone. Always round up to whole cartons. Retain leftover material from the same dye lot for future repairs.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#calculation" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Coverage calculation</a>
+        <a href="#waste" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Waste factors</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="calculation" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">How Carton Coverage Is Calculated</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Carton coverage lists the square footage (or square meters) of LVT included per box based on plank or tile size and pieces per carton.</p>
+        <h3 class="text-lg font-semibold">Coverage formula</h3>
+        <p class="mt-2 text-slate-700">Carton coverage is calculated by multiplying the plank or tile dimensions (length × width in feet) by the number of pieces per carton. For example, a product with planks measuring 6 in × 36 in (0.5 ft × 3 ft = 1.5 sq ft per plank) and 16 pieces per carton has a carton coverage of 24 sq ft. Typical glue-down plank LVT covers 12–35 sq ft per carton depending on plank size and piece count; tile-format products in 12×24 or 18×18 configurations may have different counts per carton to reach similar coverage targets. Coverage is always the gross area of pieces as cut — it does not account for any interlocking features that would reduce the installed area (glue-down LVT does not have click-lock features, so nominal dimensions equal installed dimensions).</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Accurate coverage prevents shortages or overages in estimates and helps plan freight, staging, and waste factors.</p>
+        <h3 class="text-lg font-semibold">Ordering calculation</h3>
+        <p class="mt-2 text-slate-700">To determine order quantity: (1) measure the net room area in square feet, (2) multiply by the waste factor appropriate for the layout (1.05 for simple rooms, 1.10–1.15 for complex or diagonal layouts), (3) divide the result by the carton coverage to get the number of cartons, and (4) round up to the next whole carton. Partial cartons cannot usually be ordered from distributors, and rounding down risks a material shortfall if the waste estimate is slightly off. On large commercial projects, ordering one or two additional cartons beyond the calculated quantity and retaining them as a reserve for future repairs is common practice.</p>
       </div>
+    </section>
 
+    <section id="waste" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Waste Factors by Layout Type</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Use plank size, pattern repeat, and weight per carton alongside coverage to plan layout and logistics.</p>
+        <p class="text-slate-700">Waste factor depends on room shape and installation pattern. For straight-lay glue-down LVT in rectangular rooms with minimal obstacles, a 5% waste factor (multiply area × 1.05) is typical — small rooms and rooms with many cuts at doorways may need 8–10%. Diagonal layouts (planks set at 45° to the walls) require 10–15% waste because the angled cuts at the perimeter generate larger cut-off pieces that cannot be reused on the other side of the room. Herringbone and chevron patterns require 12–15% or more due to the continuous direction changes that create off-cut geometry difficult to reuse. Pattern repeat — if the product has a long face repeat that requires matching across seams — can add additional waste, particularly in narrow rooms where the starting position of each row affects how much material is cut at the far wall.</p>
       </div>
     </section>
 
@@ -108,60 +138,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Confirm unit (sq ft or sq m) and pieces per carton.</li>
-          <li>Verify if coverage is net (finished) or includes tongue/groove allowance.</li>
-          <li>Add waste factor based on room shape and pattern repeat.</li>
-          <li>Check carton weight for handling and pallet planning.</li>
-          <li>Match coverage to order increments and minimums.</li>
+          <li>Confirm the coverage unit — square feet or square meters — and the number of pieces per carton.</li>
+          <li>Calculate net room area accurately, excluding built-in obstacles that will not be covered.</li>
+          <li>Apply the appropriate waste factor: 5–10% for straight lay, 10–15% for diagonal or herringbone.</li>
+          <li>Round up to whole cartons — partial cartons cannot be ordered and shortfall requires a new order from the same dye lot if still available.</li>
+          <li>Record the dye lot number from ordered cartons and retain leftover material for future repair matching.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Mixing metric and imperial coverage units.</li>
-          <li>Ignoring extra waste for diagonal or herringbone layouts.</li>
-          <li>Assuming coverage is the same across related SKUs.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is carton coverage the same as net coverage after cuts?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. Coverage is the raw area of planks/tiles in a box; you still need a waste factor for cuts.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Why does coverage vary between collections?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Different plank sizes and piece counts per carton change the total coverage.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is carton coverage the same as net coverage after cuts?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. Carton coverage is the gross area of all planks in the box — it does not account for material cut and discarded at room edges, obstacles, or pattern offsets. Net installed coverage will always be less than the carton coverage figure. A waste factor must be applied before calculating the number of cartons to order. Ordering to the exact coverage number without a waste factor is likely to leave the job short of material.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How much waste factor should be added for glue-down LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">For standard straight-lay in rectangular rooms, 5–10% is typical. Diagonal layouts or herringbone patterns require 10–15% or more due to additional perimeter cuts and off-cut geometry that cannot be reused. Complex room shapes with multiple offsets, columns, or doorway cuts increase waste further. Always round up to the next whole carton — partial cartons cannot typically be ordered separately, and a shortfall from an order means waiting for a dye lot match from existing inventory.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Why does coverage vary between collections of the same brand?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Coverage is determined by plank dimensions and piece count per carton. Different product lines use different plank sizes, different piece counts per carton to achieve target weights or standard coverage increments, or different formats entirely (plank vs tile). A 9×48 plank has more area per piece than a 6×36 plank, so fewer pieces per carton produce similar coverage. Always use the specific coverage figure from the product's spec sheet rather than assuming it matches a related product in the same line.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Should leftover cartons be kept after installation?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes. Retaining cartons from the same dye lot is strongly recommended. If a glue-down plank is damaged and needs replacement, an exact dye lot match is required for an invisible repair. Material from a different production run of the same SKU may show color or texture variation visible under normal lighting. Store leftover material flat in a climate-controlled location. For large commercial projects, retaining a reserve of 1–2 cartons per color used is common practice as part of project closeout.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/glue-down/specs/construction/wear-layer.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Wear Layer</a>
-          <a href="/materials/lvt/glue-down/specs/physical/plank-size.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Plank Size</a>
-          <a href="/materials/lvt/glue-down/specs/physical/weight-per-carton.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Weight Per Carton</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/glue-down/specs/physical/plank-size.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Plank Size</a>
+        <a href="/materials/lvt/glue-down/specs/physical/weight-per-carton.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Weight Per Carton</a>
+        <a href="/materials/lvt/glue-down/specs/physical/pattern-repeat.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Pattern Repeat</a>
+        <a href="/materials/lvt/glue-down/specs/installation/subfloor-tolerance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Subfloor Tolerance</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about carton coverage for glue-down LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

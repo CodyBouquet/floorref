@@ -18,7 +18,7 @@
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -31,7 +31,7 @@
         "name": "Does heavier carton mean better quality?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Not necessarily. Weight depends on core density, size, and packaging."
+          "text": "Not necessarily. Carton weight reflects a combination of core density, plank size, piece count, and packaging weight — not product quality alone. SPC cores are inherently denser than WPC cores (1.8–2.0 g/cm³ vs. 0.9–1.2 g/cm³), so an SPC product will be heavier per square foot than an equivalent WPC product. Thicker products are heavier per piece than thinner ones. A heavier carton may simply mean a larger plank size or denser core type, neither of which is a direct quality indicator. Evaluate product quality through performance specifications: wear layer thickness, traffic class, dimensional stability, and indentation resistance."
         }
       },
       {
@@ -39,7 +39,23 @@
         "name": "Is carton weight important for residential jobs?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, especially for delivery access and installation labor planning."
+          "text": "Yes, for several practical reasons. First, individual carton handling — a 50 lb carton is manageable for one person; a 60–70 lb carton may require two-person handling on stairs or in tight spaces. Second, staging area load capacity — stacking multiple cartons in a room requires knowing the total weight load the subfloor must support before installation; a stack of 20 cartons at 50 lbs each represents 1,000 lbs of concentrated load. Third, delivery access — upper-floor deliveries, elevator weight limits, and restricted access sites all require knowing carton weight to plan logistics. These practical concerns apply regardless of whether the installation is residential or commercial."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does core type affect carton weight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Core type is the primary driver of weight differences between rigid core LVT products. SPC (Stone Plastic Composite) cores are loaded with calcium carbonate (limestone) — a dense mineral filler — at high percentages by weight, typically 50–70% of the core composition. This makes SPC planks significantly heavier per square foot than WPC (Wood Plastic Composite) planks of the same nominal size and thickness. A typical SPC plank at 6mm total thickness weighs approximately 2.5–3.0 lbs per square foot, while a WPC plank at 8mm total thickness (including a thicker backing layer) may weigh only 2.0–2.5 lbs per square foot despite being physically thicker."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do manufacturers limit pieces per carton to control weight?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Manufacturers set pieces per carton to keep carton weights within ergonomic handling limits — typically targeting 40–60 lbs per carton as the maximum for one-person handling without mechanical assistance. When a product is made thicker, denser, or in a larger plank size, the weight per piece increases. To keep the carton below the target weight limit, the manufacturer reduces the number of pieces per carton. This is why two products with the same nominal plank size but different core thicknesses may have different pieces-per-carton counts, resulting in different carton coverage figures."
         }
       }
     ]
@@ -64,43 +80,90 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Weight Per Carton Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Logistics • Shipping Weight • Handling</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Carton Handling · Core Density · Staging Loads · Freight Planning</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Weight per carton lists the total weight of a box of LVT, often used for freight planning and jobsite handling.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Weight per carton is the total weight — in pounds or kilograms — of a single box of rigid core LVT including all planks and packaging. It is primarily a logistics specification, used to plan handling, freight, and staging. It is also a secondary indicator of core type: SPC products are substantially heavier per square foot than WPC products due to the limestone filler in the SPC core formula.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Heavy cartons affect labor planning, storage limits, and shipping costs. Use weight per carton alongside carton coverage and plank size for accurate logistics planning.</p>
+        <p class="mt-2 text-slate-800">
+          Typical carton weights range from 35–60 lbs (16–27 kg) for standard rigid core LVT products. SPC products weigh more per square foot than WPC products of the same thickness. Manufacturers limit pieces per carton to keep carton weight within ergonomic handling limits (typically &lt;60 lbs). Heavier carton weight does not indicate higher quality.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#what-drives-weight" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">What drives weight</a>
+        <a href="#logistics" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Logistics implications</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="what-drives-weight" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">What Drives Carton Weight</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Weight per carton lists the total weight of a box of LVT, often used for freight planning and jobsite handling.</p>
+        <h3 class="text-lg font-semibold">Core type is the dominant factor</h3>
+        <p class="mt-2 text-slate-700">SPC (Stone Plastic Composite) cores contain 50–70% calcium carbonate (limestone) by weight — a dense mineral with a specific gravity of approximately 2.7 g/cm³. This makes SPC substantially heavier per unit volume than WPC (Wood Plastic Composite) cores, which replace a significant fraction of the PVC/limestone matrix with wood flour or other lower-density fillers. An SPC plank at 5.5mm total thickness may weigh 2.5–3.0 lbs per square foot, while a WPC product at 8mm total thickness (which includes a thicker foam backing) may weigh only 2.0–2.5 lbs per square foot. When comparing products, SPC products with attached backing pads weigh more per square foot than comparable WPC products despite often being physically thinner overall.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Heavy cartons affect labor planning, storage limits, and shipping costs.</p>
+        <h3 class="text-lg font-semibold">Plank size and thickness</h3>
+        <p class="mt-2 text-slate-700">Weight per carton scales with plank area and total thickness. A larger, thicker plank weighs more per piece. As plank dimensions increase toward wide-plank or extra-long formats, manufacturers reduce pieces per carton to maintain a target maximum carton weight — typically 40–60 lbs for one-person handling. This is why carton coverage (square feet per carton) does not scale predictably with plank size: larger planks have fewer pieces per carton, partially offsetting the higher coverage each plank provides. Knowing both carton weight and pieces per carton allows calculation of weight per plank, which is useful for staging and manual handling planning on multi-story jobs.</p>
       </div>
 
+      <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+        <table class="min-w-full text-sm">
+          <thead class="bg-slate-50 text-slate-600 text-left">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Core Type</th>
+              <th class="px-4 py-3 font-semibold">Typical Density</th>
+              <th class="px-4 py-3 font-semibold">Weight / sq ft (approx.)</th>
+              <th class="px-4 py-3 font-semibold">Notes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr>
+              <td class="px-4 py-3">SPC (no pad)</td>
+              <td class="px-4 py-3">1.8–2.0 g/cm³</td>
+              <td class="px-4 py-3">~2.5–3.0 lbs/sq ft</td>
+              <td class="px-4 py-3">Heaviest category</td>
+            </tr>
+            <tr class="bg-slate-50">
+              <td class="px-4 py-3">SPC (with IXPE pad)</td>
+              <td class="px-4 py-3">1.8–2.0 g/cm³ core</td>
+              <td class="px-4 py-3">~2.6–3.1 lbs/sq ft</td>
+              <td class="px-4 py-3">Slightly heavier with pad</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-3">WPC (with backing)</td>
+              <td class="px-4 py-3">0.9–1.2 g/cm³</td>
+              <td class="px-4 py-3">~2.0–2.5 lbs/sq ft</td>
+              <td class="px-4 py-3">Lighter despite greater thickness</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="logistics" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Logistics Implications</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Use weight per carton alongside carton coverage and plank size for accurate logistics planning.</p>
+        <p class="text-slate-700">Weight per carton affects three practical areas of job planning. First, manual handling: cartons above 50 lbs typically require two-person lifts or mechanical assistance, which affects labor requirements for unloading and staging. Second, staging loads: stacking cartons in a room before installation concentrates significant weight in a small area — 20 cartons at 50 lbs each represent 1,000 lbs. Residential subfloors are typically designed for live loads of 40 lbs per square foot; stacking over a single joist bay can exceed local capacity. Distribute carton stacks across multiple locations rather than concentrating them in one spot. Third, freight: heavier products have higher shipping costs per unit of coverage, which is relevant for large commercial orders where freight is a significant line item.</p>
       </div>
     </section>
 
@@ -108,60 +171,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Confirm weight units (lb or kg).</li>
-          <li>Check the number of planks or tiles per carton.</li>
-          <li>Review pallet weight and stacking limits if available.</li>
-          <li>Plan for lifting or equipment needs on large jobs.</li>
-          <li>Coordinate with delivery and storage constraints.</li>
+          <li>Confirm weight units (pounds or kilograms) and convert for consistent logistics planning.</li>
+          <li>Check pieces per carton alongside carton weight — divide to get weight per plank, which is the relevant figure for manual handling on stairs and in tight access areas.</li>
+          <li>Plan staging locations to distribute carton weight across multiple areas rather than stacking all cartons in one location — particularly relevant for upper-floor installations.</li>
+          <li>Verify elevator weight limits and doorway access dimensions if delivering to upper floors in multi-story buildings — carton dimensions as well as weight affect access.</li>
+          <li>Note that SPC products are significantly heavier per square foot than WPC products; factor this into freight cost estimates for large commercial orders.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Assuming weight per carton is the same across collections.</li>
-          <li>Ignoring weight limits for elevators or storage racks.</li>
-          <li>Mixing metric and imperial weights in estimates.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does heavier carton mean better quality?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Not necessarily. Weight depends on core density, size, and packaging.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is carton weight important for residential jobs?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">Yes, especially for delivery access and installation labor planning.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does heavier carton mean better quality?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Not necessarily. Carton weight reflects core density, plank size, piece count, and packaging — not product quality alone. SPC cores are inherently denser than WPC cores, making SPC products heavier per square foot. A heavier carton may simply mean a larger plank size or denser core type. Evaluate quality through performance specifications: wear layer thickness, traffic class, dimensional stability, and indentation resistance.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is carton weight important for residential jobs?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Yes. Carton weight affects manual handling requirements, staging load distribution, and delivery access planning. A 50 lb carton is manageable for one person on flat ground but may require two-person handling on stairs. Stacking multiple cartons concentrates significant weight — plan staging locations to distribute the load. Elevator weight limits and access constraints in multi-story buildings also require knowing carton weight.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How does core type affect carton weight?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">SPC cores contain 50–70% calcium carbonate (limestone) by weight — a dense mineral — making SPC significantly heavier per unit volume than WPC cores. A typical SPC plank at 5.5mm weighs approximately 2.5–3.0 lbs per square foot, while a WPC product at 8mm may weigh only 2.0–2.5 lbs per square foot despite being thicker. Core type is the dominant driver of weight differences between similar-sized products.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Why do manufacturers limit pieces per carton to control weight?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Manufacturers target 40–60 lbs per carton as the maximum for one-person handling. When a product uses a denser core, larger plank size, or greater total thickness, the weight per piece increases. To stay within the target carton weight, the manufacturer reduces pieces per carton. This is why two products with the same nominal plank dimensions but different core thicknesses may have different pieces-per-carton counts and therefore different carton coverage figures.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/glue-down/specs/physical/carton-coverage.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Carton Coverage</a>
-          <a href="/materials/lvt/glue-down/specs/physical/plank-size.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Plank Size</a>
-          <a href="/materials/lvt/glue-down/specs/physical/pattern-repeat.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Pattern Repeat</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/rigid-core/specs/physical/carton-coverage.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Carton Coverage</a>
+        <a href="/materials/lvt/rigid-core/specs/physical/plank-size.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Plank Size</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/core-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Core Type</a>
+        <a href="/materials/lvt/rigid-core/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about weight per carton for rigid core LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>

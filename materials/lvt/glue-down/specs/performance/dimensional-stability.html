@@ -14,11 +14,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Dimensional Stability Explained | Flooring Reference</title>
-  <meta name="description" content="What dimensional stability means for LVT, how it’s tested, and why it matters for gaps and transitions. Reference-only." />
+  <meta name="description" content="What dimensional stability means for glue-down LVT, how it is tested, and why it matters for adhesive bond integrity and floor flatness. Reference-only." />
 
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="/tailwind.css">
-  <link rel="icon" href="data:," />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
@@ -28,18 +28,34 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Does dimensional stability guarantee no gaps?",
+        "name": "Does dimensional stability guarantee no gaps or curling?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. It indicates performance under test conditions; installation and site conditions still matter."
+          "text": "No. Dimensional stability test results indicate how much a plank changes size under controlled laboratory heat and humidity exposure — they do not guarantee performance under all installation or in-service conditions. Poor adhesive bond area, incomplete curing, or extreme temperature exposure beyond the product's rated range can all cause dimensional movement that the stability test does not capture. The test result is one indicator of movement potential, to be used alongside expansion gap requirements and installation condition guidelines."
         }
       },
       {
         "@type": "Question",
-        "name": "Is stability more important for floating floors?",
+        "name": "Is dimensional stability more important for floating floors?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It is especially critical for floating rigid core installations where movement has fewer restraints."
+          "text": "Dimensional stability matters for both floating and glue-down LVT, but the failure modes differ. For floating rigid core LVT, thermally driven expansion in the plank accumulates across the run length — poorly stable products in large rooms can generate peak, buckle, or gap. For glue-down LVT, planks are restrained by the adhesive bond; a dimensionally unstable plank trying to expand against a strong bond can generate internal stress that may eventually cause edge lifting, seam opening, or surface buckling if the adhesive bond fails in a local area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What test standard is used for dimensional stability in LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ISO 23999 (formerly EN 434) is the primary international test standard for dimensional stability in resilient flooring. The test involves conditioning samples at elevated temperature (typically 80°C for a set period) and measuring length and width before and after conditioning to determine percent change. Some manufacturers also test at lower temperatures to represent in-use conditions. ASTM F2199 is used for dimensional stability in some North American specifications. The test method and conditioning temperature should be noted when comparing stability data across products."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does sunlight exposure affect dimensional stability in glue-down LVT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Direct sunlight through windows can heat a dark-colored floor surface significantly above ambient air temperature — surface temperatures of 120–160°F have been recorded on LVT in direct sun through glass, which acts as a thermal amplifier. This heat causes the LVT to expand. In glue-down installations, the adhesive bond resists this expansion — if the bond strength is exceeded, the plank can buckle or lift at the seams. Most manufacturers specify maximum sunlight exposure limits or require protective window treatments in sunny installations. The dimensional stability test result does not directly represent performance under extreme solar heat gain."
         }
       }
     ]
@@ -51,7 +67,7 @@
 <meta property="og:site_name" content="Flooring Reference" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Dimensional Stability Explained | Flooring Reference" />
-<meta property="og:description" content="What dimensional stability means for LVT, how it’s tested, and why it matters for gaps and transitions. Reference-only." />
+<meta property="og:description" content="What dimensional stability means for glue-down LVT, how it is tested, and why it matters for adhesive bond integrity and floor flatness. Reference-only." />
 <meta property="og:url" content="https://floorref.com/materials/lvt/glue-down/specs/performance/dimensional-stability.html" />
 <meta property="og:image" content="https://floorref.com/assets/og-default.png" />
 <meta name="twitter:card" content="summary" />
@@ -64,43 +80,57 @@
   <main class="mx-auto max-w-5xl px-4 py-10">
     <section class="space-y-4">
       <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Dimensional Stability Explained
-        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">LVT Performance • Heat/Cold Movement • Expansion Control</span>
+        <span class="block text-slate-600 font-semibold text-xl sm:text-2xl mt-2">Glue-Down LVT · ISO 23999 · Heat Movement · Adhesive Bond</span>
       </h1>
 
       <p class="text-slate-700 text-lg max-w-3xl">
-        Dimensional stability measures how much an LVT plank or tile expands or contracts under heat, light, or humidity exposure during testing.
-        <span class="text-slate-500">Reference-only: no product recommendations.</span>
+        Dimensional stability measures how much a glue-down LVT plank expands or contracts when exposed to heat or moisture during standardized testing. For glue-down systems, the adhesive bond restrains thermal movement — but if the plank tries to expand significantly against the bond, the resulting stress can cause edge lifting, seam opening, or surface buckling if the bond has any weak points.
+        <span class="text-slate-500"> Reference-only: no product recommendations.</span>
       </p>
 
       <div class="rounded-xl border border-slate-200 bg-white p-5 shadow-sm max-w-3xl">
         <div class="text-sm font-semibold text-slate-500">Quick answer</div>
-        <p class="mt-2 text-slate-800">Better stability helps reduce gapping, peaking, or buckling—especially in large rooms or sunlit areas. Compare dimensional stability with expansion gap requirements, max run length, and telegraphing risk for installation planning.</p>
+        <p class="mt-2 text-slate-800">
+          Dimensional stability is tested per ISO 23999 or ASTM F2199, reporting percent change in length and width under heat conditioning. Better stability means less movement potential under temperature swings. For glue-down LVT, the adhesive bond restrains movement — but extreme heat (especially solar heat gain through windows) can overcome even a well-bonded floor if the product's stability is poor.
+        </p>
       </div>
 
       <div class="max-w-3xl flex flex-wrap gap-2 text-sm">
-        <a href="#overview" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Overview</a>
-        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Spec Sheet Checklist</a>
-        <a href="#pitfalls" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Common Pitfalls</a>
+        <a href="#test" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Test method</a>
+        <a href="#glue-down" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Glue-down context</a>
+        <a href="#checklist" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Checklist</a>
         <a href="#faq" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">FAQ</a>
       </div>
     </section>
 
-    <section id="overview" class="mt-10 space-y-6">
-      <h2 class="text-2xl font-bold">Quick Explainers</h2>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section id="test" class="mt-10 space-y-6">
+      <h2 class="text-2xl font-bold">How Dimensional Stability Is Tested</h2>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">What it is</h3>
-        <p class="mt-2 text-slate-700">Dimensional stability measures how much an LVT plank or tile expands or contracts under heat, light, or humidity exposure during testing.</p>
+        <h3 class="text-lg font-semibold">ISO 23999 / EN 434</h3>
+        <p class="mt-2 text-slate-700">ISO 23999 (which replaced EN 434 for resilient flooring) is the primary standard for dimensional stability testing. Plank samples are measured precisely, conditioned at 80°C for a specified duration (typically 6 hours), cooled to room temperature, and re-measured. The percent change in length and width is calculated and reported. Stability is expressed as a percent change — lower numbers indicate better stability. For classification purposes, many European product standards require a maximum dimensional change of ±0.25% in length and width to pass the stability requirement for a given use class.</p>
       </div>
 
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Why it matters for LVT</h3>
-        <p class="mt-2 text-slate-700">Better stability helps reduce gapping, peaking, or buckling—especially in large rooms or sunlit areas.</p>
+        <h3 class="text-lg font-semibold">Curling test</h3>
+        <p class="mt-2 text-slate-700">Some standards also include a curling assessment after the heat conditioning period. Curling occurs when the top and bottom of the LVT plank change dimension at different rates under heat — the plank edges curl upward or downward depending on which layer contracts or expands more. For glue-down LVT, the adhesive bond suppresses curling in service, but a product with high curling tendency may develop edge lifting if the bond is compromised in any area. The curling result is typically reported as a maximum curl height at the plank corner after conditioning.</p>
       </div>
+    </section>
 
+    <section id="glue-down" class="mt-10 space-y-4">
+      <h2 class="text-2xl font-bold">Dimensional Stability in Glue-Down Context</h2>
       <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h3 class="text-lg font-semibold">Related specs to compare</h3>
-        <p class="mt-2 text-slate-700">Compare dimensional stability with expansion gap requirements, max run length, and telegraphing risk for installation planning.</p>
+        <p class="text-slate-700">In a floating LVT installation, a dimensionally unstable product expands across the run length, potentially peaking or gapping if the total movement exceeds the expansion gap. In glue-down LVT, the adhesive bond physically restrains the planks from expanding — so the problem shifts from accumulated movement to internal stress in the bond. A product with poor dimensional stability installed in a location with significant temperature swings (large windows, sunrooms, entrance areas with HVAC off overnight) can generate sufficient thermal movement stress to delaminate from the adhesive, particularly at plank ends where the adhesive coverage may be thinner.</p>
       </div>
     </section>
 
@@ -108,60 +138,76 @@
       <h2 class="text-2xl font-bold">Spec Sheet Checklist</h2>
       <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
         <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Look for the test method and conditioning temperature.</li>
-          <li>Check the reported percent change or mm change.</li>
-          <li>Note whether results apply to rigid core or glue-down systems.</li>
-          <li>Confirm expansion gap and transition requirements.</li>
-          <li>Review sunlight/heat exposure limitations.</li>
+          <li>Find the dimensional stability test result — reported as percent change in length and width after heat conditioning.</li>
+          <li>Note the test method (ISO 23999, EN 434, or ASTM F2199) and conditioning temperature to allow valid comparisons.</li>
+          <li>Check whether curling data is reported alongside linear stability results.</li>
+          <li>Review the product's temperature exposure limits for in-service conditions, especially for areas with significant solar heat gain.</li>
+          <li>For glue-down applications with potential temperature extremes, confirm adhesive peel and shear strength specifications to assess bond adequacy under thermal cycling.</li>
         </ul>
       </div>
     </section>
 
-    <section id="pitfalls" class="mt-10">
-      <h2 class="text-2xl font-bold">Common Pitfalls</h2>
-      <div class="mt-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <ul class="list-disc pl-5 space-y-2 text-slate-700">
-          <li>Comparing results from different test methods or conditioning temperatures.</li>
-          <li>Ignoring expansion gap guidance when stability numbers look low.</li>
-          <li>Assuming stability numbers replace site climate control requirements.</li>
-        </ul>
-      </div>
-    </section>
+    <div class="mt-10">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-1093360273035606"
+           data-ad-slot="3125114875"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
     <section id="faq" class="mt-10">
       <h2 class="text-2xl font-bold">FAQ</h2>
-
       <div class="mt-4 space-y-3">
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Does dimensional stability guarantee no gaps?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">No. It indicates performance under test conditions; installation and site conditions still matter.</p>
-</details>
-<details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-  <summary class="cursor-pointer list-none flex items-center justify-between">
-    <span class="font-semibold">Is stability more important for floating floors?</span>
-    <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
-  </summary>
-  <p class="mt-3 text-slate-700">It is especially critical for floating rigid core installations where movement has fewer restraints.</p>
-</details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Does dimensional stability guarantee no gaps or curling?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">No. Dimensional stability test results indicate how much a plank changes size under controlled laboratory heat and humidity exposure — they do not guarantee performance under all installation or in-service conditions. Poor adhesive bond area, incomplete curing, or extreme temperature exposure beyond the product's rated range can all cause dimensional movement that the stability test does not capture. The test result is one indicator of movement potential, to be used alongside expansion gap requirements and installation condition guidelines.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">Is dimensional stability more important for floating floors?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Dimensional stability matters for both floating and glue-down LVT, but the failure modes differ. For floating rigid core LVT, thermally driven expansion accumulates across the run length — poorly stable products in large rooms can peak, buckle, or gap. For glue-down LVT, planks are restrained by the adhesive bond; a dimensionally unstable plank trying to expand against a strong bond can generate internal stress that may eventually cause edge lifting, seam opening, or surface buckling if the adhesive bond fails in a local area.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">What test standard is used for dimensional stability in LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">ISO 23999 (formerly EN 434) is the primary international test standard for dimensional stability in resilient flooring. The test involves conditioning samples at elevated temperature (typically 80°C) and measuring length and width before and after conditioning to determine percent change. ASTM F2199 is used for dimensional stability in some North American specifications. The test method and conditioning temperature should be noted when comparing stability data across products.</p>
+        </details>
+        <details class="group rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer list-none flex items-center justify-between">
+            <span class="font-semibold">How does sunlight exposure affect dimensional stability in glue-down LVT?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">⌄</span>
+          </summary>
+          <p class="mt-3 text-slate-700">Direct sunlight through windows can heat a dark-colored floor surface significantly above ambient air temperature — surface temperatures of 120–160°F have been recorded on LVT in direct sun through glass, which acts as a thermal amplifier. This heat causes the LVT to expand. In glue-down installations, the adhesive bond resists this expansion — if the bond strength is exceeded, the plank can buckle or lift at the seams. Most manufacturers specify maximum sunlight exposure limits or require protective window treatments in sunny installations.</p>
+        </details>
       </div>
+    </section>
 
-      <div class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
-        <h2 class="text-lg font-semibold">Related topics</h2>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href="/materials/lvt/rigid-core/specs/installation/expansion-gap.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Expansion Gap</a>
-          <a href="/materials/lvt/rigid-core/specs/installation/max-run-length.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Max Run Length</a>
-          <a href="/materials/lvt/rigid-core/specs/performance/telegraphing-risk.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Telegraphing Risk</a>
-        </div>
+    <section class="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-lg font-semibold">Related specs to compare</h2>
+      <div class="mt-3 flex flex-wrap gap-2 text-sm">
+        <a href="/materials/lvt/glue-down/specs/installation/adhesive-type.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Adhesive Type</a>
+        <a href="/materials/lvt/glue-down/specs/installation/moisture-limits.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Moisture Limits</a>
+        <a href="/materials/lvt/glue-down/specs/construction/total-thickness.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Total Thickness</a>
+        <a href="/materials/lvt/glue-down/specs/performance/indentation-resistance.html" class="rounded-lg border border-slate-200 bg-white px-3 py-2 hover:bg-slate-50">Indentation Resistance</a>
       </div>
+    </section>
+
+    <section class="mt-10 max-w-3xl">
+      <h2 class="text-lg font-semibold">Reference-Only Information</h2>
+      <p class="mt-2 text-sm text-slate-700">This page provides general informational reference about dimensional stability for glue-down LVT. It does not provide installation guidance, professional advice, or product recommendations.</p>
     </section>
   </main>
 
   <div id="site-footer"></div>
-
-  <script src="/assets/js/header-footer.js"></script>
-  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/site.js" defer></script>
 </body>
 </html>
