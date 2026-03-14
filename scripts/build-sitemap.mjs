@@ -30,6 +30,14 @@ const SKIP_FILES = new Set(["404.html"]);
 // If you want to exclude URL prefixes too (extra safety)
 const EXCLUDE_URL_PREFIXES = ["/search/", "/about/", "/contact/", "/legal/"];
 
+// Exact URLs to exclude (e.g. redirect sources that have a canonical elsewhere)
+const EXCLUDE_URLS = new Set([
+  "/materials/laminate/specs/performance/abrasion-resistance.html",
+  "/materials/carpet/carpet-tile/specs/tile-backing-systems.html",
+  "/materials/hardwood/engineered-hardwood/specs/installation/moisture-testing.html",
+  "/materials/lvt/glue-down/specs/construction/wear-layer.html",
+]);
+
 function* walk(dirPath) {
   const entries = fs.readdirSync(dirPath, { withFileTypes: true });
   for (const e of entries) {
@@ -97,7 +105,7 @@ function main() {
 
   const urls = files
     .map((f) => fileToUrl(f))
-    .filter((u) => u && !EXCLUDE_URL_PREFIXES.some((p) => u.startsWith(p)));
+    .filter((u) => u && !EXCLUDE_URL_PREFIXES.some((p) => u.startsWith(p)) && !EXCLUDE_URLS.has(u));
 
   // De-dupe + sort
   const unique = [...new Set(urls)].sort((a, b) => a.localeCompare(b));
