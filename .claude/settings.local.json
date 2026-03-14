@@ -5,7 +5,8 @@
       "Bash(npm run:*)",
       "Bash(git update-index:*)",
       "Bash(node:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(grep:*)"
     ]
   }
 }

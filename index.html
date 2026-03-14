@@ -138,21 +138,6 @@
   </div>
 </header>
 
-<script>
-  // Mobile nav toggle (homepage inline)
-  document.addEventListener("click", (e) => {
-    const btn = e.target.closest("#navBtn");
-    if (!btn) return;
-
-    const menuId = btn.getAttribute("aria-controls") || "mobileNav";
-    const menu = document.getElementById(menuId);
-    if (!menu) return;
-
-    const isOpen = btn.getAttribute("aria-expanded") === "true";
-    btn.setAttribute("aria-expanded", String(!isOpen));
-    menu.classList.toggle("hidden", isOpen);
-  });
-</script>
 
 
 <!-- Main content -->
