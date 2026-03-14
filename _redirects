@@ -36,10 +36,10 @@
 /materials/specs/backing.html /materials/carpet/specs/backing/backing-types.html 301
 /materials/specs/twist-level.html /materials/carpet/specs/construction/twist-level.html 301
 /materials/specs/pile-height.html /materials/carpet/specs/construction/pile-height.html 301
-/materials/specs/janka.html /materials/hardwood/specs/janka.html 301
+/materials/specs/janka.html /materials/hardwood/solid-hardwood/specs/performance/janka-hardness.html 301
 /materials/specs/veneer-thickness.html /materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html 301
-/materials/specs/wear-layer.html /materials/lvt/specs/wear-layer.html 301
-/materials/specs/core-type.html /materials/lvt/specs/core-type.html 301
+/materials/specs/wear-layer.html /materials/lvt/rigid-core/specs/construction/wear-layer.html 301
+/materials/specs/core-type.html /materials/lvt/rigid-core/specs/construction/core-type.html 301
 
 # 2) Merged duplicate pages
 /materials/laminate/specs/performance/abrasion-resistance.html  /materials/laminate/specs/performance/ac-rating.html  301
