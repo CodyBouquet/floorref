@@ -1,50 +1,32 @@
 [
   {
-    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
-    "url": "/materials/laminate/",
-    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
-    "score": 3
-  },
-  {
-    "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/performance/ac-rating.html",
-    "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
+    "title": "What Is Carpet Flooring? Formats, Specs & Terms Explained",
+    "url": "/materials/carpet/",
+    "blurb": "Reference explanation of carpet flooring. Learn what carpet is, the difference between stretch-in, glue-down, and carpet tile formats, and common carpet specifications like face weight, density, and pile height.",
     "score": 3
   },
   {
     "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
     "url": "/materials/lvt/",
     "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
-    "score": 3
-  },
-  {
-    "title": "Redirecting…",
-    "url": "/materials/carpet/carpet-tile/specs/tile-backing-systems.html",
-    "blurb": "Redirecting… Redirecting to Carpet Tile Backing System …",
     "score": 2
   },
   {
-    "title": "Laminate Specs | Flooring Reference",
-    "url": "/materials/laminate/specs/",
-    "blurb": "Plain-English index of laminate specifications. Definitions, typical ranges, and how specs appear on technical data sheets.",
+    "title": "What Is Hardwood Flooring? Types, Finishes & Installation Methods Explained",
+    "url": "/materials/hardwood/",
+    "blurb": "Reference explanation of hardwood flooring. Learn the difference between solid and engineered hardwood, prefinished vs site-finished products, and common hardwood installation methods.",
     "score": 1
   },
   {
-    "title": "Redirecting…",
-    "url": "/materials/lvt/glue-down/specs/construction/wear-layer.html",
-    "blurb": "Redirecting… Redirecting to Wear Layer Explained …",
+    "title": "Solid Hardwood Plank Width Explained | Flooring Reference",
+    "url": "/materials/hardwood/solid-hardwood/specs/construction/width.html",
+    "blurb": "Solid hardwood plank width explained — how width affects seasonal movement, appearance, nominal vs actual dimensions, and installation requirements. Reference-only.",
     "score": 1
   },
   {
-    "title": "Attached Underlayment Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/specs/construction/attached-underlayment.html",
-    "blurb": "Learn what attached underlayment means on rigid core LVT, how it affects sound ratings and height, and what to check on spec sheets. Reference-only.",
-    "score": 1
-  },
-  {
-    "title": "Edge Profile Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/specs/construction/edge-profile.html",
-    "blurb": "Edge profile defines how LVT plank or tile edges are shaped and how seams will appear. Learn what to check on data sheets. Reference-only.",
+    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
+    "url": "/materials/laminate/",
+    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
     "score": 1
   }
 ]
