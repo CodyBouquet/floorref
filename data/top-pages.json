@@ -1,14 +1,38 @@
 [
   {
+    "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
+    "url": "/materials/laminate/specs/performance/ac-rating.html",
+    "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
+    "score": 5
+  },
+  {
+    "title": "What Is Hardwood Flooring? Types, Finishes & Installation Methods Explained",
+    "url": "/materials/hardwood/",
+    "blurb": "Reference explanation of hardwood flooring. Learn the difference between solid and engineered hardwood, prefinished vs site-finished products, and common hardwood installation methods.",
+    "score": 2
+  },
+  {
+    "title": "Solid Hardwood Plank Width Explained | Flooring Reference",
+    "url": "/materials/hardwood/solid-hardwood/specs/construction/width.html",
+    "blurb": "Solid hardwood plank width explained — how width affects seasonal movement, appearance, nominal vs actual dimensions, and installation requirements. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
+    "url": "/materials/laminate/",
+    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
+    "score": 1
+  },
+  {
     "title": "Thickness Explained | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/construction/thickness.html",
     "blurb": "Laminate flooring thickness — 6mm through 12mm ranges, how thickness affects underfoot feel, subfloor tolerance, door clearance, and acoustic performance. Reference-only.",
     "score": 1
   },
   {
-    "title": "Rigid Core (Floating) LVT Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/",
-    "blurb": "Plain-English explanation of rigid core (floating) LVT: what it is, how it differs from glue-down LVT, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
+    "title": "Glue-Down (Flexible) LVT Explained | Flooring Reference",
+    "url": "/materials/lvt/glue-down/",
+    "blurb": "Plain-English explanation of glue-down (flexible) LVT: what it is, how it differs from floating rigid core LVT, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
     "score": 1
   }
 ]
