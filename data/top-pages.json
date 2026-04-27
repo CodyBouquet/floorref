@@ -1,26 +1,44 @@
 [
   {
+    "title": "Engineered Hardwood Veneer Thickness Explained | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html",
+    "blurb": "How veneer thickness is measured in engineered hardwood, what ranges are refinishable, and why veneer thickness matters more than total thickness for lifespan. Reference-only.",
+    "score": 4
+  },
+  {
+    "title": "Locking System Explained | Laminate Flooring Reference",
+    "url": "/materials/laminate/specs/construction/locking-system.html",
+    "blurb": "Locking system for laminate flooring — glueless click profiles, angle-angle vs fold-down installation methods, joint strength, plank replacement access, and what locking system affects in practice. Reference-only.",
+    "score": 2
+  },
+  {
     "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/performance/ac-rating.html",
     "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
     "score": 2
   },
   {
-    "title": "Solid Hardwood Plank Width Explained | Flooring Reference",
-    "url": "/materials/hardwood/solid-hardwood/specs/construction/width.html",
-    "blurb": "Solid hardwood plank width explained — how width affects seasonal movement, appearance, nominal vs actual dimensions, and installation requirements. Reference-only.",
+    "title": "What Is Hardwood Flooring? Types, Finishes & Installation Methods Explained",
+    "url": "/materials/hardwood/",
+    "blurb": "Reference explanation of hardwood flooring. Learn the difference between solid and engineered hardwood, prefinished vs site-finished products, and common hardwood installation methods.",
     "score": 1
   },
   {
-    "title": "Locking System Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/construction/locking-system.html",
-    "blurb": "Locking system for laminate flooring — glueless click profiles, angle-angle vs fold-down installation methods, joint strength, plank replacement access, and what locking system affects in practice. Reference-only.",
+    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
+    "url": "/materials/laminate/",
+    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
     "score": 1
   },
   {
-    "title": "Floating vs Glue-Down LVT Explained | Flooring Reference",
-    "url": "/materials/lvt/floating-vs-glue-down/",
-    "blurb": "Clear, neutral comparison of floating (rigid core) LVT vs glue-down LVT: what changes in construction, what specs differ, and how to read technical data sheets. Reference-only, no recommendations.",
+    "title": "Water Resistance for Laminate Flooring | Flooring Reference",
+    "url": "/materials/laminate/specs/performance/water-resistance.html",
+    "blurb": "Water resistance for laminate flooring — why HDF core absorbs water, swelling and joint damage mechanisms, waterproof laminate claims, where laminate should and should not be used, and water warranty scope. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
+    "url": "/materials/lvt/",
+    "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
     "score": 1
   }
 ]
