@@ -3,18 +3,18 @@
     "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/performance/ac-rating.html",
     "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
-    "score": 8
+    "score": 6
   },
   {
-    "title": "Carpet Backing Types Explained | Flooring Reference",
-    "url": "/materials/carpet/specs/backing/backing-types.html",
-    "blurb": "Carpet backing types explained — ActionBac, unitary, PVC, polyurethane cushion-back, and hard-back systems. How each affects installation method, stability, and moisture performance. Reference-only.",
+    "title": "Engineered Hardwood Veneer Thickness Explained | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html",
+    "blurb": "How veneer thickness is measured in engineered hardwood, what ranges are refinishable, and why veneer thickness matters more than total thickness for lifespan. Reference-only.",
     "score": 3
   },
   {
-    "title": "Locking System Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/construction/locking-system.html",
-    "blurb": "Locking system for laminate flooring — glueless click profiles, angle-angle vs fold-down installation methods, joint strength, plank replacement access, and what locking system affects in practice. Reference-only.",
+    "title": "Wear Layer Explained | Laminate Flooring Reference",
+    "url": "/materials/laminate/specs/construction/wear-layer.html",
+    "blurb": "Laminate flooring wear layer — melamine resin overlay, aluminum oxide content, overlay weight in g/m², relationship to AC rating, and how it differs from vinyl wear layers. Reference-only.",
     "score": 2
   },
   {
@@ -24,9 +24,15 @@
     "score": 1
   },
   {
-    "title": "Engineered Hardwood Veneer Thickness Explained | Flooring Reference",
-    "url": "/materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html",
-    "blurb": "How veneer thickness is measured in engineered hardwood, what ranges are refinishable, and why veneer thickness matters more than total thickness for lifespan. Reference-only.",
+    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
+    "url": "/materials/laminate/",
+    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
+    "score": 1
+  },
+  {
+    "title": "Wear Layer Explained | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/specs/construction/wear-layer.html",
+    "blurb": "Wear layer thickness is a key LVT spec. Learn what mil means, typical ranges, and how to compare wear layers. Reference-only.",
     "score": 1
   }
 ]
