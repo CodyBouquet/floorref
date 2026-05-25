@@ -1,44 +1,32 @@
 [
   {
-    "title": "Engineered Hardwood Veneer Thickness Explained | Flooring Reference",
-    "url": "/materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html",
-    "blurb": "How veneer thickness is measured in engineered hardwood, what ranges are refinishable, and why veneer thickness matters more than total thickness for lifespan. Reference-only.",
-    "score": 6
+    "title": "Plank Size Explained | Laminate Flooring Reference",
+    "url": "/materials/laminate/specs/construction/plank-size.html",
+    "blurb": "Plank size for laminate flooring — typical width and length ranges, narrow strip vs wide plank, how format affects subfloor flatness requirements, acclimation, and room proportion. Reference-only.",
+    "score": 3
   },
   {
     "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/performance/ac-rating.html",
     "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
-    "score": 4
-  },
-  {
-    "title": "Locking System Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/construction/locking-system.html",
-    "blurb": "Locking system for laminate flooring — glueless click profiles, angle-angle vs fold-down installation methods, joint strength, plank replacement access, and what locking system affects in practice. Reference-only.",
     "score": 2
   },
   {
-    "title": "Transition Requirements Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/specs/installation/transition-requirements.html",
-    "blurb": "Transition requirements specify where LVT needs breaks or profiles between rooms and long runs. Reference-only.",
-    "score": 2
-  },
-  {
-    "title": "What Is Carpet Flooring? Formats, Specs & Terms Explained",
-    "url": "/materials/carpet/",
-    "blurb": "Reference explanation of carpet flooring. Learn what carpet is, the difference between stretch-in, glue-down, and carpet tile formats, and common carpet specifications like face weight, density, and pile height.",
+    "title": "Carpet Backing Explained (Jute, Action Back, Unitary, OptiBack & More) | Flooring Reference",
+    "url": "/materials/carpet/specs/construction/backing.html",
+    "blurb": "Plain-English guide to carpet backing terms: jute, action back, unitary, OptiBack, high-pick, and “waterproof backing.” Learn what backing does, what these labels usually mean, and common misconceptions — reference-only.",
     "score": 1
   },
   {
-    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
-    "url": "/materials/laminate/",
-    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
+    "title": "Solid Hardwood Board Thickness Explained | Flooring Reference",
+    "url": "/materials/hardwood/solid-hardwood/specs/construction/thickness.html",
+    "blurb": "Solid hardwood board thickness explained — standard dimensions, how thickness affects refinishing cycles, radiant heat compatibility, and subfloor height. Reference-only.",
     "score": 1
   },
   {
-    "title": "Rigid Core (Floating) LVT Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/",
-    "blurb": "Plain-English explanation of rigid core (floating) LVT: what it is, how it differs from glue-down LVT, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
+    "title": "Moisture Limits Explained | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/specs/installation/moisture-limits.html",
+    "blurb": "Moisture limits define the maximum moisture allowed in the subfloor for LVT installations. Learn the tests and implications. Reference-only.",
     "score": 1
   }
 ]
