@@ -1,32 +1,74 @@
 [
   {
-    "title": "Plank Size Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/construction/plank-size.html",
-    "blurb": "Plank size for laminate flooring — typical width and length ranges, narrow strip vs wide plank, how format affects subfloor flatness requirements, acclimation, and room proportion. Reference-only.",
-    "score": 3
-  },
-  {
     "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/performance/ac-rating.html",
     "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
-    "score": 2
+    "score": 3
   },
   {
     "title": "Carpet Backing Explained (Jute, Action Back, Unitary, OptiBack & More) | Flooring Reference",
     "url": "/materials/carpet/specs/construction/backing.html",
     "blurb": "Plain-English guide to carpet backing terms: jute, action back, unitary, OptiBack, high-pick, and “waterproof backing.” Learn what backing does, what these labels usually mean, and common misconceptions — reference-only.",
+    "score": 2
+  },
+  {
+    "title": "Pile Height Explained (Carpet) | Flooring Reference",
+    "url": "/materials/carpet/specs/construction/pile-height.html",
+    "blurb": "What pile height means in carpet specs, typical ranges, and how pile height relates to feel, density, and construction — reference-only.",
+    "score": 2
+  },
+  {
+    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
+    "url": "/materials/laminate/",
+    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
+    "score": 2
+  },
+  {
+    "title": "Radiant Heat Compatibility Explained | Flooring Reference",
+    "url": "/materials/lvt/rigid-core/specs/installation/radiant-heat.html",
+    "blurb": "Learn how LVT interacts with radiant heat systems, including temperature limits and installation rules. Reference-only.",
+    "score": 2
+  },
+  {
+    "title": "Carpet Stitch Rate Explained (Stitches Per Inch) | Flooring Reference",
+    "url": "/materials/carpet/specs/construction/stitch-rate.html",
+    "blurb": "What carpet stitch rate means (stitches per inch), how it relates to gauge and density, and why it",
     "score": 1
   },
   {
-    "title": "Solid Hardwood Board Thickness Explained | Flooring Reference",
-    "url": "/materials/hardwood/solid-hardwood/specs/construction/thickness.html",
-    "blurb": "Solid hardwood board thickness explained — standard dimensions, how thickness affects refinishing cycles, radiant heat compatibility, and subfloor height. Reference-only.",
+    "title": "Engineered Hardwood Veneer Thickness Explained | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html",
+    "blurb": "How veneer thickness is measured in engineered hardwood, what ranges are refinishable, and why veneer thickness matters more than total thickness for lifespan. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Engineered Hardwood Refinish Potential Explained | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/performance/refinish-potential.html",
+    "blurb": "Refinish potential for engineered hardwood explained — how veneer thickness determines refinishability, full sanding vs. screen-and-recoat, and how many times a floor can be refinished. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Site Finished Hardwood Explained | Flooring Reference",
+    "url": "/materials/hardwood/site-finished-hardwood/",
+    "blurb": "Plain-English explanation of site finished hardwood: what it is, how it differs from prefinished, and the specs you’ll see on technical data sheets. Reference-only, no product recommendations.",
+    "score": 1
+  },
+  {
+    "title": "Laminate Specs | Flooring Reference",
+    "url": "/materials/laminate/specs/",
+    "blurb": "Plain-English index of laminate specifications. Definitions, typical ranges, and how specs appear on technical data sheets.",
+    "score": 1
+  },
+  {
+    "title": "Core Type Explained | Laminate Flooring Reference",
+    "url": "/materials/laminate/specs/construction/core-type.html",
+    "blurb": "Core type for laminate flooring — HDF vs MDF, density ratings, moisture expansion, formaldehyde emissions from the core, and how core density affects locking joint strength. Reference-only.",
     "score": 1
   },
   {
     "title": "Moisture Limits Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/specs/installation/moisture-limits.html",
-    "blurb": "Moisture limits define the maximum moisture allowed in the subfloor for LVT installations. Learn the tests and implications. Reference-only.",
+    "url": "/materials/lvt/glue-down/specs/installation/moisture-limits.html",
+    "blurb": "Moisture limits define maximum subfloor moisture for glue-down LVT. Learn ASTM F2170, ASTM F1869, slab pH, and why glue-down has tighter requirements. Reference-only.",
     "score": 1
   }
 ]
