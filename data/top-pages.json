@@ -1,122 +1,116 @@
 [
   {
+    "title": "Slip Resistance Explained | Flooring Reference",
+    "url": "/materials/lvt/glue-down/specs/performance/slip-resistance.html",
+    "blurb": "Slip resistance for glue-down LVT is measured as COF. Learn ASTM D2047, ANSI A137.1, wet vs dry ratings, and how surface coating and embossing affect traction. Reference-only.",
+    "score": 9
+  },
+  {
     "title": "AC Rating Explained (Abrasion Class) | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/performance/ac-rating.html",
     "blurb": "AC rating for laminate flooring — how AC1–AC5 abrasion classes are defined, what Taber cycle counts mean, traffic class mapping, EN 13329 test methodology, and why AC rating doesn",
-    "score": 14
+    "score": 4
   },
   {
-    "title": "Carpet Tile Size Explained | Flooring Reference",
-    "url": "/materials/carpet/carpet-tile/specs/tile-size.html",
-    "blurb": "What carpet tile size means (common formats like 18x18, 24x24, 12x48). Learn how size affects layout, waste, seams, and planning — reference-only.",
-    "score": 2
-  },
-  {
-    "title": "Carpet Yarn Type Explained | Flooring Reference",
-    "url": "/materials/carpet/specs/construction/yarn-type.html",
-    "blurb": "Carpet yarn types explained — BCF vs staple yarn, how filament vs spun construction affects shedding and texture retention, and what denier means on spec sheets. Reference-only.",
-    "score": 2
-  },
-  {
-    "title": "Engineered Hardwood Veneer Thickness Explained | Flooring Reference",
-    "url": "/materials/hardwood/engineered-hardwood/specs/construction/veneer-thickness.html",
-    "blurb": "How veneer thickness is measured in engineered hardwood, what ranges are refinishable, and why veneer thickness matters more than total thickness for lifespan. Reference-only.",
-    "score": 2
-  },
-  {
-    "title": "What Is Laminate Flooring? Construction, Specs & Terms Explained",
-    "url": "/materials/laminate/",
-    "blurb": "Reference explanation of laminate flooring. Learn what laminate is, how it is constructed, and common laminate specifications like thickness, AC rating, and core density.",
-    "score": 2
-  },
-  {
-    "title": "What Is LVT Flooring? Floating vs Glue Down, Specs & Terms",
-    "url": "/materials/lvt/",
-    "blurb": "Reference explanation of LVT (Luxury Vinyl Tile) flooring. Learn what LVT is, the difference between floating (rigid core) and glue-down formats, and common specifications found on technical data sheets.",
-    "score": 2
-  },
-  {
-    "title": "Plank Size Explained | Flooring Reference",
-    "url": "/materials/lvt/rigid-core/specs/physical/plank-size.html",
-    "blurb": "Plank size lists LVT length and width. Learn how size affects layout, visual scale, and performance. Reference-only.",
-    "score": 2
-  },
-  {
-    "title": "Carpet Primary Backing Explained | Flooring Reference",
-    "url": "/materials/carpet/specs/backing/primary-backing.html",
-    "blurb": "Carpet primary backing explained — what the primary backing fabric is, woven vs nonwoven types, how it affects tufting density and tuft bind, and how it relates to secondary backing. Reference-only.",
-    "score": 1
+    "title": "Expansion Gap Explained | Laminate Flooring Reference",
+    "url": "/materials/laminate/specs/installation/expansion-gap.html",
+    "blurb": "Expansion gap for laminate flooring — why floating floors need perimeter gaps, typical gap sizes, what happens when gaps are omitted, obstacles, and moisture effects. Reference-only.",
+    "score": 3
   },
   {
     "title": "Carpet Gauge Explained (Tufting Gauge) | Flooring Reference",
     "url": "/materials/carpet/specs/construction/gauge.html",
     "blurb": "What carpet gauge means (tufting gauge), how it affects appearance and density, and why it",
-    "score": 1
+    "score": 2
   },
   {
     "title": "Carpet VOC Certifications Explained | Flooring Reference",
     "url": "/materials/carpet/specs/environmental/voc-certifications.html",
     "blurb": "Carpet VOC certifications explained — CRI Green Label Plus, FloorScore, what emissions limits mean, adhesive and cushion requirements, and how certifications relate to LEED indoor air quality credits. Reference-only.",
+    "score": 2
+  },
+  {
+    "title": "Carpet Traffic Classification Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/performance/traffic-classification.html",
+    "blurb": "Carpet traffic classification explained — what light, moderate, heavy, and extra heavy commercial ratings mean, how they are determined, and how to compare classifications across manufacturers. Reference-only.",
+    "score": 2
+  },
+  {
+    "title": "What Is Carpet Flooring? Formats, Specs & Terms Explained",
+    "url": "/materials/carpet/",
+    "blurb": "Reference explanation of carpet flooring. Learn what carpet is, the difference between stretch-in, glue-down, and carpet tile formats, and common carpet specifications like face weight, density, and pile height.",
     "score": 1
   },
   {
-    "title": "Carpet Total Thickness Explained | Flooring Reference",
-    "url": "/materials/carpet/specs/physical/total-thickness.html",
-    "blurb": "What carpet total thickness measures, how it differs from pile height, how it affects transitions and door clearance, and how to read thickness specs — reference-only.",
+    "title": "Carpet Tile Moisture Limits Explained | Flooring Reference",
+    "url": "/materials/carpet/carpet-tile/specs/moisture-limits.html",
+    "blurb": "What carpet tile moisture limits mean, how subfloor moisture is measured (RH and MVER), and why the adhesive and installation method often determine the real limit. Reference-only: no installation instructions.",
     "score": 1
   },
   {
-    "title": "Carpet Weight per Roll Explained | Flooring Reference",
-    "url": "/materials/carpet/specs/physical/weight-per-roll.html",
-    "blurb": "How carpet weight per roll is calculated, how it differs from face weight, what affects it, and why it matters for handling and logistics — reference-only.",
+    "title": "Carpet Tile Size Explained | Flooring Reference",
+    "url": "/materials/carpet/carpet-tile/specs/tile-size.html",
+    "blurb": "What carpet tile size means (common formats like 18x18, 24x24, 12x48). Learn how size affects layout, waste, seams, and planning — reference-only.",
     "score": 1
   },
   {
-    "title": "What Is Hardwood Flooring? Types, Finishes & Installation Methods Explained",
-    "url": "/materials/hardwood/",
-    "blurb": "Reference explanation of hardwood flooring. Learn the difference between solid and engineered hardwood, prefinished vs site-finished products, and common hardwood installation methods.",
+    "title": "Carpet Specs | Flooring Reference",
+    "url": "/materials/carpet/specs/",
+    "blurb": "Plain-English index of carpet specifications across construction, backing, performance, and warranty topics — reference-only.",
     "score": 1
   },
   {
-    "title": "Engineered Hardwood Grade Explained | Flooring Reference",
-    "url": "/materials/hardwood/engineered-hardwood/specs/construction/grade.html",
-    "blurb": "Engineered hardwood grade explained — what grade terms like Select, Character, and Rustic mean, how grading is defined, and what grade does and doesn",
+    "title": "Carpet Backing Explained (Jute, Action Back, Unitary, OptiBack & More) | Flooring Reference",
+    "url": "/materials/carpet/specs/construction/backing.html",
+    "blurb": "Plain-English guide to carpet backing terms: jute, action back, unitary, OptiBack, high-pick, and “waterproof backing.” Learn what backing does, what these labels usually mean, and common misconceptions — reference-only.",
     "score": 1
   },
   {
-    "title": "Engineered Hardwood Finish Type Explained | Flooring Reference",
-    "url": "/materials/hardwood/engineered-hardwood/specs/finish/finish-type.html",
-    "blurb": "Engineered hardwood finish types explained — UV-cured urethane, aluminum oxide, oil finish, and how each affects durability, maintenance, and repairability. Reference-only.",
+    "title": "Carpet Dye Methods Explained (Solution-Dyed, Beck, Printed & More) | Flooring Reference",
+    "url": "/materials/carpet/specs/construction/dye-method.html",
+    "blurb": "Plain-English guide to carpet dye methods: solution-dyed, beck dyeing, continuous dyeing, space dyeing, and printed patterns. Learn what each method means, what it affects (colorfastness, variation), and common misconceptions — reference-only.",
     "score": 1
   },
   {
-    "title": "Solid Hardwood Dimensional Stability Explained | Flooring Reference",
-    "url": "/materials/hardwood/solid-hardwood/specs/performance/dimensional-stability.html",
-    "blurb": "Dimensional stability for solid hardwood explained — shrinkage coefficients, plain-sawn vs quartersawn movement, how moisture content drives expansion and contraction, and why stability matters in specification. Reference-only.",
+    "title": "Carpet Twist Level Explained (Twist Rate / TPI) | Flooring Reference",
+    "url": "/materials/carpet/specs/construction/twist-level.html",
+    "blurb": "What carpet twist level means (twist rate, twists per inch), why twist affects texture retention, and how to read twist specs for cut-pile carpets — reference-only.",
     "score": 1
   },
   {
-    "title": "Locking System Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/construction/locking-system.html",
-    "blurb": "Locking system for laminate flooring — glueless click profiles, angle-angle vs fold-down installation methods, joint strength, plank replacement access, and what locking system affects in practice. Reference-only.",
+    "title": "Carpet Electrostatic Propensity Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/performance/electrostatic-propensity.html",
+    "blurb": "Carpet electrostatic propensity explained — what static buildup means, AATCC 134 walking test, kilovolt ratings, humidity effects, topical vs fiber-based static control, and ESD flooring differences. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Carpet Soil Resistance Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/performance/soil-resistance.html",
+    "blurb": "What carpet soil resistance means, how it differs from stain resistance, what treatments and fiber types affect it, and why traffic lanes gray out — reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Carpet Wear Warranty Explained | Flooring Reference",
+    "url": "/materials/carpet/specs/warranty/wear-warranty.html",
+    "blurb": "Carpet wear warranty — how wear is defined (fiber loss thresholds), what wear coverage does not include, why wear claims are rare, maintenance requirements, and how wear warranty differs from texture retention warranty. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Engineered Hardwood Adhesives Explained | Flooring Reference",
+    "url": "/materials/hardwood/engineered-hardwood/specs/installation/adhesives.html",
+    "blurb": "Adhesives for engineered hardwood glue-down installations explained — urethane, MS polymer, silane, and how adhesive type affects bond strength, moisture tolerance, and VOC compliance. Reference-only.",
+    "score": 1
+  },
+  {
+    "title": "Solid Hardwood Expansion Gap Explained | Flooring Reference",
+    "url": "/materials/hardwood/solid-hardwood/specs/installation/expansion-gap.html",
+    "blurb": "Solid hardwood expansion gap explained — NWFA minimum gap requirements, how room width and board width affect gap size, and what happens when gaps are insufficient. Reference-only.",
     "score": 1
   },
   {
     "title": "Plank Size Explained | Laminate Flooring Reference",
     "url": "/materials/laminate/specs/construction/plank-size.html",
     "blurb": "Plank size for laminate flooring — typical width and length ranges, narrow strip vs wide plank, how format affects subfloor flatness requirements, acclimation, and room proportion. Reference-only.",
-    "score": 1
-  },
-  {
-    "title": "Wear Layer Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/construction/wear-layer.html",
-    "blurb": "Laminate flooring wear layer — melamine resin overlay, aluminum oxide content, overlay weight in g/m², relationship to AC rating, and how it differs from vinyl wear layers. Reference-only.",
-    "score": 1
-  },
-  {
-    "title": "Expansion Gap Explained | Laminate Flooring Reference",
-    "url": "/materials/laminate/specs/installation/expansion-gap.html",
-    "blurb": "Expansion gap for laminate flooring — why floating floors need perimeter gaps, typical gap sizes, what happens when gaps are omitted, obstacles, and moisture effects. Reference-only.",
     "score": 1
   }
 ]
